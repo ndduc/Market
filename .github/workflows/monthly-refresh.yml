@@ -25,10 +25,10 @@ jobs:
     timeout-minutes: 45
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -48,7 +48,7 @@ jobs:
           missing=0
           for k in CENSUS_API_KEY FRED_API_KEY BLS_API_KEY BEA_API_KEY; do
             if [ -z "${!k}" ]; then
-              echo "::error::Missing Actions secret: $k — add it under Settings → Secrets → Actions"
+              echo "::error::Missing Actions secret: $k - add it under Settings -> Secrets -> Actions"
               missing=1
             fi
           done
@@ -56,7 +56,7 @@ jobs:
           python -m pipeline.refresh_all --strict --archive
 
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           commit-message: |
             chore: daily live data refresh ${{ github.run_id }}
