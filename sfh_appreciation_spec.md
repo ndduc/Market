@@ -18,6 +18,8 @@ This document is both the analysis specification and the reusable AI prompt.
 **Do not break:** `rental_market_spec.md`, `rental_market_report.md`, or the existing `pipeline/` + `data/` contract for the base rental report.  
 **Apartment sibling:** `apartment_market_spec.md` / `apartment_market_report.md` — 5+ unit multifamily; do not merge rankings.
 
+**Web presentation (GitHub Pages):** Served on **https://ndduc.github.io/Market/** — Top 10 overview + full detailed report for this sibling. Full contract: parent [`rental_market_spec.md` → Web presentation / GitHub Pages](rental_market_spec.md#web-presentation--github-pages). Do not rename §3 / §4 headings (overview extractor).
+
 **Canonical data philosophy:** reuse the durable live-fetch → `data/` → build approach:
 
 ```text
@@ -40,6 +42,7 @@ Every section below includes **[↑ Back to Spec index](#spec-index)** under its
 | [How this differs from the base rental spec](#how-this-differs-from-the-base-rental-spec) | Explicit contrast |
 | [Ranking dimensions](#ranking-dimensions) | Pillars, weights, overlays |
 | [Required outputs](#required-outputs) | Report format must match base skeleton |
+| [Web presentation / GitHub Pages](#web-presentation--github-pages) | Overview + full URLs; §3/§4 lock (parent contract) |
 | [Durable live-data pipeline](#durable-live-data-pipeline-mandatory) | fetch_all + sibling build; `data/` map |
 | [Live data & web search](#live-data--web-search-requirements-mandatory) | What is automated vs still searched |
 | [Analysis rules](#analysis-rules-for-the-ai) | Scoring and honesty rules |
@@ -214,7 +217,9 @@ Insurance/catastrophe, property-tax drag, new supply / concessions, **liquidity/
 2. **Index** + **[↑ Back to Index](#index)** under every indexed heading (link What changed last as appendix)  
 3. National market snapshot — **equity-path definition** + core conclusion (no SFR vs 2–4 dual takeaway as primary)  
 4. Top 10 actionable → landlord-protection → tenant-protection (equity case) → avoid/watch  
+   (**Heading must remain exactly** `## 3. Top 10 actionable markets` — Pages overview extractor.)  
 5. All-state matrix companions **4a–4e** (same columns as base; redefine Price/Cash/Appr framing in prose)  
+   (**Heading must remain exactly** `## 4. All-state ranking matrix` — overview stops before this.)  
 6. City leaderboards — appreciation-path metros; SFH equity list; jobs/migration; supply-constrained screens; App-tilt suburbs; light carry notes (not CF-primary boards)  
 7. All-state deep dives (**every** state + D.C.) with Scores / Prices / Entry capital / Industries / Demographics / Top suburbs / Best fit / Risks / Confidence  
 8. Legal highlights (**must include Squatting / vacant SFH subsection**)  
@@ -227,6 +232,23 @@ Insurance/catastrophe, property-tax drag, new supply / concessions, **liquidity/
 **Markdown rule:** never use `~` for “approximately” (strikethrough). Use `about` or `≈`.
 
 **Disclaimer:** informational only — not financial, legal, tax, insurance, or investment advice.
+
+---
+
+## Web presentation / GitHub Pages
+[↑ Back to Spec index](#spec-index)
+
+Full contract (files, extractor, link/UX rules, appendix placement): parent **[Web presentation / GitHub Pages](rental_market_spec.md#web-presentation--github-pages)**.
+
+This sibling’s live URLs:
+
+| View | URL |
+|------|-----|
+| Hub | https://ndduc.github.io/Market/ |
+| Overview | `overview.html?src=sfh_appreciation_report.md` |
+| Full | `view.html?src=sfh_appreciation_report.md` |
+
+**Locked headings (do not change):** `## 3. Top 10 actionable markets` and `## 4. All-state ranking matrix` — overview Pages slice between them.
 
 ---
 
@@ -343,6 +365,8 @@ Respond in Markdown **and**:
 3. Optionally archive `sfh_appreciation_report_YYYY-MM-DD.md`  
 4. Leave `rental_market_report.md` unchanged unless a base refresh was requested  
 
+**Section order (aligned with Pages):** Index → National snapshot → Top 10 (`## 3. Top 10 actionable markets`) → matrix (`## 4. All-state ranking matrix`) → … → What changed appendix last (keep `#1-what-changed-vs-the-prior-run`). Do not put What changed early in the body.
+
 If output length is limited: compress deep-dive narratives before dropping states or sections. **Never** drop all-state matrix prices or replace deep dives with remaining-state bullet cards.
 
 ---
@@ -362,6 +386,7 @@ SIBLING SCOPE (MANDATORY):
 
 FORMAT (MANDATORY):
 - Mirror rental_market_report.md section order, Index, [↑ Back to Index], companion tables 4a–4e, city boards, all-state deep dives, legal, insurance/tax, lighter PM, acquisition workflow, methodology, A–Z.
+- Section order: Index → National snapshot (first body) → Top 10 → matrix → … → What changed appendix LAST. Keep headings EXACTLY `## 3. Top 10 actionable markets` and `## 4. All-state ranking matrix` (GitHub Pages overview). Keep `## 1. What changed vs the prior run` for the appendix anchor.
 - Retitle and re-score for appreciation-first SFH. Do NOT invent a different outline.
 - Column meanings: Price = entry-vs-income + liquidity (not pure cheapness); Cash = carry tolerance; Appr dominates.
 - Econ weights: Appreciation 40% / Jobs 30% / Price 20% / Cash 10%.
