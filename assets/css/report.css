@@ -24,10 +24,13 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  width: 100%;
 }
 
 body {
   margin: 0;
+  width: 100%;
+  min-height: 100vh;
   color: var(--ink);
   background:
     radial-gradient(1200px 600px at 10% -10%, #dce9e4 0%, transparent 55%),
@@ -90,14 +93,15 @@ body {
 }
 
 .wrap {
+  display: block;
   width: 100%;
-  max-width: none;
+  max-width: none !important;
   box-sizing: border-box;
   margin: 0;
   padding:
-    1rem
+    0.75rem
     max(var(--pad), var(--safe-right))
-    2.5rem
+    2rem
     max(var(--pad), var(--safe-left));
 }
 
@@ -164,6 +168,7 @@ body {
 }
 
 #content {
+  display: block;
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -171,8 +176,10 @@ body {
   box-shadow: 0 10px 30px rgba(28, 25, 23, 0.05);
   overflow-wrap: anywhere;
   word-break: break-word;
-  width: 100%;
-  min-height: calc(100vh - var(--nav-h) - var(--safe-top) - 3rem);
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box;
+  min-height: calc(100vh - var(--nav-h) - var(--safe-top) - 2rem);
 }
 
 #content > :first-child { margin-top: 0; }
@@ -421,20 +428,36 @@ body {
   }
 }
 
-/* Wide desktops: use the full window with comfortable side padding */
+/* Wide desktops: edge-to-edge report panel */
 @media (min-width: 721px) {
   :root {
-    --pad: 1.75rem;
+    --pad: 1.25rem;
+  }
+
+  body {
+    background: var(--paper);
   }
 
   .topbar {
-    padding-left: max(1.75rem, var(--safe-left));
-    padding-right: max(1.75rem, var(--safe-right));
+    padding-left: max(1.25rem, var(--safe-left));
+    padding-right: max(1.25rem, var(--safe-right));
+  }
+
+  .wrap {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #content {
-    border-radius: 14px;
-    padding: 1.75rem 2rem 3rem;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    min-height: calc(100vh - var(--nav-h) - var(--safe-top));
+    padding: 1.75rem clamp(1.25rem, 3vw, 2.75rem) 3rem;
+    width: 100% !important;
+    max-width: none !important;
   }
 
   #content table {
@@ -443,8 +466,9 @@ body {
 }
 
 @media (min-width: 1400px) {
-  :root {
-    --pad: 2.25rem;
+  #content {
+    padding-left: clamp(1.5rem, 4vw, 3.5rem);
+    padding-right: clamp(1.5rem, 4vw, 3.5rem);
   }
 }
 
