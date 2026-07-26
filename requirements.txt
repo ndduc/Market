@@ -1,0 +1,2 @@
+# Optional deps for future fetchers (current scripts use stdlib only)
+# requests>=2.31.0

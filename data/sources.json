@@ -1,0 +1,24 @@
+{
+  "pulled_at": "2026-07-26T06:21:37+00:00",
+  "urls": {
+    "fred_median_income": "https://fred.stlouisfed.org/release/tables?eid=259462&rid=249",
+    "census_acs_income_brief": "https://www2.census.gov/library/publications/2025/demo/acsbr-025.pdf",
+    "bls_industry_chart": "https://www.bls.gov/charts/state-employment-and-unemployment/industry-employment-by-state.htm",
+    "bls_laus": "https://www.bls.gov/news.release/laus.htm"
+  },
+  "status": {
+    "fred_median_income": {
+      "ok": false,
+      "pulled_at": "2026-07-26T06:21:37+00:00",
+      "n_states": 0
+    },
+    "census_acs1": {
+      "ok": false,
+      "pulled_at": "2026-07-26T06:21:37+00:00",
+      "n_states": 0,
+      "notes": [
+        "CENSUS_API_KEY not set — skipped Census API. Set env var for live ACS median/mean/race pulls."
+      ]
+    }
+  }
+}

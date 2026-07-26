@@ -1,0 +1,9 @@
+{
+  "analysis_run_at": "2026-07-26T06:22:24+00:00",
+  "live_fetch_required": true,
+  "skipped_cache": false,
+  "recovery_after_empty_scrape": true,
+  "census_api_key_present": false,
+  "spec": "rental_market_spec.md - Durable live-data pipeline",
+  "next": "Improve fetch_all FRED/Census parsers; set CENSUS_API_KEY"
+}

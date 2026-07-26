@@ -1,0 +1,166 @@
+{
+  "pulled_at": "2026-07-26T06:22:24+00:00",
+  "live_fetch": true,
+  "recovery_seed": true,
+  "source": "2020 Census PL 94-171 (NH race + Hispanic ethnicity)",
+  "source_url": "https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_race_and_ethnicity",
+  "states": {
+    "Alabama": {
+      "display": "NH White 63% \u00b7 Black 26% \u00b7 Hisp 5% \u00b7 Asian 2%"
+    },
+    "Alaska": {
+      "display": "NH White 58% \u00b7 Native 15% \u00b7 Multiracial 10% \u00b7 Hisp 7% \u00b7 Asian 6%"
+    },
+    "Arizona": {
+      "display": "NH White 53% \u00b7 Hisp 31% \u00b7 Black 4% \u00b7 Native 4% \u00b7 Asian 3%"
+    },
+    "Arkansas": {
+      "display": "NH White 69% \u00b7 Black 15% \u00b7 Hisp 9% \u00b7 Asian 2%"
+    },
+    "California": {
+      "display": "Hisp 39% \u00b7 NH White 35% \u00b7 Asian 15% \u00b7 Black 5%"
+    },
+    "Colorado": {
+      "display": "NH White 65% \u00b7 Hisp 22% \u00b7 Black 4% \u00b7 Asian 3%"
+    },
+    "Connecticut": {
+      "display": "NH White 63% \u00b7 Hisp 17% \u00b7 Black 10% \u00b7 Asian 5%"
+    },
+    "Delaware": {
+      "display": "NH White 59% \u00b7 Black 22% \u00b7 Hisp 11% \u00b7 Asian 4%"
+    },
+    "District of Columbia": {
+      "display": "Black 41% \u00b7 NH White 38% \u00b7 Hisp 11% \u00b7 Asian 5%"
+    },
+    "Florida": {
+      "display": "NH White 52% \u00b7 Hisp 26% \u00b7 Black 15% \u00b7 Asian 3%"
+    },
+    "Georgia": {
+      "display": "NH White 50% \u00b7 Black 31% \u00b7 Hisp 10% \u00b7 Asian 4%"
+    },
+    "Hawaii": {
+      "display": "Asian 37% \u00b7 Multiracial 20% \u00b7 NH White 22% \u00b7 Pacific Isl. 10% \u00b7 Hisp 10%"
+    },
+    "Idaho": {
+      "display": "NH White 79% \u00b7 Hisp 13% \u00b7 Asian 1% \u00b7 Native 1%"
+    },
+    "Illinois": {
+      "display": "NH White 58% \u00b7 Hisp 18% \u00b7 Black 14% \u00b7 Asian 6%"
+    },
+    "Indiana": {
+      "display": "NH White 75% \u00b7 Black 9% \u00b7 Hisp 8% \u00b7 Asian 2%"
+    },
+    "Iowa": {
+      "display": "NH White 83% \u00b7 Hisp 7% \u00b7 Black 4% \u00b7 Asian 2%"
+    },
+    "Kansas": {
+      "display": "NH White 72% \u00b7 Hisp 13% \u00b7 Black 6% \u00b7 Asian 3%"
+    },
+    "Kentucky": {
+      "display": "NH White 81% \u00b7 Black 8% \u00b7 Hisp 5% \u00b7 Asian 2%"
+    },
+    "Louisiana": {
+      "display": "NH White 56% \u00b7 Black 31% \u00b7 Hisp 7% \u00b7 Asian 2%"
+    },
+    "Maine": {
+      "display": "NH White 90% \u00b7 Hisp 2% \u00b7 Black 2% \u00b7 Asian 1%"
+    },
+    "Maryland": {
+      "display": "NH White 47% \u00b7 Black 29% \u00b7 Hisp 12% \u00b7 Asian 7%"
+    },
+    "Massachusetts": {
+      "display": "NH White 68% \u00b7 Hisp 13% \u00b7 Asian 7% \u00b7 Black 7%"
+    },
+    "Michigan": {
+      "display": "NH White 72% \u00b7 Black 13% \u00b7 Hisp 6% \u00b7 Asian 3%"
+    },
+    "Minnesota": {
+      "display": "NH White 76% \u00b7 Black 7% \u00b7 Asian 5% \u00b7 Hisp 6%"
+    },
+    "Mississippi": {
+      "display": "NH White 55% \u00b7 Black 36% \u00b7 Hisp 4% \u00b7 Asian 1%"
+    },
+    "Missouri": {
+      "display": "NH White 76% \u00b7 Black 11% \u00b7 Hisp 5% \u00b7 Asian 2%"
+    },
+    "Montana": {
+      "display": "NH White 83% \u00b7 Native 6% \u00b7 Hisp 4% \u00b7 Multiracial 5%"
+    },
+    "Nebraska": {
+      "display": "NH White 76% \u00b7 Hisp 12% \u00b7 Black 5% \u00b7 Asian 3%"
+    },
+    "Nevada": {
+      "display": "NH White 46% \u00b7 Hisp 29% \u00b7 Black 9% \u00b7 Asian 9%"
+    },
+    "New Hampshire": {
+      "display": "NH White 87% \u00b7 Hisp 4% \u00b7 Asian 3% \u00b7 Black 1%"
+    },
+    "New Jersey": {
+      "display": "NH White 52% \u00b7 Hisp 22% \u00b7 Black 12% \u00b7 Asian 10%"
+    },
+    "New Mexico": {
+      "display": "Hisp 48% \u00b7 NH White 37% \u00b7 Native 9% \u00b7 Black 2%"
+    },
+    "New York": {
+      "display": "NH White 52% \u00b7 Hisp 20% \u00b7 Black 14% \u00b7 Asian 9%"
+    },
+    "North Carolina": {
+      "display": "NH White 60% \u00b7 Black 20% \u00b7 Hisp 11% \u00b7 Asian 3%"
+    },
+    "North Dakota": {
+      "display": "NH White 82% \u00b7 Native 5% \u00b7 Hisp 4% \u00b7 Black 3%"
+    },
+    "Ohio": {
+      "display": "NH White 76% \u00b7 Black 12% \u00b7 Hisp 4% \u00b7 Asian 3%"
+    },
+    "Oklahoma": {
+      "display": "NH White 61% \u00b7 Hisp 12% \u00b7 Native 8% \u00b7 Black 7% \u00b7 Multiracial 9%"
+    },
+    "Oregon": {
+      "display": "NH White 72% \u00b7 Hisp 14% \u00b7 Asian 5% \u00b7 Black 2%"
+    },
+    "Pennsylvania": {
+      "display": "NH White 73% \u00b7 Black 11% \u00b7 Hisp 8% \u00b7 Asian 4%"
+    },
+    "Rhode Island": {
+      "display": "NH White 69% \u00b7 Hisp 17% \u00b7 Black 5% \u00b7 Asian 4%"
+    },
+    "South Carolina": {
+      "display": "NH White 62% \u00b7 Black 25% \u00b7 Hisp 7% \u00b7 Asian 2%"
+    },
+    "South Dakota": {
+      "display": "NH White 80% \u00b7 Native 8% \u00b7 Hisp 4% \u00b7 Black 2%"
+    },
+    "Tennessee": {
+      "display": "NH White 71% \u00b7 Black 16% \u00b7 Hisp 7% \u00b7 Asian 2%"
+    },
+    "Texas": {
+      "display": "NH White 40% \u00b7 Hisp 39% \u00b7 Black 12% \u00b7 Asian 5%"
+    },
+    "Utah": {
+      "display": "NH White 75% \u00b7 Hisp 15% \u00b7 Asian 2% \u00b7 Pacific Isl. 1%"
+    },
+    "Vermont": {
+      "display": "NH White 89% \u00b7 Hisp 2% \u00b7 Asian 2% \u00b7 Black 1%"
+    },
+    "Virginia": {
+      "display": "NH White 59% \u00b7 Black 18% \u00b7 Hisp 11% \u00b7 Asian 7%"
+    },
+    "Washington": {
+      "display": "NH White 64% \u00b7 Hisp 14% \u00b7 Asian 9% \u00b7 Black 4%"
+    },
+    "West Virginia": {
+      "display": "NH White 89% \u00b7 Black 4% \u00b7 Hisp 2% \u00b7 Asian 1%"
+    },
+    "Wisconsin": {
+      "display": "NH White 79% \u00b7 Hisp 8% \u00b7 Black 6% \u00b7 Asian 3%"
+    },
+    "Wyoming": {
+      "display": "NH White 81% \u00b7 Hisp 10% \u00b7 Native 2% \u00b7 Black 1%"
+    }
+  },
+  "notes": [
+    "Display strings are 2020 Census NH-adjusted shares used in the base report.",
+    "Prefer live ACS API (CENSUS_API_KEY) on next full refresh."
+  ]
+}

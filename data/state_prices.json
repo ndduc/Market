@@ -1,0 +1,10 @@
+{
+  "pulled_at": "2026-07-26T06:21:37+00:00",
+  "live_fetch_attempted": true,
+  "fetch_ok": false,
+  "states": {},
+  "notes": [
+    "Extend with Redfin/Zillow/Forbes live scrape or published tables.",
+    "Marked incomplete — do not invent values in build_report."
+  ]
+}
