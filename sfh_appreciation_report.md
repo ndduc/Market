@@ -44,13 +44,14 @@ This is the **first sibling deliverable** focused solely on **single-family appr
 | ------ | ------------- |
 | **New strategy lens** | Rankings overweight **appreciation**, **jobs/migration**, **entry vs income**, **liquidity/exit**, and **owner-law / remote ops**; day-one cash flow is secondary |
 | **Property scope** | **Single-family houses only** — apartments and 2–4 unit MF are out of primary scope |
+| **Squatting overlay** | Vacant App SFH treated as first-class risk — reform vs friction jurisdictions, adverse-possession neglect, vacant monitoring |
 | **Score column meanings** | Same 4a columns as the base report, but **Price** = entry-vs-income + liquidity for equity path (not pure “cheap = good”); **Cash** = carry tolerance (thin OK); **Appr.** dominates the Econ blend |
 | **Econ weights** | Appreciation **40%** / Jobs **30%** / Price **20%** / Cash **10%** (vs equal 25% pillars in the base rental report) |
 | **Live data reused** | Same `data/` snapshots: FHFA, Redfin state prices, BLS jobs/industries, ACS/FRED income & demographics, BEA |
 | **Rank flip vs base** | Midwest cash-flow leaders (Ohio, Indiana, Arkansas) fall behind **FHFA + liquidity appreciation leaders** (Illinois, Wisconsin, Connecticut, New Jersey, Pennsylvania, upstate New York, etc.) |
 | **Format** | Mirrors `rental_market_report.md` section order, Index / Back to Index, companion tables, all-state deep dives |
 
-**Defaults used (user did not override):** appreciation-first; single-family only; remote-capable preferred; **5–10+ year** hold; moderate risk; thin day-one cash flow acceptable.
+**Defaults used (user did not override):** appreciation-first; single-family only; remote-capable preferred; **5–10+ year** hold; moderate risk; thin day-one cash flow acceptable; **vacant SFH monitored against squatting**.
 
 ---
 
@@ -77,6 +78,7 @@ This is the **first sibling deliverable** focused solely on **single-family appr
 - **Carry** still matters: model PITI + tax + insurance + vacancy + management so thin cash flow does not force a distressed sale.
 - **Gross yield** (if shown) is a **carry screen only** — never treat it as the ranking objective.
 - Prefer **owner-occupant exit liquidity** (broad single-family buyer pool) over specialty product.
+- **Vacant SFH squatting risk** is first-class on App holds: longer vacancy / rehab windows attract unauthorized occupants — budget monitoring and know trespass vs eviction paths.
 
 ### Core conclusion
 [↑ Back to Index](#index)
@@ -87,6 +89,8 @@ For **single-family appreciation** in mid-2026, the actionable screen shifts awa
 
 **Structural / long-hold equity** still points many investors toward **supply-constrained or high-income job metros** (Boston, North Jersey, Northern Virginia, selected Sun Belt growth metros, Utah/Idaho) even when one-year FHFA is soft — underwrite the carry and do not buy a narrative without reserves.
 
+**Squatting / vacant holds:** 2024–2026 anti-squatter reforms improved owner tools in many states, but **practice varies by county**. Unmonitored vacant App houses remain a capital-and-title risk — especially where LE still defaults to civil process. Prefer leased or actively inspected vacant inventory over “set and forget” equity holds.
+
 **Single-family only:** this report does not split duplex/fourplex shortlists. Use `rental_market_report.md` for cash-flow–first or 2–4 unit screens.
 
 ---
@@ -94,7 +98,7 @@ For **single-family appreciation** in mid-2026, the actionable screen shifts awa
 ## 3. Top 10 actionable markets
 [↑ Back to Index](#index)
 
-Tie-breakers after equal economic scores: **exit liquidity**, data confidence, lower insurance catastrophe risk, remote management availability, diversified jobs.
+Tie-breakers after equal economic scores: **exit liquidity**, data confidence, lower insurance catastrophe risk, remote management availability, **clearer vacant-SFH / squatter removal path**, diversified jobs.
 
 | Rank | State / preferred metros | Why it ranks | Single-family equity note | Main caution |
 | ---- | ------------------------ | ------------ | ------------------------- | ------------ |
@@ -121,8 +125,8 @@ Tie-breakers after equal economic scores: **exit liquidity**, data confidence, l
 | 5 | Pennsylvania — Pittsburgh / Lancaster | Improving prices; manageable statewide baseline |
 | 6 | Utah — Salt Lake / Provo | Strong owner law + migration / jobs (softer near-term FHFA) |
 | 7 | Idaho — Boise | Owner-friendly + migration; higher entry |
-| 8 | Georgia — Atlanta job pockets | Strong owner law + migration |
-| 9 | North Carolina — Raleigh / Charlotte | Jobs / migration equity thesis |
+| 8 | Georgia — Atlanta job pockets | Strong owner law + migration; Georgia Squatter Reform Act improves vacant-SFH tools |
+| 9 | North Carolina — Raleigh / Charlotte | Jobs / migration equity thesis; expanding anti-squatter toolkit — verify county practice |
 | 10 | Tennessee — Nashville suburbs | Favorable law; App tilt outside Memphis CF |
 
 ### Best tenant-protection markets that still have an equity case
@@ -156,6 +160,9 @@ These are **not** easiest for landlords. They can still work for **appreciation 
 | **Portland, Oregon** | Job losses + rent cap + soft near-term path |
 | **Florida coastal / condo-adjacent** | Insurance can erase equity math even if rents look fine |
 | **Ultra-cheap CF cities as “App” buys** | Detroit / Jackson headline yields ≠ appreciation thesis — condition and exit risk |
+| **Unmonitored vacant App SFH (any market)** | Squatting / unauthorized occupancy + damage + adverse-possession neglect risk — especially where LE treats occupation as civil |
+| **NYC borough vacant / specialist equity** | High friction for unauthorized-occupant removal vs upstate SFH App path |
+| **Coastal CA vacant trophy holds** | Extreme entry + regulation; confirm current trespass-removal bills/status before vacant buy-and-hold |
 
 ---
 
@@ -611,7 +618,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +7.3%; unemployment 5.1%; median $338k; price-to-income about 4.0x. Appreciation actionable rank **#1** (Econ 7.20).
 **Best fit:** **Single-family appreciation hold** in Chicago, Peoria. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** insurance / tax / regulation shock reserves elevated.
+**Key risks:** insurance / tax / regulation shock reserves elevated; vacant App holds need active monitoring — large-metro LE may treat unauthorized occupancy as civil until paperwork clears.
 **Data confidence:** High
 
 ### Wisconsin
@@ -627,7 +634,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +4.5%; unemployment 3.3%; median $362k; price-to-income about 4.4x. Appreciation actionable rank **#2** (Econ 8.50).
 **Best fit:** **Single-family appreciation hold** in Milwaukee, Madison. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Connecticut
@@ -659,7 +666,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +4.5%; unemployment 4.5%; median $580k; price-to-income about 5.6x; structural supply / demand support. Appreciation actionable rank **#4** (Econ 7.30).
 **Best fit:** **Single-family appreciation hold** in Newark / North Jersey. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** insurance / tax / regulation shock reserves elevated; owner-law friction (rent caps / just-cause / eviction delay).
+**Key risks:** insurance / tax / regulation shock reserves elevated; owner-law friction (rent caps / just-cause / eviction delay); vacant-SFH squatting risk — confirm LE trespass path vs civil eviction before long vacant holds.
 **Data confidence:** High
 
 ### Pennsylvania
@@ -675,7 +682,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +3.8%; unemployment 4.1%; median $330k; price-to-income about 4.1x. Appreciation actionable rank **#5** (Econ 7.60).
 **Best fit:** **Single-family appreciation hold** in Philadelphia, Pittsburgh, Lancaster. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### New York
@@ -691,7 +698,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +4.4%; unemployment 4.6%; median $620k; price-to-income about 7.1x. Appreciation actionable rank **#6** (Econ 7.10).
 **Best fit:** **Single-family appreciation hold** in Buffalo, Rochester, Syracuse (upstate focus). Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** insurance / tax / regulation shock reserves elevated; owner-law friction (rent caps / just-cause / eviction delay).
+**Key risks:** insurance / tax / regulation shock reserves elevated; owner-law friction (rent caps / just-cause / eviction delay); vacant-SFH squatting risk — confirm LE trespass path vs civil eviction before long vacant holds.
 **Data confidence:** High
 
 ### Kentucky
@@ -707,7 +714,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +4.7%; unemployment 4.7%; median $284k; price-to-income about 4.4x. Appreciation actionable rank **#7** (Econ 7.10).
 **Best fit:** **Single-family appreciation hold** in Louisville, Lexington. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Indiana
@@ -723,7 +730,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +3.6%; unemployment 3.3%; median $287k; price-to-income about 3.7x. Appreciation actionable rank **#8** (Econ 7.90).
 **Best fit:** **Single-family appreciation hold** in Indianapolis, Fort Wayne. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Missouri
@@ -739,7 +746,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +3.9%; unemployment 3.7%; median $298k; price-to-income about 3.8x. Appreciation actionable rank **#9** (Econ 7.50).
 **Best fit:** **Single-family appreciation hold** in Kansas City, St. Louis. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Massachusetts
@@ -755,7 +762,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +2.2%; unemployment 4.4%; median $688k; price-to-income about 6.0x; structural supply / demand support. Appreciation actionable rank **#10** (Econ 6.90).
 **Best fit:** **Single-family appreciation hold** in Boston, Worcester. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** vacant App holds need active monitoring — large-metro LE may treat unauthorized occupancy as civil until paperwork clears.
 **Data confidence:** High
 
 ### North Dakota
@@ -787,7 +794,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +2.2%; unemployment 3.5%; median $413k; price-to-income about 5.4x. Appreciation actionable rank **#12** (Econ 8.00).
 **Best fit:** **Single-family appreciation hold** in Nashville, Knoxville, Memphis. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### New Hampshire
@@ -819,7 +826,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +3.9%; unemployment 2.9%; median $319k; price-to-income about 3.7x. Appreciation actionable rank **#14** (Econ 7.80).
 **Best fit:** **Single-family appreciation hold** in Omaha, Lincoln. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Vermont
@@ -851,7 +858,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +3.2%; unemployment 3.6%; median $283k; price-to-income about 3.5x. Appreciation actionable rank **#16** (Econ 7.60).
 **Best fit:** **Single-family appreciation hold** in Columbus, Cincinnati, Cleveland. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Idaho
@@ -867,7 +874,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +2.8%; unemployment 3.7%; median $503k; price-to-income about 6.2x; structural supply / demand support. Appreciation actionable rank **#17** (Econ 7.40).
 **Best fit:** **Single-family appreciation hold** in Boise. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Iowa
@@ -883,7 +890,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +3.5%; unemployment 3.2%; median $259k; price-to-income about 3.0x. Appreciation actionable rank **#18** (Econ 7.40).
 **Best fit:** **Single-family appreciation hold** in Des Moines, Cedar Rapids. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### South Dakota
@@ -915,7 +922,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +3.4%; unemployment 4.1%; median $276k; price-to-income about 4.2x. Appreciation actionable rank **#20** (Econ 7.30).
 **Best fit:** **Single-family appreciation hold** in Northwest Arkansas, Little Rock. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Hawaii
@@ -963,7 +970,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +2.4%; unemployment 3.7%; median $499k; price-to-income about 5.1x. Appreciation actionable rank **#23** (Econ 7.20).
 **Best fit:** **Single-family appreciation hold** in Northern Virginia, Richmond. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Alabama
@@ -979,7 +986,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +2.4%; unemployment 3.2%; median $313k; price-to-income about 4.8x. Appreciation actionable rank **#24** (Econ 7.20).
 **Best fit:** **Single-family appreciation hold** in Birmingham, Huntsville. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Georgia
@@ -995,7 +1002,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +0.1%; unemployment 3.4%; median $389k; price-to-income about 4.8x. Appreciation actionable rank **#25** (Econ 7.10).
 **Best fit:** **Single-family appreciation hold** in Atlanta, Athens. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** anti-squatter reforms improving owner tools — still verify local sheriff/LE practice + do not conflate squatters with tenants.
 **Data confidence:** High
 
 ### Alaska
@@ -1027,7 +1034,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +2.8%; unemployment 4.4%; median $372k; price-to-income about 4.0x. Appreciation actionable rank **#27** (Econ 6.90).
 **Best fit:** **Single-family appreciation hold** in Minneapolis–St. Paul. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Michigan
@@ -1043,7 +1050,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +3.2%; unemployment 5.0%; median $298k; price-to-income about 3.7x. Appreciation actionable rank **#28** (Econ 6.90).
 **Best fit:** **Single-family appreciation hold** in Detroit, Grand Rapids. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Kansas
@@ -1059,7 +1066,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +2.5%; unemployment 3.8%; median $316k; price-to-income about 3.6x. Appreciation actionable rank **#29** (Econ 6.80).
 **Best fit:** **Single-family appreciation hold** in Wichita, Kansas City–KS. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** anti-squatter reforms improving owner tools — still verify local sheriff/LE practice + do not conflate squatters with tenants.
 **Data confidence:** High
 
 ### Maine
@@ -1091,7 +1098,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +2.1%; unemployment 3.8%; median $284k; price-to-income about 5.1x. Appreciation actionable rank **#31** (Econ 6.80).
 **Best fit:** **Single-family appreciation hold** in Jackson, Gulfport. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** thin exit / smaller buyer pool; insurance / tax / regulation shock reserves elevated.
+**Key risks:** thin exit / smaller buyer pool; insurance / tax / regulation shock reserves elevated; anti-squatter reforms improving owner tools — still verify local sheriff/LE practice + do not conflate squatters with tenants.
 **Data confidence:** High
 
 ### South Carolina
@@ -1107,7 +1114,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +1.5%; unemployment 4.4%; median $394k; price-to-income about 5.1x. Appreciation actionable rank **#32** (Econ 6.70).
 **Best fit:** **Single-family appreciation hold** in Greenville, Charleston. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** insurance / tax / regulation shock reserves elevated.
+**Key risks:** insurance / tax / regulation shock reserves elevated; anti-squatter reforms improving owner tools — still verify local sheriff/LE practice + do not conflate squatters with tenants.
 **Data confidence:** High
 
 ### North Carolina
@@ -1123,7 +1130,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +0.1%; unemployment 3.6%; median $398k; price-to-income about 5.9x; structural supply / demand support. Appreciation actionable rank **#33** (Econ 6.50).
 **Best fit:** **Single-family appreciation hold** in Raleigh, Charlotte. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** anti-squatter reforms improving owner tools — still verify local sheriff/LE practice + do not conflate squatters with tenants.
 **Data confidence:** High
 
 ### Maryland
@@ -1139,7 +1146,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +0.6%; unemployment 4.3%; median $477k; price-to-income about 4.4x. Appreciation actionable rank **#34** (Econ 6.20).
 **Best fit:** **Single-family appreciation hold** in Baltimore. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Montana
@@ -1187,7 +1194,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +0.2%; unemployment 4.9%; median $454k; price-to-income about 5.4x. Appreciation actionable rank **#37** (Econ 5.80).
 **Best fit:** **Single-family appreciation hold** in Phoenix, Tucson. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** anti-squatter reforms improving owner tools — still verify local sheriff/LE practice + do not conflate squatters with tenants.
 **Data confidence:** High
 
 ### Louisiana
@@ -1235,7 +1242,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +0.7%; unemployment 5.1%; median $481k; price-to-income about 6.0x. Appreciation actionable rank **#40** (Econ 5.60).
 **Best fit:** **Single-family appreciation hold** in Las Vegas, Reno. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** block-level variance; confirm local supply pipeline.
+**Key risks:** block-level variance; confirm local supply pipeline; monitor vacant SFH against unauthorized occupancy.
 **Data confidence:** High
 
 ### Delaware
@@ -1299,7 +1306,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY -1.6%; unemployment 4.4%; median $356k; price-to-income about 4.4x. Appreciation actionable rank **#44** (Econ 5.00).
 **Best fit:** **Single-family appreciation hold** in Dallas–Fort Worth, Houston, Austin. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** insurance / tax / regulation shock reserves elevated; near-term FHFA softness — do not extrapolate past boom blindly.
+**Key risks:** insurance / tax / regulation shock reserves elevated; near-term FHFA softness — do not extrapolate past boom blindly; anti-squatter reforms improving owner tools — still verify local sheriff/LE practice + do not conflate squatters with tenants.
 **Data confidence:** High
 
 ### Oregon
@@ -1315,7 +1322,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY +0.6%; unemployment 5.2%; median $526k; price-to-income about 5.9x. Appreciation actionable rank **#45** (Econ 4.90).
 **Best fit:** **Single-family appreciation hold** in Portland, Salem. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** insurance / tax / regulation shock reserves elevated; owner-law friction (rent caps / just-cause / eviction delay).
+**Key risks:** insurance / tax / regulation shock reserves elevated; owner-law friction (rent caps / just-cause / eviction delay); vacant-SFH squatting risk — confirm LE trespass path vs civil eviction before long vacant holds.
 **Data confidence:** High
 
 ### Florida
@@ -1331,7 +1338,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY -0.5%; unemployment 4.7%; median $422k; price-to-income about 5.6x. Appreciation actionable rank **#46** (Econ 4.90).
 **Best fit:** **Single-family appreciation hold** in Tampa, Orlando, Jacksonville. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** insurance / tax / regulation shock reserves elevated; near-term FHFA softness — do not extrapolate past boom blindly.
+**Key risks:** insurance / tax / regulation shock reserves elevated; near-term FHFA softness — do not extrapolate past boom blindly; anti-squatter reforms improving owner tools — still verify local sheriff/LE practice + do not conflate squatters with tenants.
 **Data confidence:** High
 
 ### Rhode Island
@@ -1363,7 +1370,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY -0.4%; unemployment 5.2%; median $652k; price-to-income about 6.7x. Appreciation actionable rank **#48** (Econ 4.10).
 **Best fit:** **Single-family appreciation hold** in Seattle, Spokane. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** insurance / tax / regulation shock reserves elevated; owner-law friction (rent caps / just-cause / eviction delay); near-term FHFA softness — do not extrapolate past boom blindly.
+**Key risks:** insurance / tax / regulation shock reserves elevated; owner-law friction (rent caps / just-cause / eviction delay); vacant-SFH squatting risk — confirm LE trespass path vs civil eviction before long vacant holds; near-term FHFA softness — do not extrapolate past boom blindly.
 **Data confidence:** High
 
 ### Colorado
@@ -1395,7 +1402,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY -0.5%; unemployment 5.2%; median $887k; price-to-income about 8.8x; structural supply / demand support. Appreciation actionable rank **#50** (Econ 3.80).
 **Best fit:** **Single-family appreciation hold** in Los Angeles, Bay Area, San Diego. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** insurance / tax / regulation shock reserves elevated; owner-law friction (rent caps / just-cause / eviction delay); near-term FHFA softness — do not extrapolate past boom blindly.
+**Key risks:** insurance / tax / regulation shock reserves elevated; owner-law friction (rent caps / just-cause / eviction delay); vacant-SFH squatting risk — confirm LE trespass path vs civil eviction before long vacant holds; near-term FHFA softness — do not extrapolate past boom blindly.
 **Data confidence:** High
 
 ### District of Columbia
@@ -1411,7 +1418,7 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 
 **Why it ranks:** FHFA YoY -1.4%; unemployment 6.0%. Appreciation actionable rank **#51** (Econ 2.20).
 **Best fit:** **Single-family appreciation hold** in Washington, D.C.. Cash flow is secondary — underwrite thin/negative day-one carry if equity path and exit liquidity hold.
-**Key risks:** owner-law friction (rent caps / just-cause / eviction delay); near-term FHFA softness — do not extrapolate past boom blindly.
+**Key risks:** owner-law friction (rent caps / just-cause / eviction delay); vacant-SFH squatting risk — confirm LE trespass path vs civil eviction before long vacant holds; near-term FHFA softness — do not extrapolate past boom blindly.
 **Data confidence:** Medium
 
 ---
@@ -1419,19 +1426,36 @@ Deep dives for **all 50 states + D.C.** in **appreciation actionable-rank** orde
 ## 7. Legal environment — verified 2026 highlights
 [↑ Back to Index](#index)
 
-Legal scores are reused directionally from the base rental report research layer. For appreciation holds, **owner-law friction matters for ops and exit timing**, even when cash flow is secondary.
+Legal scores are reused directionally from the base rental report research layer. For appreciation holds, **owner-law friction matters for ops and exit timing**, even when cash flow is secondary. **Vacant single-family houses** also face **squatting / unauthorized occupancy** risk — treat that separately from ordinary tenant eviction.
 
 | Theme | 2026 highlight | Investor takeaway |
 | ----- | -------------- | ----------------- |
 | **Washington / Oregon rent caps** | Statewide caps about **9.683%** (WA) and **9.5%** (OR) for 2026 | Long equity possible; near-term rent growth capped — size reserves |
-| **California** | Statewide rent cap (5% + inflation, max 10%) + local overlays | Supply-constrained equity thesis ≠ easy ops |
-| **New York** | Good Cause in opt-in cities; strong tenant tilt | Prefer **upstate SFH** for App; NYC specialist-only |
+| **California** | Statewide rent cap (5% + inflation, max 10%) + local overlays; trespass-removal bills active in 2025–26 sessions | Supply-constrained equity ≠ easy ops; **verify current vacant-occupant removal path** before long vacant holds |
+| **New York** | Good Cause in opt-in cities; strong tenant tilt | Prefer **upstate SFH** for App; NYC specialist-only; vacant borough product = high ops friction |
 | **New Jersey** | Anti-Eviction Act; many local rent ordinances | Equity / spillover demand with tax + ops drag |
-| **Illinois** | State preempts rent control; Chicago has strong local L-T ordinance | Chicago App works with city-rule underwriting |
+| **Illinois** | State preempts rent control; Chicago strong local L-T ordinance; newer anti-squatter tools expanding post-2025 | Chicago App works with city-rule underwriting; still monitor vacant SFH |
 | **Midwest owner-friendly cluster** | OH / IN / WI / MO / KY baselines generally landlord-leaning | Good remote-ops backdrop for equity holds |
 | **Idaho / Utah** | Strong owner law | Pair with migration thesis; watch entry prices |
+| **Anti-squatter reform cluster** | GA Squatter Reform Act; FL unauthorized-occupant sheriff complaint path; 2025–26 expansions in TX, NC, OR, KS, MS, AZ, SC and others ([NAA tracker](https://naahq.org/news/anti-squatter-legislation-continues-third-year)) | Better **paper tools** for true unauthorized occupants — still confirm **local LE practice**; not a free pass to neglect vacant homes |
 
 City rules can override state baselines (Chicago, NYC, coastal CA, Seattle). Verify locally before bidding.
+
+### Squatting / vacant SFH (appreciation overlay)
+[↑ Back to Index](#index)
+
+Why this sibling emphasizes squatting: App investors often accept **longer vacancy, rehab, or thin leasing** — vacant detached houses are the usual target, not occupied rentals with clear leases.
+
+| Concept | Screen rule |
+| ------- | ----------- |
+| **Unauthorized occupant / squatter** | Entered **without** consent; **no** bona fide lease — some states now allow expedited LE / sheriff removal after owner affidavit |
+| **Holdover or claimed tenant** | Usually **eviction court**, not “trespass remove” — fake-lease fraud is common; document ownership and prior vacancy |
+| **Adverse possession** | Long open/hostile statutory path to a **title** claim — rare vs headlines, real if you abandon an App hold for years |
+| **Reform vs friction** | Reform statutes help **paper process**; large metros can still be slow if LE defaults to civil |
+
+**Operating controls (minimum for vacant App SFH):** change locks at closing; keep utilities intentional (not “dark and abandoned”); weekly or biweekly exterior/interior checks (PM vacant product or trusted local); cameras / smart locks where lawful; immediate counsel if someone claims tenancy; never self-help lockouts of people who may be tenants.
+
+**Ranking use:** clearer vacant-occupant removal + strong remote monitoring **tie-breaks upward** for remote App buyers; unmonitored vacant product in friction metros **tie-breaks downward** even when FHFA looks strong.
 
 ---
 
@@ -1453,21 +1477,23 @@ Appreciation math dies if insurance or taxes force a sale. Apply the same overla
 - National landlord policies often **$800–$3,000/year**.
 - Commonly **$2,200–$4,600+** in Florida, Louisiana, Texas, Oklahoma, Mississippi, and hail-belt pockets.
 - Treat Florida coastal, Louisiana, Texas Gulf, and Oklahoma as **insurance-first** markets — equity thesis second.
+- Ask carriers about **vacancy clauses** — many policies restrict or exclude coverage after 30–60 days vacant; squatting loss without coverage can erase equity.
 
 ---
 
 ## 9. Property management rates & remote ops
 [↑ Back to Index](#index)
 
-Lighter section than the base rental report: appreciation investors still need **professional ops** so thin cash flow does not become deferred maintenance.
+Lighter section than the base rental report: appreciation investors still need **professional ops** so thin cash flow does not become deferred maintenance — and so **vacant houses are not left unwatched**.
 
 | Fee | Typical screen |
 | --- | -------------- |
 | Monthly management | **8–12%** of collected rent (default screen **10%**) |
 | Leasing / placement | **50–100%** of one month’s rent on turnover |
+| Vacant / caretaking | Flat monthly vacant fee or reduced % — **budget explicitly** on App holds |
 | All-in first-year | Often **15–20%+** of gross once add-ons included |
 
-Prefer metros with **multiple competing local PMs** (Chicago suburbs, Indianapolis, Milwaukee, Dallas–Fort Worth, Atlanta, Phoenix, Raleigh). Interview 2–3 managers; get fee schedules in writing. Institutional SFR landlords (Invitation Homes, Progress Residential, etc.) are **comps / competitors**, not your third-party PM.
+Prefer metros with **multiple competing local PMs** (Chicago suburbs, Indianapolis, Milwaukee, Dallas–Fort Worth, Atlanta, Phoenix, Raleigh). Interview 2–3 managers; get fee schedules in writing; ask for **vacant inspection cadence** and unauthorized-occupant response SOP. Institutional SFR landlords (Invitation Homes, Progress Residential, etc.) are **comps / competitors**, not your third-party PM.
 
 ---
 
@@ -1478,13 +1504,14 @@ Prefer metros with **multiple competing local PMs** (Chicago suburbs, Indianapol
 2. Property type: **single-family only** for this screen.
 3. Shortlist 3–5 metros from §3 / §5 — not a whole state.
 4. Pull ZIP-level sale comps and **days-on-market / sale-to-list** (exit liquidity).
-5. Get property-tax history and a **bindable insurance quote** before finalizing.
+5. Get property-tax history and a **bindable insurance quote** before finalizing — confirm **vacancy endorsement** limits.
 6. Model carry: vacancy, management (about 10%), leasing, repairs, tax, insurance — even if day-one cash is thin.
 7. Confirm **cash to close + shock reserves** from §4e (do not skip reserves because “it’s an App deal”).
 8. Use transparent financing defaults (**25% down**, investor rate band about 7.0%–8.5%) unless you have a live quote for different leverage — disclose any override.
 9. Stress: rate +1%, rent −5%, insurance +50%, price flat for 24 months, and six months vacancy.
-10. Verify local licensing, notice, rent-cap, and just-cause rules.
-11. Buy only if the **address-level** equity path still works with reserves intact.
+10. Verify local licensing, notice, rent-cap, just-cause rules, and **unauthorized-occupant / squatter removal path** (sheriff affidavit vs full eviction).
+11. Day-of / post-close vacant controls: rekey, utilities plan, PM vacant checks, no “dark abandoned” look — document ownership if LE is called.
+12. Buy only if the **address-level** equity path still works with reserves **and** a vacant-occupancy plan intact.
 
 ---
 
@@ -1498,7 +1525,7 @@ Tabular national fields use the Market repo’s live `data/` snapshots from this
 
 - **Pipeline live fetch stamp:** `data/meta.json` analysis_run_at **2026-07-26T07:07:04+00:00**; census_api_key_present=True; fred_api_key_present=True; bls_api_key_present=True; bea_api_key_present=True.
 - **Format parent:** section skeleton from `rental_market_report.md`.
-- **Spec:** `sfh_appreciation_spec.md`.
+- **Spec:** `sfh_appreciation_spec.md` (includes mandatory squatting / vacant-SFH overlay).
 
 ### Scoring weights (appreciation-first)
 [↑ Back to Index](#index)
@@ -1510,7 +1537,7 @@ Tabular national fields use the Market repo’s live `data/` snapshots from this
 | Price | 20% | Entry vs income band + exit liquidity |
 | Cash (carry) | 10% | Secondary carry tolerance — thin OK |
 
-Owner / Tenant law scores are shown separately (not in Econ) and reused from the base legal judgment layer.
+Owner / Tenant law scores are shown separately (not in Econ) and reused from the base legal judgment layer. **Squatting risk** is an **overlay** (Legal § + avoid/watch + deep-dive risks + acquisition controls), not a fifth Econ pillar.
 
 ### Financing and expense assumptions
 [↑ Back to Index](#index)
@@ -1522,7 +1549,7 @@ Owner / Tenant law scores are shown separately (not in Econ) and reused from the
 | Cash to close | ≈ **28%** of median |
 | Shock liquid | **6 months** PITI default; **9 months** in high-insurance / high-tax / heavy-regulation states |
 | PITI rate assumption | **7.5%** midpoint of about 7.0%–8.5% investor band; 30-year amortizing on 75% LTV |
-| Property management | about **10%** of collected rent unless quoted |
+| Property management | about **10%** of collected rent unless quoted; vacant caretaking budgeted separately when vacant |
 | Hold period | **5–10+ years** |
 
 ### Primary sources
@@ -1537,6 +1564,7 @@ Owner / Tenant law scores are shown separately (not in Econ) and reused from the
 - [BEA personal income](https://www.bea.gov/) / `data/bea.json`
 - [BLS metro employment, May 2026](https://www.bls.gov/news.release/metro.nr0.htm)
 - Base report legal / insurance / suburb research layer in `rental_market_report.md`
+- Anti-squatter legislation tracker / context: [National Apartment Association](https://naahq.org/news/anti-squatter-legislation-continues-third-year); state examples include [Georgia Squatter Reform Act (HB 1017)](https://gov.georgia.gov/document/2024-signed-legislation/hb-1017/download), Florida unauthorized-occupant sheriff complaint path (Ch. 82 / related 2025 updates)
 - [July 2026 investor loan rate sheets](https://dscrfinder.com/blog/current-dscr-loan-rates)
 
 ### Caveats / data gaps
@@ -1546,6 +1574,7 @@ Owner / Tenant law scores are shown separately (not in Econ) and reused from the
 - Metro FHFA prints in §5 cite the base report’s published metro leader table; state YoY is always from live `data/fhfa.json`.
 - `data/metro_prices.json` and `data/suburbs.json` remain placeholders — suburb notes are qualitative screens.
 - True mean closed-sale prices by metro are often `unavailable`.
+- Squatting statutes and **county LE practice** change quickly — treat §7 as a screen, not a legal opinion; confirm with local counsel.
 - Never use Markdown `~` for approximately (strikethrough risk); this report uses **about** or **≈**.
 - This sibling does **not** auto-build via `pipeline/build_report.py` yet — refresh guidance is in `sfh_appreciation_spec.md`.
 

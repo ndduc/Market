@@ -99,6 +99,27 @@ Keep the base report’s dual legal lenses, applied to equity-path markets:
 | **Landlord-protection set** | Owner-friendly law + workable remote ops **and** a coherent appreciation thesis |
 | **Tenant-protection set** | Stronger renter protections that still have an **equity / long-hold** case (e.g., Chicago, upstate NY, North Jersey) |
 
+### Squatting / unauthorized occupancy (mandatory for this sibling)
+
+[↑ Back to Spec index](#spec-index)
+
+Appreciation-first SFH holds often mean **longer vacancy, rehab windows, or thin rental demand** — vacant single-family houses are the primary squatting target. Treat **unauthorized occupancy** as a first-class ops / equity risk, not a footnote.
+
+| Concept | How to use it |
+|---------|----------------|
+| **Squatter / unauthorized occupant** | Person who entered **without** owner consent and has **no** bona fide lease or tenancy claim |
+| **Holdover / disputed tenant** | Former or claimed tenant — usually requires **eviction**, not “trespass remove” |
+| **Adverse possession** | Long statutory open/hostile possession path to **title** claim — rare vs viral anecdotes, still a **neglect risk** on abandoned App holds |
+| **Reform states** | States with 2024–2026 anti-squatter / expedited unlawful-occupant removal (e.g. Georgia Squatter Reform Act; Florida unauthorized-occupant sheriff complaint path; expanding list including TX, NC, IL, OR, KS, MS, AZ, SC and others) — **verify current statute + local LE practice** each refresh |
+| **Friction metros** | Large cities where LE historically treats many vacant-home occupations as **civil** until paperwork clears — haircut remote vacant App holds |
+
+**Required in every report refresh:**
+1. Legal § must include a **Squatting / vacant SFH** subsection (process clarity, reform vs friction, adverse-possession note).  
+2. Acquisition workflow must include **vacant-property controls** (lock/utility/inspect/PM vacant checks; confirm trespass vs eviction path before bidding).  
+3. Avoid/watch + deep-dive **Key risks** must flag squatting when vacant holds or soft owner-law / civil-only LE practice applies.  
+4. Do **not** invent statutes — cite year + link or mark `unavailable` / “verify with counsel.”  
+5. Never conflate squatters with tenants in rankings or advice.
+
 ---
 
 ## How this differs from the base rental spec
@@ -112,6 +133,7 @@ Keep the base report’s dual legal lenses, applied to equity-path markets:
 | Price pillar | Affordability (higher = cheaper entry) | **Entry vs income + exit liquidity** for equity buys |
 | Cash pillar | Primary income realism | **Carry tolerance** (thin OK) |
 | Typical top markets | Midwest CF leaders (OH, IN, AR, …) | **FHFA + liquidity / structural demand** leaders (often IL, WI, CT, NJ, PA, upstate NY, KY, … plus selected supply-constrained coasts/Sun Belt) |
+| Squatting / vacant SFH | Mentioned only if base legal layer covers it | **Mandatory overlay** — vacant App holds, reform vs friction jurisdictions, adverse-possession neglect risk |
 | Report file | `rental_market_report.md` | `sfh_appreciation_report.md` |
 | Format | Canonical | **Must mirror** base section skeleton |
 
@@ -165,14 +187,14 @@ Cash-flow / gross-yield screens are **optional secondary** notes — not the ran
 1. Exit liquidity / metro depth  
 2. Data confidence (High > Medium > Low)  
 3. Lower catastrophe / insurance risk  
-4. Stronger remote-operability  
+4. Stronger remote-operability **and clearer vacant-SFH / squatter removal path**  
 5. Diversified job base over single-employer dependence  
 
 ### Mandatory overlays
 
 [↑ Back to Spec index](#spec-index)
 
-Insurance/catastrophe, property-tax drag, new supply / concessions, **liquidity/exit**, remote PM availability, ops intensity, industry concentration. For App buys: **under-reserved thin carry** is a first-class risk.
+Insurance/catastrophe, property-tax drag, new supply / concessions, **liquidity/exit**, remote PM availability, ops intensity, industry concentration, and **squatting / unauthorized occupancy on vacant SFH** (process clarity, LE practice, adverse-possession neglect). For App buys: **under-reserved thin carry** and **unmonitored vacant houses** are first-class risks.
 
 ---
 
@@ -196,10 +218,10 @@ Insurance/catastrophe, property-tax drag, new supply / concessions, **liquidity/
 6. All-state matrix companions **4a–4e** (same columns as base; redefine Price/Cash/Appr framing in prose)  
 7. City leaderboards — appreciation-path metros; SFH equity list; jobs/migration; supply-constrained screens; App-tilt suburbs; light carry notes (not CF-primary boards)  
 8. All-state deep dives (**every** state + D.C.) with Scores / Prices / Entry capital / Industries / Demographics / Top suburbs / Best fit / Risks / Confidence  
-9. Legal highlights  
+9. Legal highlights (**must include Squatting / vacant SFH subsection**)  
 10. Insurance & property tax  
-11. Property management & remote ops (**lighter** than base, still present)  
-12. Acquisition workflow (appreciation-adapted)  
+11. Property management & remote ops (**lighter** than base, still present; include vacant monitoring)  
+12. Acquisition workflow (appreciation-adapted; **vacant-property / anti-squat controls**)  
 13. Methodology + **A–Z rank index**
 
 **Markdown rule:** never use `~` for “approximately” (strikethrough). Use `about` or `≈`.
@@ -230,7 +252,7 @@ python -m pipeline.fetch_all
 # 4) Build this sibling report from data/
 python pipeline/build_sfh_appreciation_report.py
 
-# 5) Narrative / web-search pass for legal, insurance, metro YoY leaders, suburb notes
+# 5) Narrative / web-search pass for legal (incl. squatting reforms), insurance, metro YoY, suburbs
 #    Revise Top 10 / avoid / §7–§8 only if evidence moved
 ```
 
@@ -260,6 +282,7 @@ Do **not** wipe or rebuild `rental_market_report.md` when refreshing this siblin
 - Metro-level FHFA / price YoY leaderboards beyond state file  
 - Suburb qualitative App notes and local comps  
 - Landlord–tenant law updates  
+- **Squatting / unauthorized-occupant reforms** and local LE practice (trespass remove vs civil eviction)  
 - Insurance / tax overlay changes  
 - Migration / permits / concessions narratives  
 - §4a judgment tweaks when live data contradicts prior ranks  
@@ -289,10 +312,11 @@ Same hard rules as the base rental spec:
 4. **Carry honesty** — thin cash flow is allowed; **zero reserves** is not.  
 5. **Liquidity honesty** — high FHFA in a tiny market is not automatically Top 10 actionable.  
 6. **One-year ≠ destiny** — label structural App overlays as judgment; soft FHFA coasts need explicit caution.  
-7. **SFH only** — no primary 2–4 unit shortlists.  
-8. **Format match** — section skeleton of `rental_market_report.md`.  
-9. **Plain English**; no `~` approx tildes.  
-10. **Coverage completeness** — all 51 deep dives with the same field labels (narratives may be shorter).
+7. **Squatting honesty** — vacant App SFH needs monitoring + known removal path; do not assume “call police and they leave.” Separate squatters from tenants.  
+8. **SFH only** — no primary 2–4 unit shortlists.  
+9. **Format match** — section skeleton of `rental_market_report.md`.  
+10. **Plain English**; no `~` approx tildes.  
+11. **Coverage completeness** — all 51 deep dives with the same field labels (narratives may be shorter).
 
 ---
 
@@ -349,7 +373,7 @@ LIVE DATA EVERY RUN:
 2) python -m pipeline.fetch_all  (overwrite data/)
 3) Confirm data/meta.json timestamps and source ok flags
 4) python pipeline/build_sfh_appreciation_report.py
-5) Web-search pass: metro Appr leaders, App-tilt suburbs, legal/insurance updates
+5) Web-search pass: metro Appr leaders, App-tilt suburbs, legal/insurance updates, squatting/unauthorized-occupant reforms
 6) Only revise Top 10 / avoid / legal if evidence warrants
 7) Cite FHFA YoY, Redfin prices, BLS jobs, income for rankings — do not invent numbers
 8) Mark unavailable honestly
@@ -364,7 +388,8 @@ RANKING PRIORITIES:
 - Overweight: FHFA/local price growth, jobs/migration, supply constraints, entry vs income, liquidity/exit, owner-law/remote ops
 - De-emphasize: day-one cash-flow vs base rental report
 - Favor appreciation leaders (often higher-price / supply-constrained / rebound metros) over Midwest CF leaders when evidence supports — justify with FHFA YoY / jobs / prices
-- Tie-break: liquidity, confidence, lower catastrophe risk, remote ops, job diversity
+- Tie-break: liquidity, confidence, lower catastrophe risk, remote ops, clearer vacant-SFH/squatter removal path, job diversity
+- Squatting overlay (MANDATORY): Legal § vacant-SFH subsection; avoid/watch + risks for unmonitored vacant holds / friction metros; acquisition vacant controls; do not conflate squatters with tenants
 
 Produce the full report with all 51 deep dives (shorter OK) matching base navigability.
 ```
