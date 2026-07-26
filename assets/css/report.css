@@ -90,10 +90,15 @@ body {
 }
 
 .wrap {
-  width: min(1100px, calc(100% - (2 * var(--pad)) - var(--safe-left) - var(--safe-right)));
-  margin: 1.25rem auto 3rem;
-  margin-left: max(var(--pad), var(--safe-left));
-  margin-right: max(var(--pad), var(--safe-right));
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding:
+    1rem
+    max(var(--pad), var(--safe-right))
+    2.5rem
+    max(var(--pad), var(--safe-left));
 }
 
 .home-card {
@@ -102,6 +107,8 @@ body {
   border-radius: 12px;
   padding: 1.5rem 1.75rem;
   box-shadow: 0 10px 30px rgba(28, 25, 23, 0.05);
+  width: min(52rem, 100%);
+  margin: 0 auto;
 }
 
 .home-card h1 {
@@ -160,10 +167,12 @@ body {
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 1.25rem 1.5rem 2.5rem;
+  padding: 1.5rem 1.75rem 2.75rem;
   box-shadow: 0 10px 30px rgba(28, 25, 23, 0.05);
   overflow-wrap: anywhere;
   word-break: break-word;
+  width: 100%;
+  min-height: calc(100vh - var(--nav-h) - var(--safe-top) - 3rem);
 }
 
 #content > :first-child { margin-top: 0; }
@@ -184,7 +193,7 @@ body {
 
 #content p,
 #content li {
-  max-width: 70ch;
+  max-width: none;
 }
 
 #content img {
@@ -324,13 +333,14 @@ body {
   }
 
   .wrap {
-    margin-top: 0.85rem;
-    margin-bottom: 2.25rem;
+    padding-top: 0.85rem;
+    padding-bottom: 2rem;
   }
 
   .home-card {
     padding: 1.15rem 1rem 1.35rem;
     border-radius: 10px;
+    width: 100%;
   }
 
   .home-card li a {
@@ -341,6 +351,7 @@ body {
   #content {
     padding: 1rem 0.85rem 2rem;
     border-radius: 10px;
+    min-height: 0;
   }
 
   #content p,
@@ -407,6 +418,33 @@ body {
 
   #content {
     padding: 0.85rem 0.65rem 1.75rem;
+  }
+}
+
+/* Wide desktops: use the full window with comfortable side padding */
+@media (min-width: 721px) {
+  :root {
+    --pad: 1.75rem;
+  }
+
+  .topbar {
+    padding-left: max(1.75rem, var(--safe-left));
+    padding-right: max(1.75rem, var(--safe-right));
+  }
+
+  #content {
+    border-radius: 14px;
+    padding: 1.75rem 2rem 3rem;
+  }
+
+  #content table {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  :root {
+    --pad: 2.25rem;
   }
 }
 
