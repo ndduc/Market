@@ -30,6 +30,7 @@
       content.innerHTML = marked.parse(md);
       assignHeadingIds(content);
       rewriteLocalLinks(content);
+      openLinksInNewTab(content);
       wrapTables(content);
       markWideTables(content);
       document.title = (labels[src] || src) + " · Market";
@@ -100,6 +101,19 @@
       if (href.charAt(0) === "#" && href.length > 1) {
         a.setAttribute("href", href);
       }
+    });
+  }
+
+  /** External / file links open in a new tab. Same-page #anchors stay in-page for Index nav. */
+  function openLinksInNewTab(root) {
+    root.querySelectorAll("a[href]").forEach(function (a) {
+      var href = (a.getAttribute("href") || "").trim();
+      if (!href || href === "#") return;
+      // In-page section jumps (Index, Back to Index, state deep dives)
+      if (href.charAt(0) === "#") return;
+
+      a.setAttribute("target", "_blank");
+      a.setAttribute("rel", "noopener noreferrer");
     });
   }
 
