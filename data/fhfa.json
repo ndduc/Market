@@ -1,0 +1,369 @@
+{
+  "pulled_at": "2026-07-26T07:07:00+00:00",
+  "live_fetch": true,
+  "source": "FHFA HPI purchase-only state (quarterly TXT)",
+  "source_url": "https://www.fhfa.gov/hpi/download/quarterly_datasets/hpi_po_state.txt",
+  "fetch_ok": true,
+  "states": {
+    "Alaska": {
+      "index_sa": 399.38,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 5.5
+    },
+    "Alabama": {
+      "index_sa": 372.65,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 2.4
+    },
+    "Arkansas": {
+      "index_sa": 372.68,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 3.4
+    },
+    "Arizona": {
+      "index_sa": 568.14,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 0.2
+    },
+    "California": {
+      "index_sa": 420.62,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": -0.5
+    },
+    "Colorado": {
+      "index_sa": 674.85,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": -2.4
+    },
+    "Connecticut": {
+      "index_sa": 316.62,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 4.7
+    },
+    "District of Columbia": {
+      "index_sa": 604.81,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": -1.4
+    },
+    "Delaware": {
+      "index_sa": 337.85,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 1.0
+    },
+    "Florida": {
+      "index_sa": 547.02,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": -0.5
+    },
+    "Georgia": {
+      "index_sa": 425.45,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 0.1
+    },
+    "Hawaii": {
+      "index_sa": 401.56,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 2.2
+    },
+    "Iowa": {
+      "index_sa": 380.18,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 3.5
+    },
+    "Idaho": {
+      "index_sa": 651.54,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 2.8
+    },
+    "Illinois": {
+      "index_sa": 333.04,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 7.3
+    },
+    "Indiana": {
+      "index_sa": 372.58,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 3.6
+    },
+    "Kansas": {
+      "index_sa": 413.13,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 2.5
+    },
+    "Kentucky": {
+      "index_sa": 406.9,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 4.7
+    },
+    "Louisiana": {
+      "index_sa": 366.25,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 1.3
+    },
+    "Massachusetts": {
+      "index_sa": 475.46,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 2.2
+    },
+    "Maryland": {
+      "index_sa": 368.66,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 0.6
+    },
+    "Maine": {
+      "index_sa": 502.14,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 2.4
+    },
+    "Michigan": {
+      "index_sa": 391.7,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 3.2
+    },
+    "Minnesota": {
+      "index_sa": 434.29,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 2.8
+    },
+    "Missouri": {
+      "index_sa": 408.41,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 3.9
+    },
+    "Mississippi": {
+      "index_sa": 324.93,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 2.1
+    },
+    "Montana": {
+      "index_sa": 726.96,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 0.2
+    },
+    "North Carolina": {
+      "index_sa": 438.66,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 0.1
+    },
+    "North Dakota": {
+      "index_sa": 450.79,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 4.0
+    },
+    "Nebraska": {
+      "index_sa": 440.58,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 3.9
+    },
+    "New Hampshire": {
+      "index_sa": 479.86,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 3.3
+    },
+    "New Jersey": {
+      "index_sa": 438.52,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 4.5
+    },
+    "New Mexico": {
+      "index_sa": 416.62,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 2.2
+    },
+    "Nevada": {
+      "index_sa": 425.52,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 0.7
+    },
+    "New York": {
+      "index_sa": 424.54,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 4.4
+    },
+    "Ohio": {
+      "index_sa": 356.09,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 3.2
+    },
+    "Oklahoma": {
+      "index_sa": 380.37,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 0.2
+    },
+    "Oregon": {
+      "index_sa": 630.22,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 0.6
+    },
+    "Pennsylvania": {
+      "index_sa": 377.52,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 3.8
+    },
+    "Rhode Island": {
+      "index_sa": 427.62,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": -0.7
+    },
+    "South Carolina": {
+      "index_sa": 444.43,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 1.5
+    },
+    "South Dakota": {
+      "index_sa": 501.05,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 2.8
+    },
+    "Tennessee": {
+      "index_sa": 482.79,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 2.2
+    },
+    "Texas": {
+      "index_sa": 439.81,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": -1.6
+    },
+    "Utah": {
+      "index_sa": 721.91,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": -0.1
+    },
+    "Virginia": {
+      "index_sa": 430.69,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 2.4
+    },
+    "Vermont": {
+      "index_sa": 445.13,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 4.9
+    },
+    "Washington": {
+      "index_sa": 585.94,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": -0.4
+    },
+    "Wisconsin": {
+      "index_sa": 468.49,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 4.5
+    },
+    "West Virginia": {
+      "index_sa": 336.32,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": 4.0
+    },
+    "Wyoming": {
+      "index_sa": 546.91,
+      "year": 2026,
+      "quarter": 1,
+      "as_of": "2026Q1",
+      "yoy_pct": -0.0
+    }
+  },
+  "notes": [
+    "FHFA PO HPI YoY for 51 states/DC."
+  ]
+}

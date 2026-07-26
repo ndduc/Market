@@ -1,10 +1,263 @@
 {
-  "pulled_at": "2026-07-26T06:21:37+00:00",
-  "live_fetch_attempted": true,
-  "fetch_ok": false,
-  "states": {},
+  "pulled_at": "2026-07-26T07:07:01+00:00",
+  "live_fetch": true,
+  "source": "Redfin public state_market_tracker (All Residential)",
+  "source_url": "https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/state_market_tracker.tsv000.gz",
+  "fetch_ok": true,
+  "as_of": "2026-05-31",
+  "states": {
+    "Missouri": {
+      "median_sale_price": 297500,
+      "typical_home_value": 300400,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Massachusetts": {
+      "median_sale_price": 688100,
+      "typical_home_value": 718900,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Michigan": {
+      "median_sale_price": 297900,
+      "typical_home_value": 314000,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Rhode Island": {
+      "median_sale_price": 536900,
+      "typical_home_value": 583400,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Vermont": {
+      "median_sale_price": 448400,
+      "typical_home_value": 485800,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Kansas": {
+      "median_sale_price": 316300,
+      "typical_home_value": 319300,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Ohio": {
+      "median_sale_price": 282600,
+      "typical_home_value": 292600,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "West Virginia": {
+      "median_sale_price": 265200,
+      "typical_home_value": 273300,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Tennessee": {
+      "median_sale_price": 413200,
+      "typical_home_value": 440100,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Montana": {
+      "median_sale_price": 528600,
+      "typical_home_value": 619600,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Alabama": {
+      "median_sale_price": 312600,
+      "typical_home_value": 325800,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Oregon": {
+      "median_sale_price": 525500,
+      "typical_home_value": 569100,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Indiana": {
+      "median_sale_price": 287300,
+      "typical_home_value": 296700,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Washington": {
+      "median_sale_price": 651800,
+      "typical_home_value": 685800,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Wisconsin": {
+      "median_sale_price": 361600,
+      "typical_home_value": 373500,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Colorado": {
+      "median_sale_price": 617000,
+      "typical_home_value": 620500,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Connecticut": {
+      "median_sale_price": 498000,
+      "typical_home_value": 522000,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Nebraska": {
+      "median_sale_price": 319100,
+      "typical_home_value": 327800,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Idaho": {
+      "median_sale_price": 503400,
+      "typical_home_value": 577300,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "California": {
+      "median_sale_price": 887400,
+      "typical_home_value": 865400,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Maryland": {
+      "median_sale_price": 477300,
+      "typical_home_value": 477400,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Georgia": {
+      "median_sale_price": 389000,
+      "typical_home_value": 413800,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Arkansas": {
+      "median_sale_price": 275500,
+      "typical_home_value": 306100,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "South Carolina": {
+      "median_sale_price": 394000,
+      "typical_home_value": 410000,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Virginia": {
+      "median_sale_price": 499300,
+      "typical_home_value": 502100,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "North Carolina": {
+      "median_sale_price": 397600,
+      "typical_home_value": 426800,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Illinois": {
+      "median_sale_price": 337900,
+      "typical_home_value": 350500,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Pennsylvania": {
+      "median_sale_price": 330200,
+      "typical_home_value": 344700,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Wyoming": {
+      "median_sale_price": 464500,
+      "typical_home_value": 646900,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Iowa": {
+      "median_sale_price": 258700,
+      "typical_home_value": 274100,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "New Hampshire": {
+      "median_sale_price": 537900,
+      "typical_home_value": 563800,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Kentucky": {
+      "median_sale_price": 284400,
+      "typical_home_value": 311700,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "New Jersey": {
+      "median_sale_price": 579900,
+      "typical_home_value": 597200,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Hawaii": {
+      "median_sale_price": 741300,
+      "typical_home_value": 780500,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Delaware": {
+      "median_sale_price": 384500,
+      "typical_home_value": 408300,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "North Dakota": {
+      "median_sale_price": 311200,
+      "typical_home_value": 330800,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Arizona": {
+      "median_sale_price": 453800,
+      "typical_home_value": 473300,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Alaska": {
+      "median_sale_price": 427100,
+      "typical_home_value": 448100,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "New York": {
+      "median_sale_price": 620500,
+      "typical_home_value": 638600,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "New Mexico": {
+      "median_sale_price": 395500,
+      "typical_home_value": 446200,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Nevada": {
+      "median_sale_price": 481200,
+      "typical_home_value": 506300,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "South Dakota": {
+      "median_sale_price": 346600,
+      "typical_home_value": 368300,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Florida": {
+      "median_sale_price": 421500,
+      "typical_home_value": 438900,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Utah": {
+      "median_sale_price": 560200,
+      "typical_home_value": 619400,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Minnesota": {
+      "median_sale_price": 372300,
+      "typical_home_value": 396200,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Mississippi": {
+      "median_sale_price": 284300,
+      "typical_home_value": 286800,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Louisiana": {
+      "median_sale_price": 269000,
+      "typical_home_value": 276300,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Oklahoma": {
+      "median_sale_price": 264600,
+      "typical_home_value": 284900,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Texas": {
+      "median_sale_price": 356100,
+      "typical_home_value": 378500,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    },
+    "Maine": {
+      "median_sale_price": 439200,
+      "typical_home_value": 463900,
+      "typical_field": "MEDIAN_LIST_PRICE"
+    }
+  },
   "notes": [
-    "Extend with Redfin/Zillow/Forbes live scrape or published tables.",
-    "Marked incomplete — do not invent values in build_report."
+    "Redfin All Residential medians for 50 states as of 2026-05-31."
   ]
 }

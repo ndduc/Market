@@ -1,10 +1,267 @@
 {
-  "pulled_at": "2026-07-26T06:21:37+00:00",
-  "live_fetch_attempted": true,
-  "fetch_ok": false,
-  "states": {},
+  "pulled_at": "2026-07-26T07:06:49+00:00",
+  "live_fetch": true,
+  "source": "BLS LAUS API (LASST unemployment rate)",
+  "source_url": "https://www.bls.gov/news.release/laus.htm",
+  "fetch_ok": true,
+  "states": {
+    "Alabama": {
+      "unemployment_rate": 3.2,
+      "as_of": "June 2026",
+      "series_id": "LASST010000000000003"
+    },
+    "Alaska": {
+      "unemployment_rate": 4.4,
+      "as_of": "June 2026",
+      "series_id": "LASST020000000000003"
+    },
+    "Arizona": {
+      "unemployment_rate": 4.9,
+      "as_of": "June 2026",
+      "series_id": "LASST040000000000003"
+    },
+    "Arkansas": {
+      "unemployment_rate": 4.1,
+      "as_of": "June 2026",
+      "series_id": "LASST050000000000003"
+    },
+    "California": {
+      "unemployment_rate": 5.2,
+      "as_of": "June 2026",
+      "series_id": "LASST060000000000003"
+    },
+    "Colorado": {
+      "unemployment_rate": 3.9,
+      "as_of": "June 2026",
+      "series_id": "LASST080000000000003"
+    },
+    "Connecticut": {
+      "unemployment_rate": 5.2,
+      "as_of": "June 2026",
+      "series_id": "LASST090000000000003"
+    },
+    "Delaware": {
+      "unemployment_rate": 4.9,
+      "as_of": "June 2026",
+      "series_id": "LASST100000000000003"
+    },
+    "District of Columbia": {
+      "unemployment_rate": 6.0,
+      "as_of": "June 2026",
+      "series_id": "LASST110000000000003"
+    },
+    "Florida": {
+      "unemployment_rate": 4.7,
+      "as_of": "June 2026",
+      "series_id": "LASST120000000000003"
+    },
+    "Georgia": {
+      "unemployment_rate": 3.4,
+      "as_of": "June 2026",
+      "series_id": "LASST130000000000003"
+    },
+    "Hawaii": {
+      "unemployment_rate": 2.6,
+      "as_of": "June 2026",
+      "series_id": "LASST150000000000003"
+    },
+    "Idaho": {
+      "unemployment_rate": 3.7,
+      "as_of": "June 2026",
+      "series_id": "LASST160000000000003"
+    },
+    "Illinois": {
+      "unemployment_rate": 5.1,
+      "as_of": "June 2026",
+      "series_id": "LASST170000000000003"
+    },
+    "Indiana": {
+      "unemployment_rate": 3.3,
+      "as_of": "June 2026",
+      "series_id": "LASST180000000000003"
+    },
+    "Iowa": {
+      "unemployment_rate": 3.2,
+      "as_of": "June 2026",
+      "series_id": "LASST190000000000003"
+    },
+    "Kansas": {
+      "unemployment_rate": 3.8,
+      "as_of": "June 2026",
+      "series_id": "LASST200000000000003"
+    },
+    "Kentucky": {
+      "unemployment_rate": 4.7,
+      "as_of": "June 2026",
+      "series_id": "LASST210000000000003"
+    },
+    "Louisiana": {
+      "unemployment_rate": 4.4,
+      "as_of": "June 2026",
+      "series_id": "LASST220000000000003"
+    },
+    "Maine": {
+      "unemployment_rate": 3.1,
+      "as_of": "June 2026",
+      "series_id": "LASST230000000000003"
+    },
+    "Maryland": {
+      "unemployment_rate": 4.3,
+      "as_of": "June 2026",
+      "series_id": "LASST240000000000003"
+    },
+    "Massachusetts": {
+      "unemployment_rate": 4.4,
+      "as_of": "June 2026",
+      "series_id": "LASST250000000000003"
+    },
+    "Michigan": {
+      "unemployment_rate": 5.0,
+      "as_of": "June 2026",
+      "series_id": "LASST260000000000003"
+    },
+    "Minnesota": {
+      "unemployment_rate": 4.4,
+      "as_of": "June 2026",
+      "series_id": "LASST270000000000003"
+    },
+    "Mississippi": {
+      "unemployment_rate": 3.8,
+      "as_of": "June 2026",
+      "series_id": "LASST280000000000003"
+    },
+    "Missouri": {
+      "unemployment_rate": 3.7,
+      "as_of": "June 2026",
+      "series_id": "LASST290000000000003"
+    },
+    "Montana": {
+      "unemployment_rate": 3.3,
+      "as_of": "June 2026",
+      "series_id": "LASST300000000000003"
+    },
+    "Nebraska": {
+      "unemployment_rate": 2.9,
+      "as_of": "June 2026",
+      "series_id": "LASST310000000000003"
+    },
+    "Nevada": {
+      "unemployment_rate": 5.1,
+      "as_of": "June 2026",
+      "series_id": "LASST320000000000003"
+    },
+    "New Hampshire": {
+      "unemployment_rate": 2.9,
+      "as_of": "June 2026",
+      "series_id": "LASST330000000000003"
+    },
+    "New Jersey": {
+      "unemployment_rate": 4.5,
+      "as_of": "June 2026",
+      "series_id": "LASST340000000000003"
+    },
+    "New Mexico": {
+      "unemployment_rate": 4.8,
+      "as_of": "June 2026",
+      "series_id": "LASST350000000000003"
+    },
+    "New York": {
+      "unemployment_rate": 4.6,
+      "as_of": "June 2026",
+      "series_id": "LASST360000000000003"
+    },
+    "North Carolina": {
+      "unemployment_rate": 3.6,
+      "as_of": "June 2026",
+      "series_id": "LASST370000000000003"
+    },
+    "North Dakota": {
+      "unemployment_rate": 2.3,
+      "as_of": "June 2026",
+      "series_id": "LASST380000000000003"
+    },
+    "Ohio": {
+      "unemployment_rate": 3.6,
+      "as_of": "June 2026",
+      "series_id": "LASST390000000000003"
+    },
+    "Oklahoma": {
+      "unemployment_rate": 4.2,
+      "as_of": "June 2026",
+      "series_id": "LASST400000000000003"
+    },
+    "Oregon": {
+      "unemployment_rate": 5.2,
+      "as_of": "June 2026",
+      "series_id": "LASST410000000000003"
+    },
+    "Pennsylvania": {
+      "unemployment_rate": 4.1,
+      "as_of": "June 2026",
+      "series_id": "LASST420000000000003"
+    },
+    "Rhode Island": {
+      "unemployment_rate": 4.1,
+      "as_of": "June 2026",
+      "series_id": "LASST440000000000003"
+    },
+    "South Carolina": {
+      "unemployment_rate": 4.4,
+      "as_of": "June 2026",
+      "series_id": "LASST450000000000003"
+    },
+    "South Dakota": {
+      "unemployment_rate": 2.0,
+      "as_of": "June 2026",
+      "series_id": "LASST460000000000003"
+    },
+    "Tennessee": {
+      "unemployment_rate": 3.5,
+      "as_of": "June 2026",
+      "series_id": "LASST470000000000003"
+    },
+    "Texas": {
+      "unemployment_rate": 4.4,
+      "as_of": "June 2026",
+      "series_id": "LASST480000000000003"
+    },
+    "Utah": {
+      "unemployment_rate": 3.6,
+      "as_of": "June 2026",
+      "series_id": "LASST490000000000003"
+    },
+    "Vermont": {
+      "unemployment_rate": 2.6,
+      "as_of": "June 2026",
+      "series_id": "LASST500000000000003"
+    },
+    "Virginia": {
+      "unemployment_rate": 3.7,
+      "as_of": "June 2026",
+      "series_id": "LASST510000000000003"
+    },
+    "Washington": {
+      "unemployment_rate": 5.2,
+      "as_of": "June 2026",
+      "series_id": "LASST530000000000003"
+    },
+    "West Virginia": {
+      "unemployment_rate": 4.2,
+      "as_of": "June 2026",
+      "series_id": "LASST540000000000003"
+    },
+    "Wisconsin": {
+      "unemployment_rate": 3.3,
+      "as_of": "June 2026",
+      "series_id": "LASST550000000000003"
+    },
+    "Wyoming": {
+      "unemployment_rate": 3.2,
+      "as_of": "June 2026",
+      "series_id": "LASST560000000000003"
+    }
+  },
   "notes": [
-    "Extend with BLS LAUS / metro employment live pull.",
-    "Marked incomplete — do not invent values in build_report."
+    "LAUS unemployment rates for 51 states/DC."
   ]
 }

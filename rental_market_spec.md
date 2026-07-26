@@ -16,7 +16,14 @@ This document is both the analysis specification and the reusable AI prompt.
 
 **Canonical report:** `rental_market_report.md` is the base format and latest full analysis. Future runs must match that report’s section order, tables, and plain-English tone. **Median and average/typical prices**, **top job industries**, and **demographics / income** (race/ethnicity mix plus **median and average** household income) must appear **in context** (companion tables in the all-state matrix, city/metro notes, deep dives, cards) — not as standalone dumps that break top-to-bottom reading.
 
-**Canonical build method:** Do **not** maintain one-off “patch the Markdown” scripts (`_add_*.py` that string-replace sections). Every full refresh must use the **durable pipeline**: **live fetch → overwrite `data/` → build report**. Data must be **pulled live on every run** — never treat prior `data/` files as current without re-fetching.
+**Canonical build method:** Do **not** maintain one-off “patch the Markdown” scripts (`_add_*.py` that string-replace sections). Every full refresh must use the **durable pipeline**:
+
+```text
+python -m pipeline.fetch_all
+python -m pipeline.build_report
+```
+
+Keys live in `.env` (`CENSUS_API_KEY`, `FRED_API_KEY`, `BLS_API_KEY`, `BEA_API_KEY`). Data must be **pulled live on every run** — never treat prior `data/` files as current without re-fetching. See **Durable live-data pipeline** for the full contract.
 
 ---
 
@@ -30,7 +37,7 @@ Every section below includes **[↑ Back to Spec index](#spec-index)** under its
 | [Scope](#scope) | Geography, suburbs, property types, investor lenses |
 | [Ranking dimensions](#ranking-dimensions) | Pillars, industries, demographics/income, prices, cash flow, financing, overlays |
 | [Required outputs](#required-outputs) | Report format, section order, **Index requirement**, presentation rules |
-| [Durable live-data pipeline](#durable-live-data-pipeline-mandatory) | Fetch → `data/` → build; live every run |
+| [Durable live-data pipeline](#durable-live-data-pipeline-mandatory) | Exact commands: `fetch_all` → `build_report`; keys + `data/` map |
 | [Live data & web search](#live-data--web-search-requirements-mandatory) | Hard fetch/search rules and sources |
 | [Analysis rules](#analysis-rules-for-the-ai) | Scoring and honesty rules |
 | [Scoring rubric](#suggested-scoring-rubric-directional) | 1–10 directional guide |
@@ -439,6 +446,38 @@ Every full analysis **must match that report’s structure, tone, and section or
 
 Hand-editing giant Markdown tables and disposable `_add_industries.py` / `_add_demographics.py` patch scripts are **out of process**. They are slow, error-prone (section-boundary bugs), and encourage stale numbers.
 
+### Exact refresh commands (run these)
+
+[↑ Back to Spec index](#spec-index)
+
+From the repo root (`Market/`):
+
+```powershell
+# 1) Secrets — copy once, never commit
+copy .env.example .env
+# Edit .env and set:
+#   CENSUS_API_KEY=...
+#   FRED_API_KEY=...
+#   BLS_API_KEY=...
+#   BEA_API_KEY=...
+
+# 2) Live fetch (ALWAYS re-pull; overwrites data/*.json)
+python -m pipeline.fetch_all
+
+# 3) Build report from data/ (companion tables + deep-dive fields + capital/narratives)
+python -m pipeline.build_report
+```
+
+That is the **minimum full tabular refresh**. `build_report` already calls `pipeline.update_from_data` at the end.
+
+Optional explicit re-propagation without re-fetching (only if `data/` is already fresh from this session):
+
+```powershell
+python -m pipeline.update_from_data
+```
+
+Do **not** invent new disposable `_add_*.py` / `_fix_*.py` patchers for routine refreshes. Extend `pipeline/fetch_all.py`, `pipeline/build_report.py`, or `pipeline/update_from_data.py` instead.
+
 ### Required architecture
 
 [↑ Back to Spec index](#spec-index)
@@ -446,35 +485,84 @@ Hand-editing giant Markdown tables and disposable `_add_industries.py` / `_add_d
 Every full analysis / refresh **must** follow this order:
 
 ```text
-1) LIVE FETCH   → pull current public data (APIs, official downloads, web search/browse)
-2) WRITE data/  → overwrite structured JSON/CSV snapshots for this run (with as-of + source URLs)
-3) BUILD        → generate ranking companion tables (4a–4d) and structured deep-dive fields from data/
-4) NARRATIVE    → update judgment sections (top 10, legal, workflow) against the fresh figures
-5) REPORT       → write rental_market_report.md (optional dated archive)
+1) LIVE FETCH   → python -m pipeline.fetch_all  (APIs + no-key downloads)
+2) WRITE data/  → overwrite JSON snapshots (as-of + source URLs in meta/sources)
+3) BUILD        → python -m pipeline.build_report
+                  (4b–4e, deep-dive Prices/Entry capital/Industries/Demographics,
+                   unemployment/appreciation leads, §1/§2 live bullets)
+4) NARRATIVE    → judgment-only sections if evidence moved enough to change ranks
+                  (4a score numbers, top 10, legal, avoid list, city boards)
+5) REPORT       → rental_market_report.md is the canonical output
 ```
 
-| Path | Role |
-|------|------|
-| `data/` | **Run outputs only.** Structured tables written/overwritten on **every** refresh. Not a long-term “source of truth” that replaces live fetch. |
-| `pipeline/fetch_*.py` (or `fetch_all.py`) | Live pullers: Census/ACS (API key if required), FRED/CPS income, BLS/industry sources, price sources, etc. |
-| `pipeline/build_report.py` | Reads `data/` + report template/sections; emits companion tables and keyed deep-dive lines. Does **not** invent numbers. |
-| `pipeline/config.py` | URLs, series IDs, state/metro lists, env var names (`CENSUS_API_KEY`, etc.). |
-| `rental_market_report.md` | Human-readable canonical report (format contract). |
-| `rental_market_spec.md` | This spec + AI prompt (process contract). |
+### Pipeline modules (current contract)
 
-Suggested `data/` files (names may evolve; keep the idea):
+[↑ Back to Spec index](#spec-index)
+
+| Path | Role | Operator action |
+|------|------|-----------------|
+| `.env` (gitignored) | API keys; load via `pipeline/config.py` | Maintain locally; never commit |
+| `.env.example` | Key names only | Safe to commit |
+| `pipeline/config.py` | Paths, URLs, series IDs, FIPS, env var names | Edit when adding sources |
+| `pipeline/fetch_all.py` | Live pullers → overwrite `data/` | `python -m pipeline.fetch_all` |
+| `pipeline/build_report.py` | Rebuild §4b–4d (+ industries/demos) then call update_from_data | `python -m pipeline.build_report` |
+| `pipeline/update_from_data.py` | Deep-dive Prices / Entry capital / §4e; LAUS+FHFA narrative leads; §1/§2 bullets | Invoked by build_report; or run alone |
+| `pipeline/add_entry_capital.py` | **Legacy** capital injector — superseded by `update_from_data` | Do not use for routine refresh |
+| `rental_market_report.md` | Canonical human report | Output of build |
+| `rental_market_spec.md` | This process contract | Follow on every refresh |
+
+### API keys vs no-key sources
+
+[↑ Back to Spec index](#spec-index)
+
+| Env var | Source | What it feeds |
+|---------|--------|----------------|
+| `CENSUS_API_KEY` | Census ACS 1-year + subject S1901 | Race shares, ACS median alt, **mean HH income** → `demographics.json`, `income.json` |
+| `FRED_API_KEY` | FRED series `MEHOINUS*A646N` | CPS median HH income (preferred) → `income.json` |
+| `BLS_API_KEY` | BLS API v2 | LAUS unemployment → `jobs.json`; CES SAE industries → `industries.json` |
+| `BEA_API_KEY` | BEA Regional SAINC1 | Per-capita + total personal income → `bea.json` |
+| *(none)* | FHFA HPI purchase-only TXT | State YoY appreciation → `fhfa.json` → §4b FHFA YoY |
+| *(none)* | Redfin public state market tracker (gzip TSV) | State median / list prices → `state_prices.json` → §4b + deep-dive Prices/Entry capital |
+
+Still **manual / web search** each refresh until automated: metro price drill-downs beyond preserved screens, suburb qualitative notes, landlord–tenant law, tax/insurance overlays, rents/concessions, and **4a score number changes**.
+
+### `data/` files written every fetch
+
+[↑ Back to Spec index](#spec-index)
 
 | File | Contents |
 |------|----------|
-| `data/meta.json` | Analysis run timestamp, fetch success/fail per source, tool notes |
-| `data/state_prices.json` | Median / typical (and average when found) by state |
-| `data/metro_prices.json` | Metro/city median / screen prices |
-| `data/industries.json` | Top industries + concentration notes by state/metro |
-| `data/demographics.json` | Race/ethnicity shares by state (+ metro/suburb when fetched) |
-| `data/income.json` | Median + mean household income by state (+ metro when fetched) |
-| `data/jobs.json` | Unemployment / job-growth signals used in scoring |
-| `data/suburbs.json` | Researched top suburbs per featured metro |
-| `data/sources.json` | Canonical URLs + as-of dates for methodology |
+| `data/meta.json` | Run timestamp; `*_api_key_present`; per-source ok / n_states / notes |
+| `data/sources.json` | Canonical URLs + status mirror |
+| `data/income.json` | Median HH income (FRED CPS preferred; ACS fallback) + mean (ACS S1901) |
+| `data/demographics.json` | Race/ethnicity shares (ACS) |
+| `data/bea.json` | BEA per-capita / total personal income |
+| `data/jobs.json` | BLS LAUS unemployment rates |
+| `data/industries.json` | BLS CES top supersectors by share |
+| `data/fhfa.json` | FHFA PO HPI index + YoY % |
+| `data/state_prices.json` | Redfin All Residential median (+ list as typical when present) |
+| `data/metro_prices.json` | Placeholder until metro tracker wired (`fetch_ok: false`) |
+| `data/suburbs.json` | Placeholder until structured suburb research wired |
+
+### What `build_report` / `update_from_data` auto-refresh
+
+[↑ Back to Spec index](#spec-index)
+
+| Report section | Auto-updated from `data/`? |
+|----------------|----------------------------|
+| §4b Prices (+ FHFA YoY) | Yes — Redfin + FHFA |
+| §4c Industries | Yes — BLS CES |
+| §4d Demographics & income | Yes — Census + FRED |
+| §4e Entry capital | Yes — Redfin medians + financing screen (25% / ~3% / 7.5% / 6–9 mo PITI) |
+| §6 deep-dive **Prices:** / **Entry capital:** / **Top industries:** / **Demographics / income:** | Yes |
+| §6 narrative unemployment / FHFA appreciation leads (patterned sentences) | Yes when patterns match |
+| §1 What changed + §2 national snapshot live bullets | Partially yes |
+| §4a **score numbers** (Jobs / Price / Cash / Appr / …) | **No** — analyst/AI judgment after reviewing new data |
+| Top 10 / avoid / city boards / legal / insurance narrative | **No** — judgment + web search |
+
+**Builder safety:** refuse to wipe §4d if fewer than ~40 medians; skip §4b/§4c rebuilds if those `data/` files are empty/failed. Prefer aborting a section over all-`unavailable` overwrite.
+
+**Markdown rule:** never use `~` for “approximately” in the report (single/double tildes render as strikethrough). Use `about` or `≈`.
 
 ### Live pull every time (hard rule)
 
@@ -494,28 +582,29 @@ Suggested `data/` files (names may evolve; keep the idea):
 
 | Allowed | Forbidden |
 |---------|-----------|
-| Render 4a–4d from `data/` | String-replace random sections of the report with one-off `_add_*.py` scripts |
-| Leave narrative judgment to the analyst/AI after data lands | Invent income, race %, prices, or industry ranks in the builder |
+| Render 4b–4e + structured deep-dive fields from `data/` | String-replace random sections with one-off `_add_*.py` / `_fix_*.py` scripts |
+| Leave 4a score numbers / top-10 / legal to analyst/AI after data lands | Invent income, race %, prices, or industry ranks in the builder |
 | Mark `unavailable` when fetch fails | Pretend a cached file is a fresh live pull |
 | Abort build for a table when fetch clearly failed / empty | Overwrite a good table with all-`unavailable` rows |
 | Keep durable, versioned `pipeline/*.py` and improve them over time | Delete fetch/build scripts after each chat turn |
 
-### AI / operator workflow on each refresh
+### AI / operator checklist on each refresh
 
 [↑ Back to Spec index](#spec-index)
 
-1. Confirm network + any API keys (`CENSUS_API_KEY`, etc.).
-2. Run **live fetch** (`pipeline/fetch_all.py` or equivalent + web search for non-API topics).
-3. Confirm `data/meta.json` shows fresh timestamps and list fetch failures.
-4. Run **build** to refresh companion tables / structured fields in `rental_market_report.md`.
-5. Update narrative sections (what changed, top 10, legal, caveats) using the new figures.
-6. In Methodology: state that data was **live-fetched this run**, list primary URLs, and note any `unavailable` / STALE fields.
+1. Confirm `.env` has `CENSUS_API_KEY`, `FRED_API_KEY`, `BLS_API_KEY`, `BEA_API_KEY` (and network).
+2. Run `python -m pipeline.fetch_all`.
+3. Open `data/meta.json` — confirm fresh `analysis_run_at` and which sources have `"ok": true`.
+4. Run `python -m pipeline.build_report` (includes `update_from_data`).
+5. Spot-check: §4b Ohio median matches `data/state_prices.json`; §4d means present; one deep dive Prices/Entry capital; no `~~` / stray `~` strikethroughs.
+6. **Only if** rankings should move: revise §4a scores, top 10, avoid list, legal — with cites. Otherwise leave judgment sections and note “tabular refresh only.”
+7. In Methodology: pipeline live-fetch stamp must show all four `*_api_key_present` flags from this run.
 
 ### Efficiency intent
 
 [↑ Back to Spec index](#spec-index)
 
-Keeping and improving the **same** `pipeline/` scripts is the speed win. Do **not** accumulate disposable patch scripts. Expand fetch coverage over time (mean income, BLS industry shares, metro ACS) without changing the report outline.
+Keeping and improving the **same** `pipeline/` scripts is the speed win. Do **not** accumulate disposable patch scripts. Expand fetch coverage over time (metro Redfin tracker, HUD FMR, tax/insurance tables) without changing the report outline.
 
 ---
 
@@ -699,14 +788,16 @@ CRITICAL — LIVE DATA REQUIRED EVERY RUN:
 - Suggested sources to search/fetch: Bureau of Labor Statistics / Bureau of Economic Analysis / Census (jobs), Census Decennial / ACS / CPS ASEC / FRED (demographics and household income), Zillow / Redfin / National Association of Realtors / Federal Housing Finance Agency (prices/liquidity), Zillow / Apartment List / HUD / American Community Survey (rents/vacancy/concessions), Federal Housing Finance Agency / Case-Shiller (appreciation), Census / IRS migration, permits/delivery reports (supply), effective property-tax summaries, landlord-insurance/catastrophe reports, and state/city statute or ordinance pages (including licensing/registration).
 
 Required search / fetch workflow:
-1) Run durable live fetchers (`pipeline/fetch_all.py` or equivalent); overwrite `data/`; confirm `data/meta.json` timestamps.
-2) National/state web queries for anything not yet automated: unemployment, job growth, **top industries by state**, **median and average home prices**, **race/ethnicity by state**, **median and mean household income**, rent indexes, appreciation, landlord-tenant law, property-tax burden, and insurance/catastrophe risk.
-3) Metro/city queries for each state’s major markets (**median and average** single-family and 2–4 unit prices where available, rents, jobs, **metro industry / employer mix**, **metro demographics / income**, vacancy/concessions, liquidity) **and top suburbs**.
-4) Extra legal searches for known local-rule cities (e.g., New York City, San Francisco, Los Angeles, Seattle, Chicago), including rent caps, just-cause, and rental licensing.
-5) Extra insurance searches for catastrophe-exposed markets (Florida, Louisiana, Texas Gulf, hail belt, California wildfire zones) and apply cash-flow haircuts.
-6) Build companion tables from `data/` via `pipeline/build_report.py` (or equivalent); score only after collecting data; revise if later searches contradict earlier assumptions.
-7) Write the report in the `rental_market_report.md` format; refresh that file; optionally save a dated archive.
-8) In Methodology, list live-fetch confirmation (this run), property-type scope, financing assumptions, yield definition, **price-measure definitions (median vs average)**, **industry sources**, **demographics/income sources**, suburb sources, source links, and data gaps.
+1) Confirm `.env` keys: `CENSUS_API_KEY`, `FRED_API_KEY`, `BLS_API_KEY`, `BEA_API_KEY`.
+2) Run `python -m pipeline.fetch_all` — overwrites `data/`; confirm `data/meta.json` timestamps and per-source `"ok"`.
+3) Run `python -m pipeline.build_report` — rebuilds §4b–4e, deep-dive Prices/Entry capital/Industries/Demographics, patterned unemployment/FHFA leads, and live §1/§2 bullets (via `update_from_data`).
+4) Metro/city / suburb / legal / insurance web queries for anything not yet in `data/` (especially metro prices beyond preserved screens, rents/concessions, statutes).
+5) Extra legal searches for known local-rule cities (e.g., New York City, San Francisco, Los Angeles, Seattle, Chicago), including rent caps, just-cause, and rental licensing.
+6) Extra insurance searches for catastrophe-exposed markets (Florida, Louisiana, Texas Gulf, hail belt, California wildfire zones) and apply cash-flow haircuts.
+7) Only if evidence warrants: revise §4a **score numbers**, top 10, avoid list, and city boards — do not invent score changes without citing the new `data/` or web sources.
+8) Write/keep the report in the `rental_market_report.md` format; optionally save a dated archive.
+9) In Methodology, list live-fetch confirmation (this run), all `*_api_key_present` flags, property-type scope, financing assumptions, yield definition, **price-measure definitions (median vs typical/list)**, **industry sources**, **demographics/income sources**, suburb sources, source links, and data gaps.
+10) Never use Markdown `~` / `~~` for “approximately” (causes strikethrough); use `about` or `≈`.
 
 DEFAULT UNDERWRITING ASSUMPTIONS (state them; override only if user specifies):
 - 25% down, investor / cash-flow–qualified rental financing at current live-searched rate band

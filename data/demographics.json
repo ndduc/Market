@@ -1,166 +1,374 @@
 {
-  "pulled_at": "2026-07-26T06:22:24+00:00",
+  "pulled_at": "2026-07-26T07:06:48+00:00",
   "live_fetch": true,
-  "recovery_seed": true,
-  "source": "2020 Census PL 94-171 (NH race + Hispanic ethnicity)",
-  "source_url": "https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_race_and_ethnicity",
+  "source": "Census ACS 1-year API",
   "states": {
     "Alabama": {
-      "display": "NH White 63% \u00b7 Black 26% \u00b7 Hisp 5% \u00b7 Asian 2%"
+      "white_alone_pct": 64.7,
+      "black_alone_pct": 25.4,
+      "asian_alone_pct": 1.5,
+      "hispanic_any_race_pct": 5.7,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Alaska": {
-      "display": "NH White 58% \u00b7 Native 15% \u00b7 Multiracial 10% \u00b7 Hisp 7% \u00b7 Asian 6%"
+      "white_alone_pct": 59.6,
+      "black_alone_pct": 2.9,
+      "asian_alone_pct": 5.9,
+      "hispanic_any_race_pct": 7.5,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Arizona": {
-      "display": "NH White 53% \u00b7 Hisp 31% \u00b7 Black 4% \u00b7 Native 4% \u00b7 Asian 3%"
+      "white_alone_pct": 58.3,
+      "black_alone_pct": 4.8,
+      "asian_alone_pct": 3.6,
+      "hispanic_any_race_pct": 31.6,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Arkansas": {
-      "display": "NH White 69% \u00b7 Black 15% \u00b7 Hisp 9% \u00b7 Asian 2%"
+      "white_alone_pct": 68.9,
+      "black_alone_pct": 14.4,
+      "asian_alone_pct": 1.7,
+      "hispanic_any_race_pct": 9.1,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "California": {
-      "display": "Hisp 39% \u00b7 NH White 35% \u00b7 Asian 15% \u00b7 Black 5%"
+      "white_alone_pct": 38.5,
+      "black_alone_pct": 5.4,
+      "asian_alone_pct": 15.8,
+      "hispanic_any_race_pct": 40.4,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Colorado": {
-      "display": "NH White 65% \u00b7 Hisp 22% \u00b7 Black 4% \u00b7 Asian 3%"
+      "white_alone_pct": 70.4,
+      "black_alone_pct": 3.9,
+      "asian_alone_pct": 3.3,
+      "hispanic_any_race_pct": 22.7,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Connecticut": {
-      "display": "NH White 63% \u00b7 Hisp 17% \u00b7 Black 10% \u00b7 Asian 5%"
+      "white_alone_pct": 64.5,
+      "black_alone_pct": 10.9,
+      "asian_alone_pct": 4.9,
+      "hispanic_any_race_pct": 18.6,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Delaware": {
-      "display": "NH White 59% \u00b7 Black 22% \u00b7 Hisp 11% \u00b7 Asian 4%"
+      "white_alone_pct": 59.3,
+      "black_alone_pct": 22.5,
+      "asian_alone_pct": 4.3,
+      "hispanic_any_race_pct": 11.1,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "District of Columbia": {
-      "display": "Black 41% \u00b7 NH White 38% \u00b7 Hisp 11% \u00b7 Asian 5%"
+      "white_alone_pct": 38.8,
+      "black_alone_pct": 40.9,
+      "asian_alone_pct": 4.2,
+      "hispanic_any_race_pct": 12.0,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Florida": {
-      "display": "NH White 52% \u00b7 Hisp 26% \u00b7 Black 15% \u00b7 Asian 3%"
+      "white_alone_pct": 55.5,
+      "black_alone_pct": 14.9,
+      "asian_alone_pct": 3.0,
+      "hispanic_any_race_pct": 27.4,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Georgia": {
-      "display": "NH White 50% \u00b7 Black 31% \u00b7 Hisp 10% \u00b7 Asian 4%"
+      "white_alone_pct": 50.3,
+      "black_alone_pct": 30.8,
+      "asian_alone_pct": 4.5,
+      "hispanic_any_race_pct": 11.1,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Hawaii": {
-      "display": "Asian 37% \u00b7 Multiracial 20% \u00b7 NH White 22% \u00b7 Pacific Isl. 10% \u00b7 Hisp 10%"
+      "white_alone_pct": 21.9,
+      "black_alone_pct": 1.7,
+      "asian_alone_pct": 36.7,
+      "hispanic_any_race_pct": 10.1,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Idaho": {
-      "display": "NH White 79% \u00b7 Hisp 13% \u00b7 Asian 1% \u00b7 Native 1%"
+      "white_alone_pct": 81.7,
+      "black_alone_pct": 0.8,
+      "asian_alone_pct": 1.4,
+      "hispanic_any_race_pct": 13.8,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Illinois": {
-      "display": "NH White 58% \u00b7 Hisp 18% \u00b7 Black 14% \u00b7 Asian 6%"
+      "white_alone_pct": 60.7,
+      "black_alone_pct": 13.3,
+      "asian_alone_pct": 6.0,
+      "hispanic_any_race_pct": 19.0,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Indiana": {
-      "display": "NH White 75% \u00b7 Black 9% \u00b7 Hisp 8% \u00b7 Asian 2%"
+      "white_alone_pct": 76.7,
+      "black_alone_pct": 9.0,
+      "asian_alone_pct": 2.7,
+      "hispanic_any_race_pct": 8.7,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Iowa": {
-      "display": "NH White 83% \u00b7 Hisp 7% \u00b7 Black 4% \u00b7 Asian 2%"
+      "white_alone_pct": 84.2,
+      "black_alone_pct": 4.0,
+      "asian_alone_pct": 2.4,
+      "hispanic_any_race_pct": 7.3,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Kansas": {
-      "display": "NH White 72% \u00b7 Hisp 13% \u00b7 Black 6% \u00b7 Asian 3%"
+      "white_alone_pct": 75.9,
+      "black_alone_pct": 5.3,
+      "asian_alone_pct": 2.6,
+      "hispanic_any_race_pct": 13.7,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Kentucky": {
-      "display": "NH White 81% \u00b7 Black 8% \u00b7 Hisp 5% \u00b7 Asian 2%"
+      "white_alone_pct": 82.5,
+      "black_alone_pct": 7.5,
+      "asian_alone_pct": 1.4,
+      "hispanic_any_race_pct": 4.9,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Louisiana": {
-      "display": "NH White 56% \u00b7 Black 31% \u00b7 Hisp 7% \u00b7 Asian 2%"
+      "white_alone_pct": 56.7,
+      "black_alone_pct": 30.3,
+      "asian_alone_pct": 1.8,
+      "hispanic_any_race_pct": 7.1,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Maine": {
-      "display": "NH White 90% \u00b7 Hisp 2% \u00b7 Black 2% \u00b7 Asian 1%"
+      "white_alone_pct": 90.1,
+      "black_alone_pct": 1.8,
+      "asian_alone_pct": 1.1,
+      "hispanic_any_race_pct": 2.2,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Maryland": {
-      "display": "NH White 47% \u00b7 Black 29% \u00b7 Hisp 12% \u00b7 Asian 7%"
+      "white_alone_pct": 47.9,
+      "black_alone_pct": 29.2,
+      "asian_alone_pct": 6.6,
+      "hispanic_any_race_pct": 12.6,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Massachusetts": {
-      "display": "NH White 68% \u00b7 Hisp 13% \u00b7 Asian 7% \u00b7 Black 7%"
+      "white_alone_pct": 67.9,
+      "black_alone_pct": 7.0,
+      "asian_alone_pct": 7.4,
+      "hispanic_any_race_pct": 13.5,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Michigan": {
-      "display": "NH White 72% \u00b7 Black 13% \u00b7 Hisp 6% \u00b7 Asian 3%"
+      "white_alone_pct": 73.8,
+      "black_alone_pct": 13.2,
+      "asian_alone_pct": 3.4,
+      "hispanic_any_race_pct": 6.0,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Minnesota": {
-      "display": "NH White 76% \u00b7 Black 7% \u00b7 Asian 5% \u00b7 Hisp 6%"
+      "white_alone_pct": 76.7,
+      "black_alone_pct": 7.2,
+      "asian_alone_pct": 5.2,
+      "hispanic_any_race_pct": 6.4,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Mississippi": {
-      "display": "NH White 55% \u00b7 Black 36% \u00b7 Hisp 4% \u00b7 Asian 1%"
+      "white_alone_pct": 55.6,
+      "black_alone_pct": 35.6,
+      "asian_alone_pct": 0.9,
+      "hispanic_any_race_pct": 3.7,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Missouri": {
-      "display": "NH White 76% \u00b7 Black 11% \u00b7 Hisp 5% \u00b7 Asian 2%"
+      "white_alone_pct": 77.8,
+      "black_alone_pct": 10.8,
+      "asian_alone_pct": 2.1,
+      "hispanic_any_race_pct": 5.2,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Montana": {
-      "display": "NH White 83% \u00b7 Native 6% \u00b7 Hisp 4% \u00b7 Multiracial 5%"
+      "white_alone_pct": 84.6,
+      "black_alone_pct": 0.4,
+      "asian_alone_pct": 0.8,
+      "hispanic_any_race_pct": 4.6,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Nebraska": {
-      "display": "NH White 76% \u00b7 Hisp 12% \u00b7 Black 5% \u00b7 Asian 3%"
+      "white_alone_pct": 77.7,
+      "black_alone_pct": 4.6,
+      "asian_alone_pct": 2.5,
+      "hispanic_any_race_pct": 12.9,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Nevada": {
-      "display": "NH White 46% \u00b7 Hisp 29% \u00b7 Black 9% \u00b7 Asian 9%"
+      "white_alone_pct": 49.8,
+      "black_alone_pct": 9.4,
+      "asian_alone_pct": 9.1,
+      "hispanic_any_race_pct": 29.9,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "New Hampshire": {
-      "display": "NH White 87% \u00b7 Hisp 4% \u00b7 Asian 3% \u00b7 Black 1%"
+      "white_alone_pct": 87.5,
+      "black_alone_pct": 1.5,
+      "asian_alone_pct": 2.6,
+      "hispanic_any_race_pct": 4.7,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "New Jersey": {
-      "display": "NH White 52% \u00b7 Hisp 22% \u00b7 Black 12% \u00b7 Asian 10%"
+      "white_alone_pct": 53.5,
+      "black_alone_pct": 12.7,
+      "asian_alone_pct": 10.2,
+      "hispanic_any_race_pct": 22.7,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "New Mexico": {
-      "display": "Hisp 48% \u00b7 NH White 37% \u00b7 Native 9% \u00b7 Black 2%"
+      "white_alone_pct": 47.5,
+      "black_alone_pct": 2.0,
+      "asian_alone_pct": 1.8,
+      "hispanic_any_race_pct": 48.6,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "New York": {
-      "display": "NH White 52% \u00b7 Hisp 20% \u00b7 Black 14% \u00b7 Asian 9%"
+      "white_alone_pct": 55.1,
+      "black_alone_pct": 14.3,
+      "asian_alone_pct": 9.1,
+      "hispanic_any_race_pct": 19.8,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "North Carolina": {
-      "display": "NH White 60% \u00b7 Black 20% \u00b7 Hisp 11% \u00b7 Asian 3%"
+      "white_alone_pct": 61.4,
+      "black_alone_pct": 20.1,
+      "asian_alone_pct": 3.3,
+      "hispanic_any_race_pct": 11.4,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "North Dakota": {
-      "display": "NH White 82% \u00b7 Native 5% \u00b7 Hisp 4% \u00b7 Black 3%"
+      "white_alone_pct": 82.5,
+      "black_alone_pct": 3.1,
+      "asian_alone_pct": 1.5,
+      "hispanic_any_race_pct": 4.9,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Ohio": {
-      "display": "NH White 76% \u00b7 Black 12% \u00b7 Hisp 4% \u00b7 Asian 3%"
+      "white_alone_pct": 76.6,
+      "black_alone_pct": 11.9,
+      "asian_alone_pct": 2.6,
+      "hispanic_any_race_pct": 4.8,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Oklahoma": {
-      "display": "NH White 61% \u00b7 Hisp 12% \u00b7 Native 8% \u00b7 Black 7% \u00b7 Multiracial 9%"
+      "white_alone_pct": 64.6,
+      "black_alone_pct": 6.8,
+      "asian_alone_pct": 2.3,
+      "hispanic_any_race_pct": 12.9,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Oregon": {
-      "display": "NH White 72% \u00b7 Hisp 14% \u00b7 Asian 5% \u00b7 Black 2%"
+      "white_alone_pct": 73.9,
+      "black_alone_pct": 2.1,
+      "asian_alone_pct": 4.6,
+      "hispanic_any_race_pct": 14.9,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Pennsylvania": {
-      "display": "NH White 73% \u00b7 Black 11% \u00b7 Hisp 8% \u00b7 Asian 4%"
+      "white_alone_pct": 74.0,
+      "black_alone_pct": 10.6,
+      "asian_alone_pct": 3.9,
+      "hispanic_any_race_pct": 8.9,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Rhode Island": {
-      "display": "NH White 69% \u00b7 Hisp 17% \u00b7 Black 5% \u00b7 Asian 4%"
+      "white_alone_pct": 69.7,
+      "black_alone_pct": 5.4,
+      "asian_alone_pct": 3.4,
+      "hispanic_any_race_pct": 18.0,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "South Carolina": {
-      "display": "NH White 62% \u00b7 Black 25% \u00b7 Hisp 7% \u00b7 Asian 2%"
+      "white_alone_pct": 63.6,
+      "black_alone_pct": 24.4,
+      "asian_alone_pct": 1.8,
+      "hispanic_any_race_pct": 7.4,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "South Dakota": {
-      "display": "NH White 80% \u00b7 Native 8% \u00b7 Hisp 4% \u00b7 Black 2%"
+      "white_alone_pct": 80.5,
+      "black_alone_pct": 2.5,
+      "asian_alone_pct": 1.5,
+      "hispanic_any_race_pct": 5.1,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Tennessee": {
-      "display": "NH White 71% \u00b7 Black 16% \u00b7 Hisp 7% \u00b7 Asian 2%"
+      "white_alone_pct": 72.3,
+      "black_alone_pct": 15.3,
+      "asian_alone_pct": 1.8,
+      "hispanic_any_race_pct": 7.5,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Texas": {
-      "display": "NH White 40% \u00b7 Hisp 39% \u00b7 Black 12% \u00b7 Asian 5%"
+      "white_alone_pct": 47.7,
+      "black_alone_pct": 12.3,
+      "asian_alone_pct": 5.7,
+      "hispanic_any_race_pct": 39.8,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Utah": {
-      "display": "NH White 75% \u00b7 Hisp 15% \u00b7 Asian 2% \u00b7 Pacific Isl. 1%"
+      "white_alone_pct": 78.6,
+      "black_alone_pct": 1.1,
+      "asian_alone_pct": 2.5,
+      "hispanic_any_race_pct": 16.0,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Vermont": {
-      "display": "NH White 89% \u00b7 Hisp 2% \u00b7 Asian 2% \u00b7 Black 1%"
+      "white_alone_pct": 89.9,
+      "black_alone_pct": 1.2,
+      "asian_alone_pct": 1.7,
+      "hispanic_any_race_pct": 2.5,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Virginia": {
-      "display": "NH White 59% \u00b7 Black 18% \u00b7 Hisp 11% \u00b7 Asian 7%"
+      "white_alone_pct": 59.8,
+      "black_alone_pct": 18.4,
+      "asian_alone_pct": 6.9,
+      "hispanic_any_race_pct": 11.1,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Washington": {
-      "display": "NH White 64% \u00b7 Hisp 14% \u00b7 Asian 9% \u00b7 Black 4%"
+      "white_alone_pct": 65.2,
+      "black_alone_pct": 4.0,
+      "asian_alone_pct": 10.0,
+      "hispanic_any_race_pct": 14.6,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "West Virginia": {
-      "display": "NH White 89% \u00b7 Black 4% \u00b7 Hisp 2% \u00b7 Asian 1%"
+      "white_alone_pct": 90.1,
+      "black_alone_pct": 3.2,
+      "asian_alone_pct": 0.7,
+      "hispanic_any_race_pct": 2.1,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Wisconsin": {
-      "display": "NH White 79% \u00b7 Hisp 8% \u00b7 Black 6% \u00b7 Asian 3%"
+      "white_alone_pct": 79.9,
+      "black_alone_pct": 5.9,
+      "asian_alone_pct": 3.0,
+      "hispanic_any_race_pct": 8.1,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     },
     "Wyoming": {
-      "display": "NH White 81% \u00b7 Hisp 10% \u00b7 Native 2% \u00b7 Black 1%"
+      "white_alone_pct": 84.3,
+      "black_alone_pct": 0.7,
+      "asian_alone_pct": 0.9,
+      "hispanic_any_race_pct": 10.8,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
+    },
+    "Puerto Rico": {
+      "white_alone_pct": 23.8,
+      "black_alone_pct": 5.3,
+      "asian_alone_pct": 0.1,
+      "hispanic_any_race_pct": 99.0,
+      "note": "Race alone categories; Hispanic is ethnicity (any race). Not NH-adjusted."
     }
   },
   "notes": [
-    "Display strings are 2020 Census NH-adjusted shares used in the base report.",
-    "Prefer live ACS API (CENSUS_API_KEY) on next full refresh."
+    "ACS subject S1901 mean HH income for 52 areas (year 2023)."
   ]
 }

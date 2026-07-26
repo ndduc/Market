@@ -1,10 +1,1698 @@
 {
-  "pulled_at": "2026-07-26T06:21:37+00:00",
-  "live_fetch_attempted": true,
-  "fetch_ok": false,
-  "states": {},
+  "pulled_at": "2026-07-26T07:06:51+00:00",
+  "live_fetch": true,
+  "source": "BLS CES SAE API (SMU statewide supersectors)",
+  "source_url": "https://www.bls.gov/charts/state-employment-and-unemployment/industry-employment-by-state.htm",
+  "fetch_ok": true,
+  "states": {
+    "Alabama": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 2224.2,
+      "top": [
+        {
+          "label": "Government",
+          "employees_thousands": 432.1,
+          "share_pct": 19.4
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 402.8,
+          "share_pct": 18.1
+        },
+        {
+          "label": "Manufacturing",
+          "employees_thousands": 282.9,
+          "share_pct": 12.7
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 266.4,
+          "share_pct": 12.0
+        }
+      ],
+      "top_labels": [
+        "Government",
+        "Trade / logistics",
+        "Manufacturing",
+        "Professional services"
+      ],
+      "display": "government; trade / logistics; manufacturing; professional services"
+    },
+    "Alaska": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 357.6,
+      "top": [
+        {
+          "label": "Government",
+          "employees_thousands": 75.7,
+          "share_pct": 21.2
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 72.2,
+          "share_pct": 20.2
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 54.6,
+          "share_pct": 15.3
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 45.4,
+          "share_pct": 12.7
+        }
+      ],
+      "top_labels": [
+        "Government",
+        "Trade / logistics",
+        "Education & health",
+        "Leisure / hospitality"
+      ],
+      "display": "government; trade / logistics; education & health; leisure / hospitality"
+    },
+    "Arizona": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 3231.3,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 624.5,
+          "share_pct": 19.3
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 559.9,
+          "share_pct": 17.3
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 465.7,
+          "share_pct": 14.4
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 392.1,
+          "share_pct": 12.1
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Professional services",
+        "Government"
+      ],
+      "display": "trade / logistics; education & health; professional services; government"
+    },
+    "Arkansas": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 1346.0,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 273.0,
+          "share_pct": 20.3
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 209.0,
+          "share_pct": 15.5
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 202.1,
+          "share_pct": 15.0
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 167.0,
+          "share_pct": 12.4
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Government",
+        "Professional services"
+      ],
+      "display": "trade / logistics; education & health; government; professional services"
+    },
+    "California": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 18187.6,
+      "top": [
+        {
+          "label": "Education & health",
+          "employees_thousands": 3604.1,
+          "share_pct": 19.8
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 3025.9,
+          "share_pct": 16.6
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 2741.0,
+          "share_pct": 15.1
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 2703.0,
+          "share_pct": 14.9
+        }
+      ],
+      "top_labels": [
+        "Education & health",
+        "Trade / logistics",
+        "Professional services",
+        "Government"
+      ],
+      "display": "education & health; trade / logistics; professional services; government"
+    },
+    "Colorado": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 2991.5,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 499.9,
+          "share_pct": 16.7
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 492.6,
+          "share_pct": 16.5
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 484.9,
+          "share_pct": 16.2
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 410.9,
+          "share_pct": 13.7
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Professional services",
+        "Government",
+        "Education & health"
+      ],
+      "display": "trade / logistics; professional services; government; education & health"
+    },
+    "Connecticut": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 1744.8,
+      "top": [
+        {
+          "label": "Education & health",
+          "employees_thousands": 379.9,
+          "share_pct": 21.8
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 299.1,
+          "share_pct": 17.1
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 234.8,
+          "share_pct": 13.5
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 224.3,
+          "share_pct": 12.9
+        }
+      ],
+      "top_labels": [
+        "Education & health",
+        "Trade / logistics",
+        "Government",
+        "Professional services"
+      ],
+      "display": "education & health; trade / logistics; government; professional services"
+    },
+    "Delaware": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 504.5,
+      "top": [
+        {
+          "label": "Education & health",
+          "employees_thousands": 93.7,
+          "share_pct": 18.6
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 90.2,
+          "share_pct": 17.9
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 71.5,
+          "share_pct": 14.2
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 67.7,
+          "share_pct": 13.4
+        }
+      ],
+      "top_labels": [
+        "Education & health",
+        "Trade / logistics",
+        "Government",
+        "Professional services"
+      ],
+      "display": "education & health; trade / logistics; government; professional services"
+    },
+    "District of Columbia": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 721.8,
+      "top": [
+        {
+          "label": "Government",
+          "employees_thousands": 206.7,
+          "share_pct": 28.6
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 162.3,
+          "share_pct": 22.5
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 123.1,
+          "share_pct": 17.1
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 78.0,
+          "share_pct": 10.8
+        }
+      ],
+      "top_labels": [
+        "Government",
+        "Professional services",
+        "Education & health",
+        "Leisure / hospitality"
+      ],
+      "display": "government; professional services; education & health; leisure / hospitality"
+    },
+    "Florida": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 9943.8,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 1976.8,
+          "share_pct": 19.9
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 1635.2,
+          "share_pct": 16.4
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 1613.0,
+          "share_pct": 16.2
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 1342.7,
+          "share_pct": 13.5
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Professional services",
+        "Education & health",
+        "Leisure / hospitality"
+      ],
+      "display": "trade / logistics; professional services; education & health; leisure / hospitality"
+    },
+    "Georgia": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 4994.5,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 1027.9,
+          "share_pct": 20.6
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 747.3,
+          "share_pct": 15.0
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 741.4,
+          "share_pct": 14.8
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 702.2,
+          "share_pct": 14.1
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Professional services",
+        "Government"
+      ],
+      "display": "trade / logistics; education & health; professional services; government"
+    },
+    "Hawaii": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 641.4,
+      "top": [
+        {
+          "label": "Government",
+          "employees_thousands": 124.1,
+          "share_pct": 19.3
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 122.2,
+          "share_pct": 19.1
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 114.9,
+          "share_pct": 17.9
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 93.3,
+          "share_pct": 14.5
+        }
+      ],
+      "top_labels": [
+        "Government",
+        "Leisure / hospitality",
+        "Trade / logistics",
+        "Education & health"
+      ],
+      "display": "government; leisure / hospitality; trade / logistics; education & health"
+    },
+    "Idaho": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 897.4,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 169.0,
+          "share_pct": 18.8
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 145.5,
+          "share_pct": 16.2
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 128.5,
+          "share_pct": 14.3
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 114.3,
+          "share_pct": 12.7
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Government",
+        "Professional services"
+      ],
+      "display": "trade / logistics; education & health; government; professional services"
+    },
+    "Illinois": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 6221.1,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 1212.1,
+          "share_pct": 19.5
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 1028.8,
+          "share_pct": 16.5
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 914.8,
+          "share_pct": 14.7
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 851.5,
+          "share_pct": 13.7
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Professional services",
+        "Government"
+      ],
+      "display": "trade / logistics; education & health; professional services; government"
+    },
+    "Indiana": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 3256.7,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 636.0,
+          "share_pct": 19.5
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 526.1,
+          "share_pct": 16.2
+        },
+        {
+          "label": "Manufacturing",
+          "employees_thousands": 519.0,
+          "share_pct": 15.9
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 392.2,
+          "share_pct": 12.0
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Manufacturing",
+        "Government"
+      ],
+      "display": "trade / logistics; education & health; manufacturing; government"
+    },
+    "Iowa": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 1594.0,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 307.9,
+          "share_pct": 19.3
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 266.5,
+          "share_pct": 16.7
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 238.3,
+          "share_pct": 14.9
+        },
+        {
+          "label": "Manufacturing",
+          "employees_thousands": 214.4,
+          "share_pct": 13.5
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Government",
+        "Education & health",
+        "Manufacturing"
+      ],
+      "display": "trade / logistics; government; education & health; manufacturing"
+    },
+    "Kansas": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 1476.8,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 272.7,
+          "share_pct": 18.5
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 255.4,
+          "share_pct": 17.3
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 218.9,
+          "share_pct": 14.8
+        },
+        {
+          "label": "Manufacturing",
+          "employees_thousands": 175.7,
+          "share_pct": 11.9
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Government",
+        "Education & health",
+        "Manufacturing"
+      ],
+      "display": "trade / logistics; government; education & health; manufacturing"
+    },
+    "Kentucky": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 2039.6,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 423.2,
+          "share_pct": 20.7
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 319.7,
+          "share_pct": 15.7
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 313.5,
+          "share_pct": 15.4
+        },
+        {
+          "label": "Manufacturing",
+          "employees_thousands": 247.9,
+          "share_pct": 12.2
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Government",
+        "Manufacturing"
+      ],
+      "display": "trade / logistics; education & health; government; manufacturing"
+    },
+    "Louisiana": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 2006.0,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 373.5,
+          "share_pct": 18.6
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 352.7,
+          "share_pct": 17.6
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 319.3,
+          "share_pct": 15.9
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 226.7,
+          "share_pct": 11.3
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Government",
+        "Professional services"
+      ],
+      "display": "trade / logistics; education & health; government; professional services"
+    },
+    "Maine": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 677.8,
+      "top": [
+        {
+          "label": "Education & health",
+          "employees_thousands": 136.7,
+          "share_pct": 20.2
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 120.2,
+          "share_pct": 17.7
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 105.0,
+          "share_pct": 15.5
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 82.8,
+          "share_pct": 12.2
+        }
+      ],
+      "top_labels": [
+        "Education & health",
+        "Trade / logistics",
+        "Government",
+        "Leisure / hospitality"
+      ],
+      "display": "education & health; trade / logistics; government; leisure / hospitality"
+    },
+    "Maryland": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 2821.6,
+      "top": [
+        {
+          "label": "Government",
+          "employees_thousands": 520.6,
+          "share_pct": 18.5
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 510.5,
+          "share_pct": 18.1
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 467.3,
+          "share_pct": 16.6
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 450.7,
+          "share_pct": 16.0
+        }
+      ],
+      "top_labels": [
+        "Government",
+        "Education & health",
+        "Professional services",
+        "Trade / logistics"
+      ],
+      "display": "government; education & health; professional services; trade / logistics"
+    },
+    "Massachusetts": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 3777.6,
+      "top": [
+        {
+          "label": "Education & health",
+          "employees_thousands": 851.7,
+          "share_pct": 22.5
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 618.8,
+          "share_pct": 16.4
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 565.7,
+          "share_pct": 15.0
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 481.5,
+          "share_pct": 12.7
+        }
+      ],
+      "top_labels": [
+        "Education & health",
+        "Professional services",
+        "Trade / logistics",
+        "Government"
+      ],
+      "display": "education & health; professional services; trade / logistics; government"
+    },
+    "Michigan": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 4548.6,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 803.3,
+          "share_pct": 17.7
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 738.9,
+          "share_pct": 16.2
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 631.7,
+          "share_pct": 13.9
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 630.2,
+          "share_pct": 13.9
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Professional services",
+        "Government"
+      ],
+      "display": "trade / logistics; education & health; professional services; government"
+    },
+    "Minnesota": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 3116.5,
+      "top": [
+        {
+          "label": "Education & health",
+          "employees_thousands": 632.7,
+          "share_pct": 20.3
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 526.9,
+          "share_pct": 16.9
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 446.4,
+          "share_pct": 14.3
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 376.6,
+          "share_pct": 12.1
+        }
+      ],
+      "top_labels": [
+        "Education & health",
+        "Trade / logistics",
+        "Government",
+        "Professional services"
+      ],
+      "display": "education & health; trade / logistics; government; professional services"
+    },
+    "Mississippi": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 1191.8,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 248.7,
+          "share_pct": 20.9
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 233.9,
+          "share_pct": 19.6
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 157.8,
+          "share_pct": 13.2
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 139.4,
+          "share_pct": 11.7
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Government",
+        "Education & health",
+        "Leisure / hospitality"
+      ],
+      "display": "trade / logistics; government; education & health; leisure / hospitality"
+    },
+    "Missouri": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 3023.9,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 559.3,
+          "share_pct": 18.5
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 539.6,
+          "share_pct": 17.8
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 433.0,
+          "share_pct": 14.3
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 368.3,
+          "share_pct": 12.2
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Government",
+        "Professional services"
+      ],
+      "display": "trade / logistics; education & health; government; professional services"
+    },
+    "Montana": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 532.6,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 102.4,
+          "share_pct": 19.2
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 93.9,
+          "share_pct": 17.6
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 87.0,
+          "share_pct": 16.3
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 77.1,
+          "share_pct": 14.5
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Government",
+        "Education & health",
+        "Leisure / hospitality"
+      ],
+      "display": "trade / logistics; government; education & health; leisure / hospitality"
+    },
+    "Nebraska": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 1073.0,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 193.4,
+          "share_pct": 18.0
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 179.5,
+          "share_pct": 16.7
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 175.8,
+          "share_pct": 16.4
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 118.1,
+          "share_pct": 11.0
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Government",
+        "Education & health",
+        "Professional services"
+      ],
+      "display": "trade / logistics; government; education & health; professional services"
+    },
+    "Nevada": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 1612.4,
+      "top": [
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 366.7,
+          "share_pct": 22.7
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 295.4,
+          "share_pct": 18.3
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 238.1,
+          "share_pct": 14.8
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 187.4,
+          "share_pct": 11.6
+        }
+      ],
+      "top_labels": [
+        "Leisure / hospitality",
+        "Trade / logistics",
+        "Professional services",
+        "Education & health"
+      ],
+      "display": "leisure / hospitality; trade / logistics; professional services; education & health"
+    },
+    "New Hampshire": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 712.1,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 136.0,
+          "share_pct": 19.1
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 129.3,
+          "share_pct": 18.2
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 103.5,
+          "share_pct": 14.5
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 87.1,
+          "share_pct": 12.2
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Professional services",
+        "Leisure / hospitality"
+      ],
+      "display": "trade / logistics; education & health; professional services; leisure / hospitality"
+    },
+    "New Jersey": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 4463.9,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 892.5,
+          "share_pct": 20.0
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 832.1,
+          "share_pct": 18.6
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 727.5,
+          "share_pct": 16.3
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 632.1,
+          "share_pct": 14.2
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Professional services",
+        "Government"
+      ],
+      "display": "trade / logistics; education & health; professional services; government"
+    },
+    "New Mexico": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 900.2,
+      "top": [
+        {
+          "label": "Government",
+          "employees_thousands": 190.2,
+          "share_pct": 21.1
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 154.0,
+          "share_pct": 17.1
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 149.4,
+          "share_pct": 16.6
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 118.7,
+          "share_pct": 13.2
+        }
+      ],
+      "top_labels": [
+        "Government",
+        "Education & health",
+        "Trade / logistics",
+        "Professional services"
+      ],
+      "display": "government; education & health; trade / logistics; professional services"
+    },
+    "New York": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 10079.6,
+      "top": [
+        {
+          "label": "Education & health",
+          "employees_thousands": 2417.7,
+          "share_pct": 24.0
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 1532.5,
+          "share_pct": 15.2
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 1484.7,
+          "share_pct": 14.7
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 1433.0,
+          "share_pct": 14.2
+        }
+      ],
+      "top_labels": [
+        "Education & health",
+        "Government",
+        "Trade / logistics",
+        "Professional services"
+      ],
+      "display": "education & health; government; trade / logistics; professional services"
+    },
+    "North Carolina": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 5136.1,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 938.4,
+          "share_pct": 18.3
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 769.6,
+          "share_pct": 15.0
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 757.2,
+          "share_pct": 14.7
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 739.5,
+          "share_pct": 14.4
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Government",
+        "Professional services",
+        "Education & health"
+      ],
+      "display": "trade / logistics; government; professional services; education & health"
+    },
+    "North Dakota": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 452.2,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 92.6,
+          "share_pct": 20.5
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 86.5,
+          "share_pct": 19.1
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 72.2,
+          "share_pct": 16.0
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 42.9,
+          "share_pct": 9.5
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Government",
+        "Education & health",
+        "Leisure / hospitality"
+      ],
+      "display": "trade / logistics; government; education & health; leisure / hospitality"
+    },
+    "Ohio": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 5735.6,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 1054.3,
+          "share_pct": 18.4
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 991.4,
+          "share_pct": 17.3
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 776.2,
+          "share_pct": 13.5
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 739.3,
+          "share_pct": 12.9
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Government",
+        "Professional services"
+      ],
+      "display": "trade / logistics; education & health; government; professional services"
+    },
+    "Oklahoma": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 1795.2,
+      "top": [
+        {
+          "label": "Government",
+          "employees_thousands": 366.3,
+          "share_pct": 20.4
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 315.3,
+          "share_pct": 17.6
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 286.4,
+          "share_pct": 16.0
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 203.1,
+          "share_pct": 11.3
+        }
+      ],
+      "top_labels": [
+        "Government",
+        "Trade / logistics",
+        "Education & health",
+        "Professional services"
+      ],
+      "display": "government; trade / logistics; education & health; professional services"
+    },
+    "Oregon": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 1980.8,
+      "top": [
+        {
+          "label": "Education & health",
+          "employees_thousands": 356.9,
+          "share_pct": 18.0
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 348.3,
+          "share_pct": 17.6
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 319.8,
+          "share_pct": 16.1
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 249.6,
+          "share_pct": 12.6
+        }
+      ],
+      "top_labels": [
+        "Education & health",
+        "Trade / logistics",
+        "Government",
+        "Professional services"
+      ],
+      "display": "education & health; trade / logistics; government; professional services"
+    },
+    "Pennsylvania": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 6240.0,
+      "top": [
+        {
+          "label": "Education & health",
+          "employees_thousands": 1398.8,
+          "share_pct": 22.4
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 1125.2,
+          "share_pct": 18.0
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 844.9,
+          "share_pct": 13.5
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 695.1,
+          "share_pct": 11.1
+        }
+      ],
+      "top_labels": [
+        "Education & health",
+        "Trade / logistics",
+        "Professional services",
+        "Government"
+      ],
+      "display": "education & health; trade / logistics; professional services; government"
+    },
+    "Rhode Island": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 520.6,
+      "top": [
+        {
+          "label": "Education & health",
+          "employees_thousands": 114.2,
+          "share_pct": 21.9
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 80.9,
+          "share_pct": 15.5
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 69.6,
+          "share_pct": 13.4
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 66.7,
+          "share_pct": 12.8
+        }
+      ],
+      "top_labels": [
+        "Education & health",
+        "Trade / logistics",
+        "Professional services",
+        "Leisure / hospitality"
+      ],
+      "display": "education & health; trade / logistics; professional services; leisure / hospitality"
+    },
+    "South Carolina": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 2423.7,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 446.0,
+          "share_pct": 18.4
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 397.1,
+          "share_pct": 16.4
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 320.0,
+          "share_pct": 13.2
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 313.2,
+          "share_pct": 12.9
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Government",
+        "Education & health",
+        "Professional services"
+      ],
+      "display": "trade / logistics; government; education & health; professional services"
+    },
+    "South Dakota": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 481.0,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 92.5,
+          "share_pct": 19.2
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 82.6,
+          "share_pct": 17.2
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 80.8,
+          "share_pct": 16.8
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 58.6,
+          "share_pct": 12.2
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Government",
+        "Education & health",
+        "Leisure / hospitality"
+      ],
+      "display": "trade / logistics; government; education & health; leisure / hospitality"
+    },
+    "Tennessee": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 3392.2,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 682.1,
+          "share_pct": 20.1
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 513.0,
+          "share_pct": 15.1
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 451.7,
+          "share_pct": 13.3
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 446.8,
+          "share_pct": 13.2
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Professional services",
+        "Government"
+      ],
+      "display": "trade / logistics; education & health; professional services; government"
+    },
+    "Texas": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 14497.7,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 2806.2,
+          "share_pct": 19.4
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 2192.7,
+          "share_pct": 15.1
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 2114.0,
+          "share_pct": 14.6
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 1999.0,
+          "share_pct": 13.8
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Professional services",
+        "Government",
+        "Education & health"
+      ],
+      "display": "trade / logistics; professional services; government; education & health"
+    },
+    "Utah": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 1790.3,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 311.4,
+          "share_pct": 17.4
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 277.0,
+          "share_pct": 15.5
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 263.5,
+          "share_pct": 14.7
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 249.7,
+          "share_pct": 13.9
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Government",
+        "Professional services",
+        "Education & health"
+      ],
+      "display": "trade / logistics; government; professional services; education & health"
+    },
+    "Vermont": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 311.7,
+      "top": [
+        {
+          "label": "Education & health",
+          "employees_thousands": 64.2,
+          "share_pct": 20.6
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 55.8,
+          "share_pct": 17.9
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 51.3,
+          "share_pct": 16.5
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 36.0,
+          "share_pct": 11.5
+        }
+      ],
+      "top_labels": [
+        "Education & health",
+        "Government",
+        "Trade / logistics",
+        "Leisure / hospitality"
+      ],
+      "display": "education & health; government; trade / logistics; leisure / hospitality"
+    },
+    "Virginia": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 4270.2,
+      "top": [
+        {
+          "label": "Professional services",
+          "employees_thousands": 793.3,
+          "share_pct": 18.6
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 760.5,
+          "share_pct": 17.8
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 695.2,
+          "share_pct": 16.3
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 625.4,
+          "share_pct": 14.6
+        }
+      ],
+      "top_labels": [
+        "Professional services",
+        "Government",
+        "Trade / logistics",
+        "Education & health"
+      ],
+      "display": "professional services; government; trade / logistics; education & health"
+    },
+    "Washington": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 3679.8,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 623.2,
+          "share_pct": 16.9
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 619.4,
+          "share_pct": 16.8
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 568.6,
+          "share_pct": 15.5
+        },
+        {
+          "label": "Professional services",
+          "employees_thousands": 546.0,
+          "share_pct": 14.8
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Government",
+        "Education & health",
+        "Professional services"
+      ],
+      "display": "trade / logistics; government; education & health; professional services"
+    },
+    "West Virginia": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 722.7,
+      "top": [
+        {
+          "label": "Education & health",
+          "employees_thousands": 147.5,
+          "share_pct": 20.4
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 144.9,
+          "share_pct": 20.0
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 121.4,
+          "share_pct": 16.8
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 75.1,
+          "share_pct": 10.4
+        }
+      ],
+      "top_labels": [
+        "Education & health",
+        "Government",
+        "Trade / logistics",
+        "Leisure / hospitality"
+      ],
+      "display": "education & health; government; trade / logistics; leisure / hospitality"
+    },
+    "Wisconsin": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 3083.1,
+      "top": [
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 539.1,
+          "share_pct": 17.5
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 507.6,
+          "share_pct": 16.5
+        },
+        {
+          "label": "Manufacturing",
+          "employees_thousands": 461.3,
+          "share_pct": 15.0
+        },
+        {
+          "label": "Government",
+          "employees_thousands": 402.8,
+          "share_pct": 13.1
+        }
+      ],
+      "top_labels": [
+        "Trade / logistics",
+        "Education & health",
+        "Manufacturing",
+        "Government"
+      ],
+      "display": "trade / logistics; education & health; manufacturing; government"
+    },
+    "Wyoming": {
+      "as_of": "June 2026",
+      "total_nonfarm_thousands": 304.1,
+      "top": [
+        {
+          "label": "Government",
+          "employees_thousands": 72.3,
+          "share_pct": 23.8
+        },
+        {
+          "label": "Trade / logistics",
+          "employees_thousands": 53.1,
+          "share_pct": 17.5
+        },
+        {
+          "label": "Leisure / hospitality",
+          "employees_thousands": 43.6,
+          "share_pct": 14.3
+        },
+        {
+          "label": "Education & health",
+          "employees_thousands": 30.1,
+          "share_pct": 9.9
+        }
+      ],
+      "top_labels": [
+        "Government",
+        "Trade / logistics",
+        "Leisure / hospitality",
+        "Education & health"
+      ],
+      "display": "government; trade / logistics; leisure / hospitality; education & health"
+    }
+  },
   "notes": [
-    "Extend with BLS CES / industry chart live parse or download.",
-    "Marked incomplete — do not invent values in build_report."
+    "CES supersector shares for 51 states/DC (606 series observations).",
+    "Series does not exist for Series SMU10000001000000001",
+    "Series does not exist for Series SMU10000002000000001",
+    "Series does not exist for Series SMU11000001000000001"
   ]
 }

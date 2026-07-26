@@ -1,10 +1,10 @@
 {
-  "pulled_at": "2026-07-26T06:21:37+00:00",
+  "pulled_at": "2026-07-26T07:07:04+00:00",
   "live_fetch_attempted": true,
   "fetch_ok": false,
   "states": {},
   "notes": [
     "Usually web-researched; write structured results after live suburb search.",
-    "Marked incomplete — do not invent values in build_report."
+    "Marked incomplete - do not invent values in build_report."
   ]
 }

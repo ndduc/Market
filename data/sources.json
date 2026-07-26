@@ -1,23 +1,70 @@
 {
-  "pulled_at": "2026-07-26T06:21:37+00:00",
+  "pulled_at": "2026-07-26T07:07:04+00:00",
   "urls": {
     "fred_median_income": "https://fred.stlouisfed.org/release/tables?eid=259462&rid=249",
     "census_acs_income_brief": "https://www2.census.gov/library/publications/2025/demo/acsbr-025.pdf",
+    "bls_api": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
     "bls_industry_chart": "https://www.bls.gov/charts/state-employment-and-unemployment/industry-employment-by-state.htm",
-    "bls_laus": "https://www.bls.gov/news.release/laus.htm"
+    "bls_laus": "https://www.bls.gov/news.release/laus.htm",
+    "bea_api": "https://apps.bea.gov/api/data/",
+    "fhfa_hpi_po_state": "https://www.fhfa.gov/hpi/download/quarterly_datasets/hpi_po_state.txt",
+    "redfin_state_tracker": "https://redfin-public-data.s3.us-west-2.amazonaws.com/redfin_market_tracker/state_market_tracker.tsv000.gz"
   },
   "status": {
     "fred_median_income": {
-      "ok": false,
-      "pulled_at": "2026-07-26T06:21:37+00:00",
-      "n_states": 0
+      "ok": true,
+      "pulled_at": "2026-07-26T07:06:30+00:00",
+      "n_states": 51
     },
     "census_acs1": {
-      "ok": false,
-      "pulled_at": "2026-07-26T06:21:37+00:00",
-      "n_states": 0,
+      "ok": true,
+      "pulled_at": "2026-07-26T07:06:47+00:00",
+      "n_states": 52,
       "notes": [
-        "CENSUS_API_KEY not set — skipped Census API. Set env var for live ACS median/mean/race pulls."
+        "ACS subject S1901 mean HH income for 52 areas (year 2023)."
+      ]
+    },
+    "bea_sainc1": {
+      "ok": true,
+      "pulled_at": "2026-07-26T07:06:48+00:00",
+      "n_states": 51,
+      "notes": [
+        "BEA SAINC1 2024: per-capita for 51 states; total PI for 51 states."
+      ]
+    },
+    "bls_laus": {
+      "ok": true,
+      "pulled_at": "2026-07-26T07:06:49+00:00",
+      "n_states": 51,
+      "notes": [
+        "LAUS unemployment rates for 51 states/DC."
+      ]
+    },
+    "bls_ces_industries": {
+      "ok": true,
+      "pulled_at": "2026-07-26T07:06:51+00:00",
+      "n_states": 51,
+      "notes": [
+        "CES supersector shares for 51 states/DC (606 series observations).",
+        "Series does not exist for Series SMU10000001000000001",
+        "Series does not exist for Series SMU10000002000000001",
+        "Series does not exist for Series SMU11000001000000001"
+      ]
+    },
+    "fhfa_hpi": {
+      "ok": true,
+      "pulled_at": "2026-07-26T07:07:00+00:00",
+      "n_states": 51,
+      "notes": [
+        "FHFA PO HPI YoY for 51 states/DC."
+      ]
+    },
+    "redfin_state_prices": {
+      "ok": true,
+      "pulled_at": "2026-07-26T07:07:01+00:00",
+      "n_states": 50,
+      "notes": [
+        "Redfin All Residential medians for 50 states as of 2026-05-31."
       ]
     }
   }
