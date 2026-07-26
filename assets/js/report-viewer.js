@@ -104,13 +104,41 @@
     });
   }
 
-  /** External / file links open in a new tab. Same-page #anchors stay in-page for Index nav. */
+  /** Only external http(s) links open in a new tab (sources, etc.). In-app nav stays same tab. */
   function openLinksInNewTab(root) {
     root.querySelectorAll("a[href]").forEach(function (a) {
       var href = (a.getAttribute("href") || "").trim();
       if (!href || href === "#") return;
-      // In-page section jumps (Index, Back to Index, state deep dives)
-      if (href.charAt(0) === "#") return;
+
+      // Same-page anchors: Index, Back to Index, next/prev section jumps
+      if (href.charAt(0) === "#") {
+        a.removeAttribute("target");
+        a.removeAttribute("rel");
+        return;
+      }
+
+      // In-app paths (view.html, index, local .md, relative files) — same tab
+      var isExternal =
+        /^(https?:)?\/\//i.test(href) ||
+        /^https?:/i.test(href);
+
+      if (!isExternal) {
+        a.removeAttribute("target");
+        a.removeAttribute("rel");
+        return;
+      }
+
+      // Optional: treat same-origin absolute URLs as internal if they point at this site
+      try {
+        var url = new URL(href, window.location.href);
+        if (url.origin === window.location.origin) {
+          a.removeAttribute("target");
+          a.removeAttribute("rel");
+          return;
+        }
+      } catch (_) {
+        /* keep going */
+      }
 
       a.setAttribute("target", "_blank");
       a.setAttribute("rel", "noopener noreferrer");
