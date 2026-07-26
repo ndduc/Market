@@ -282,7 +282,7 @@ Companion tables share the same `#` actionable order. **Price** = apartment entr
 ### 4c. Top job industries (same order)
 [↑ Back to Index](#index)
 
-**Source:** live `data/industries.json` (BLS CES SAE API (SMU statewide supersectors); pulled_at=2026-07-26T07:06:51+00:00). Demand context for renter employment — not an apartment rent print.
+**Source:** live `data/industries.json` (BLS CES SAE API (SMU statewide supersectors); pulled_at=2026-07-26T08:29:05+00:00). Demand context for renter employment — not an apartment rent print.
 
 | # | State | Top industries (largest →) | Concentration / renter note |
 |---:|---|---|---|

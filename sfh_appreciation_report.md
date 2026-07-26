@@ -292,7 +292,7 @@ Companion tables share the same `#` order. **Econ** uses appreciation-first weig
 ### 4c. Top job industries (same order)
 [↑ Back to Index](#index)
 
-**Source framing:** Live `data/industries.json` (pulled_at=2026-07-26T07:06:51+00:00; BLS CES SAE). Sectors ranked by share of statewide total nonfarm employment.
+**Source framing:** Live `data/industries.json` (pulled_at=2026-07-26T08:29:05+00:00; BLS CES SAE). Sectors ranked by share of statewide total nonfarm employment.
 
 | # | State | Top industries (largest →) | Concentration / demand note |
 |---:|---|---|---|
@@ -1523,7 +1523,7 @@ Prefer metros with **multiple competing local PMs** (Chicago suburbs, Indianapol
 
 Tabular national fields use the Market repo’s live `data/` snapshots from this workspace run.
 
-- **Pipeline live fetch stamp:** `data/meta.json` analysis_run_at **2026-07-26T07:07:04+00:00**; census_api_key_present=True; fred_api_key_present=True; bls_api_key_present=True; bea_api_key_present=True.
+- **Pipeline live fetch stamp:** `data/meta.json` analysis_run_at **2026-07-26T08:29:17+00:00**; census_api_key_present=True; fred_api_key_present=True; bls_api_key_present=True; bea_api_key_present=True.
 - **Format parent:** section skeleton from `rental_market_report.md`.
 - **Spec:** `sfh_appreciation_spec.md` (includes mandatory squatting / vacant-SFH overlay).
 

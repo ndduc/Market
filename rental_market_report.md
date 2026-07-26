@@ -332,7 +332,7 @@ Split into two companion tables so columns stay readable in Markdown preview. Bo
 
 ### 4c. Top job industries (same order)
 
-**Source framing:** Built from this run’s live `data/industries.json` (pulled_at=2026-07-26T07:06:51+00:00; source=BLS CES SAE API (SMU statewide supersectors)). Sectors are CES supersectors ranked by share of statewide total nonfarm employment (largest →). Exact headcount shares revise with each BLS release.
+**Source framing:** Built from this run’s live `data/industries.json` (pulled_at=2026-07-26T08:29:05+00:00; source=BLS CES SAE API (SMU statewide supersectors)). Sectors are CES supersectors ranked by share of statewide total nonfarm employment (largest →). Exact headcount shares revise with each BLS release.
 
 | # | State | Top industries (largest →) | Concentration / renter note |
 |---:|---|---|---|
@@ -391,7 +391,7 @@ Split into two companion tables so columns stay readable in Markdown preview. Bo
 
 ### 4d. Demographics & income (same order)
 
-**Source framing:** Built from this run’s live `data/income.json` and `data/demographics.json` (pulled_at income=2026-07-26T07:06:48+00:00, demographics=2026-07-26T07:06:48+00:00). Median source: CPS ASEC via FRED API (MEHOINUS*A646N), as_of 2024; https://fred.stlouisfed.org/release/tables?eid=259462&rid=249. Mean status: **acs_s1901**. Race rows use live ACS/`display` fields when present; otherwise `unavailable` (spec: no silent stale reuse). Demographics are tenant-pool / demand context only - not a ranking filter.
+**Source framing:** Built from this run’s live `data/income.json` and `data/demographics.json` (pulled_at income=2026-07-26T08:29:02+00:00, demographics=2026-07-26T08:29:02+00:00). Median source: CPS ASEC via FRED API (MEHOINUS*A646N), as_of 2024; https://fred.stlouisfed.org/release/tables?eid=259462&rid=249. Mean status: **acs_s1901**. Race rows use live ACS/`display` fields when present; otherwise `unavailable` (spec: no silent stale reuse). Demographics are tenant-pool / demand context only - not a ranking filter.
 
 | # | State | Race / ethnicity (top groups) | Median HH income | Mean HH income |
 |---:|---|---|---:|---|
@@ -1781,7 +1781,7 @@ Sources for scale context: industry rankings and press (e.g. [Belong / ResRents 
 
 This report used active web search / browsing on July 25, 2026. Scores are comparative screens on top of cited figures; regional judgment is labeled where exact metro duplex/fourplex medians were incomplete.
 
-- **Pipeline live fetch:** `data/meta.json` analysis_run_at **2026-07-26T07:07:04+00:00**; census_api_key_present=True; fred_api_key_present=True; bls_api_key_present=True; bea_api_key_present=True; tabular fields regenerated from overwritten `data/` (no cache-as-current).
+- **Pipeline live fetch:** `data/meta.json` analysis_run_at **2026-07-26T08:29:17+00:00**; census_api_key_present=True; fred_api_key_present=True; bls_api_key_present=True; bea_api_key_present=True; tabular fields regenerated from overwritten `data/` (no cache-as-current).
 
 
 

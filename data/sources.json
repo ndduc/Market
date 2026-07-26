@@ -1,5 +1,5 @@
 {
-  "pulled_at": "2026-07-26T07:07:04+00:00",
+  "pulled_at": "2026-07-26T08:29:17+00:00",
   "urls": {
     "fred_median_income": "https://fred.stlouisfed.org/release/tables?eid=259462&rid=249",
     "census_acs_income_brief": "https://www2.census.gov/library/publications/2025/demo/acsbr-025.pdf",
@@ -13,12 +13,12 @@
   "status": {
     "fred_median_income": {
       "ok": true,
-      "pulled_at": "2026-07-26T07:06:30+00:00",
+      "pulled_at": "2026-07-26T08:28:51+00:00",
       "n_states": 51
     },
     "census_acs1": {
       "ok": true,
-      "pulled_at": "2026-07-26T07:06:47+00:00",
+      "pulled_at": "2026-07-26T08:29:01+00:00",
       "n_states": 52,
       "notes": [
         "ACS subject S1901 mean HH income for 52 areas (year 2023)."
@@ -26,7 +26,7 @@
     },
     "bea_sainc1": {
       "ok": true,
-      "pulled_at": "2026-07-26T07:06:48+00:00",
+      "pulled_at": "2026-07-26T08:29:02+00:00",
       "n_states": 51,
       "notes": [
         "BEA SAINC1 2024: per-capita for 51 states; total PI for 51 states."
@@ -34,7 +34,7 @@
     },
     "bls_laus": {
       "ok": true,
-      "pulled_at": "2026-07-26T07:06:49+00:00",
+      "pulled_at": "2026-07-26T08:29:03+00:00",
       "n_states": 51,
       "notes": [
         "LAUS unemployment rates for 51 states/DC."
@@ -42,7 +42,7 @@
     },
     "bls_ces_industries": {
       "ok": true,
-      "pulled_at": "2026-07-26T07:06:51+00:00",
+      "pulled_at": "2026-07-26T08:29:05+00:00",
       "n_states": 51,
       "notes": [
         "CES supersector shares for 51 states/DC (606 series observations).",
@@ -53,7 +53,7 @@
     },
     "fhfa_hpi": {
       "ok": true,
-      "pulled_at": "2026-07-26T07:07:00+00:00",
+      "pulled_at": "2026-07-26T08:29:14+00:00",
       "n_states": 51,
       "notes": [
         "FHFA PO HPI YoY for 51 states/DC."
@@ -61,7 +61,7 @@
     },
     "redfin_state_prices": {
       "ok": true,
-      "pulled_at": "2026-07-26T07:07:01+00:00",
+      "pulled_at": "2026-07-26T08:29:15+00:00",
       "n_states": 50,
       "notes": [
         "Redfin All Residential medians for 50 states as of 2026-05-31."
