@@ -64,7 +64,7 @@ Workflow: [`.github/workflows/monthly-refresh.yml`](.github/workflows/monthly-re
 
 - Runs **every day** (14:00 UTC) and on manual **Run workflow**
 - Uses repo **Actions secrets** (not files in git): `CENSUS_API_KEY`, `FRED_API_KEY`, `BLS_API_KEY`, `BEA_API_KEY`
-- Opens a PR on branch `chore/daily-data-refresh` with rebuilt `data/` + reports (+ `archives/YYYY-MM/`)
+- **Does not commit or open PRs** — uploads rebuilt `data/` + reports as a downloadable Actions artifact (30-day retention)
 
 **One-time setup** (GitHub → this repo → **Settings → Secrets and variables → Actions → New repository secret**), add each key from your local `.env`.
 

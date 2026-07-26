@@ -3,6 +3,7 @@
 #   CENSUS_API_KEY, FRED_API_KEY, BLS_API_KEY, BEA_API_KEY
 #
 # Schedule: every day 14:00 UTC. Also runnable via "Run workflow".
+# Does NOT commit or open PRs — uploads run artifacts only.
 
 name: Daily data refresh
 
@@ -12,8 +13,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 
 concurrency:
   group: daily-refresh
@@ -55,28 +55,15 @@ jobs:
           if [ "$missing" -ne 0 ]; then exit 1; fi
           python -m pipeline.refresh_all --strict --archive
 
-      - name: Create pull request
-        uses: peter-evans/create-pull-request@v8
+      - name: Upload refresh artifacts
+        uses: actions/upload-artifact@v4
         with:
-          commit-message: |
-            chore: daily live data refresh ${{ github.run_id }}
-
-            Automated fetch_all + rebuild of rental, apartment, and SFH appreciation reports.
-          title: "Daily data refresh — ${{ github.event_name == 'schedule' && 'scheduled' || 'manual' }}"
-          body: |
-            ## Summary
-            - Live `python -m pipeline.refresh_all --strict --archive`
-            - Overwrote `data/*.json` and rebuilt:
-              - `rental_market_report.md`
-              - `apartment_market_report.md`
-              - `sfh_appreciation_report.md`
-            - Snapshot under `archives/YYYY-MM/` when present
-
-            ## Still manual (judgment pass)
-            - Top 10 / avoid list wording if ranks flipped hard
-            - Legal / squatting statute updates
-            - Apartment occupancy / concessions / cap-rate narrative
-
-            Merge when the numbers look sane. Informational only — not financial advice.
-          branch: chore/daily-data-refresh
-          delete-branch: true
+          name: market-refresh-${{ github.run_id }}
+          path: |
+            data/
+            archives/
+            rental_market_report.md
+            apartment_market_report.md
+            sfh_appreciation_report.md
+          if-no-files-found: error
+          retention-days: 30
