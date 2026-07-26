@@ -16,6 +16,10 @@ This document is both the analysis specification and the reusable AI prompt.
 
 **Canonical report:** `rental_market_report.md` is the base format and latest full analysis. Future runs must match that report’s section order, tables, and plain-English tone. **Median and average/typical prices**, **top job industries**, and **demographics / income** (race/ethnicity mix plus **median and average** household income) must appear **in context** (companion tables in the all-state matrix, city/metro notes, deep dives, cards) — not as standalone dumps that break top-to-bottom reading.
 
+**Apartment sibling:** Conventional **5+ unit** apartments are specified in `apartment_market_spec.md` and reported in `apartment_market_report.md`. That sibling **must reuse this report’s format** but ranks apartments only — do not merge the two Top 10 lists without re-underwriting.
+
+**SFH appreciation sibling:** Appreciation-first **single-family** is specified in `sfh_appreciation_spec.md` and reported in `sfh_appreciation_report.md`. That sibling **must reuse this report’s format** but ranks for equity-path / price growth — do not merge the two Top 10 lists without re-underwriting.
+
 **Canonical build method:** Do **not** maintain one-off “patch the Markdown” scripts (`_add_*.py` that string-replace sections). Every full refresh must use the **durable pipeline**:
 
 ```text
@@ -914,6 +918,8 @@ Use after the base analysis:
 
 
 - Specific property / address-level underwriting or deal analysis
-- Large commercial apartments (5+ units institutional), short-term rental (Airbnb), or mobile-home park strategies
+- Large commercial apartments (5+ units) — see sibling `apartment_market_spec.md` / `apartment_market_report.md`
+- SFH appreciation / equity-path rankings — see sibling `sfh_appreciation_spec.md` / `sfh_appreciation_report.md`
+- Short-term rental (Airbnb), or mobile-home park strategies
 - International markets
 - Personalized portfolio allocation, tax filing, or insurance brokerage advice
