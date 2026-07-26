@@ -4,6 +4,14 @@ US rental-market screening report for all 50 states + D.C. (single-family and 2â
 
 ## Read the report (web view)
 
+**GitHub Pages:**
+
+**https://ndduc.github.io/Market/**
+
+Report page (when Pages is publishing from this repo):
+
+**https://ndduc.github.io/Market/rental_market_report**
+
 Open the full rendered Markdown on GitHub:
 
 **https://github.com/ndduc/Market/blob/master/rental_market_report.md**
