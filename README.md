@@ -58,13 +58,13 @@ python -m pipeline.build_apartment_report                # apartment (5+) siblin
 python -m pipeline.build_sfh_appreciation_report         # SFH appreciation sibling
 ```
 
-### Monthly automation (GitHub Actions)
+### Daily automation (GitHub Actions)
 
 Workflow: [`.github/workflows/monthly-refresh.yml`](.github/workflows/monthly-refresh.yml)
 
-- Runs **1st of each month** (14:00 UTC) and on manual **Run workflow**
+- Runs **every day** (14:00 UTC) and on manual **Run workflow**
 - Uses repo **Actions secrets** (not files in git): `CENSUS_API_KEY`, `FRED_API_KEY`, `BLS_API_KEY`, `BEA_API_KEY`
-- Opens a PR on branch `chore/monthly-data-refresh` with rebuilt `data/` + reports (+ `archives/YYYY-MM/`)
+- Opens a PR on branch `chore/daily-data-refresh` with rebuilt `data/` + reports (+ `archives/YYYY-MM/`)
 
 **One-time setup** (GitHub → this repo → **Settings → Secrets and variables → Actions → New repository secret**), add each key from your local `.env`.
 
@@ -77,6 +77,6 @@ gh secret set BLS_API_KEY
 gh secret set BEA_API_KEY
 ```
 
-Then **Actions → Monthly data refresh → Run workflow** to test.
+Then **Actions → Daily data refresh → Run workflow** to test.
 
 Even for free/public API keys, prefer Actions secrets over committing `.env` so keys are not permanently stored in git history.
