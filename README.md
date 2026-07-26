@@ -37,13 +37,46 @@ US residential investment screening for all 50 states + D.C. Informational only 
 
 ## Refresh
 
-Copy `.env.example` → `.env` and set `CENSUS_API_KEY`, `FRED_API_KEY`, `BLS_API_KEY`, and `BEA_API_KEY` (gitignored; never commit).
+Copy `.env.example` → `.env` and set `CENSUS_API_KEY`, `FRED_API_KEY`, `BLS_API_KEY`, and `BEA_API_KEY` (gitignored; **do not commit `.env`**).
 
 No-key sources also pulled each run: **FHFA** HPI (appreciation) and **Redfin** public state market tracker (sale prices).
+
+### One-shot (local)
+
+```bash
+python -m pipeline.refresh_all              # fetch + rebuild all three reports
+python -m pipeline.refresh_all --archive    # also copy into archives/YYYY-MM/
+python -m pipeline.refresh_all --skip-fetch # rebuild from existing data/ only
+```
+
+Or step-by-step:
 
 ```bash
 python -m pipeline.fetch_all
 python -m pipeline.build_report                          # base rental report
 python -m pipeline.build_apartment_report                # apartment (5+) sibling
-python pipeline/build_sfh_appreciation_report.py         # SFH appreciation sibling
+python -m pipeline.build_sfh_appreciation_report         # SFH appreciation sibling
 ```
+
+### Monthly automation (GitHub Actions)
+
+Workflow: [`.github/workflows/monthly-refresh.yml`](.github/workflows/monthly-refresh.yml)
+
+- Runs **1st of each month** (14:00 UTC) and on manual **Run workflow**
+- Uses repo **Actions secrets** (not files in git): `CENSUS_API_KEY`, `FRED_API_KEY`, `BLS_API_KEY`, `BEA_API_KEY`
+- Opens a PR on branch `chore/monthly-data-refresh` with rebuilt `data/` + reports (+ `archives/YYYY-MM/`)
+
+**One-time setup** (GitHub → this repo → **Settings → Secrets and variables → Actions → New repository secret**), add each key from your local `.env`.
+
+Or with [GitHub CLI](https://cli.github.com/) from the repo root:
+
+```bash
+gh secret set CENSUS_API_KEY < .env   # or: gh secret set CENSUS_API_KEY
+gh secret set FRED_API_KEY
+gh secret set BLS_API_KEY
+gh secret set BEA_API_KEY
+```
+
+Then **Actions → Monthly data refresh → Run workflow** to test.
+
+Even for free/public API keys, prefer Actions secrets over committing `.env` so keys are not permanently stored in git history.

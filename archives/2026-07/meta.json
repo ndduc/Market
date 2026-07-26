@@ -1,0 +1,69 @@
+{
+  "analysis_run_at": "2026-07-26T07:07:04+00:00",
+  "live_fetch_required": true,
+  "skipped_cache": true,
+  "census_api_key_present": true,
+  "fred_api_key_present": true,
+  "bls_api_key_present": true,
+  "bea_api_key_present": true,
+  "sources": {
+    "fred_median_income": {
+      "ok": true,
+      "pulled_at": "2026-07-26T07:06:30+00:00",
+      "n_states": 51
+    },
+    "census_acs1": {
+      "ok": true,
+      "pulled_at": "2026-07-26T07:06:47+00:00",
+      "n_states": 52,
+      "notes": [
+        "ACS subject S1901 mean HH income for 52 areas (year 2023)."
+      ]
+    },
+    "bea_sainc1": {
+      "ok": true,
+      "pulled_at": "2026-07-26T07:06:48+00:00",
+      "n_states": 51,
+      "notes": [
+        "BEA SAINC1 2024: per-capita for 51 states; total PI for 51 states."
+      ]
+    },
+    "bls_laus": {
+      "ok": true,
+      "pulled_at": "2026-07-26T07:06:49+00:00",
+      "n_states": 51,
+      "notes": [
+        "LAUS unemployment rates for 51 states/DC."
+      ]
+    },
+    "bls_ces_industries": {
+      "ok": true,
+      "pulled_at": "2026-07-26T07:06:51+00:00",
+      "n_states": 51,
+      "notes": [
+        "CES supersector shares for 51 states/DC (606 series observations).",
+        "Series does not exist for Series SMU10000001000000001",
+        "Series does not exist for Series SMU10000002000000001",
+        "Series does not exist for Series SMU11000001000000001"
+      ]
+    },
+    "fhfa_hpi": {
+      "ok": true,
+      "pulled_at": "2026-07-26T07:07:00+00:00",
+      "n_states": 51,
+      "notes": [
+        "FHFA PO HPI YoY for 51 states/DC."
+      ]
+    },
+    "redfin_state_prices": {
+      "ok": true,
+      "pulled_at": "2026-07-26T07:07:01+00:00",
+      "n_states": 50,
+      "notes": [
+        "Redfin All Residential medians for 50 states as of 2026-05-31."
+      ]
+    }
+  },
+  "spec": "rental_market_spec.md - Durable live-data pipeline",
+  "next": "Run: python -m pipeline.build_report"
+}

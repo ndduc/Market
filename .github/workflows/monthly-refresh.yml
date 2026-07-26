@@ -1,0 +1,82 @@
+# Monthly live-data refresh for all Market sibling reports.
+# Secrets (repo Settings → Secrets and variables → Actions):
+#   CENSUS_API_KEY, FRED_API_KEY, BLS_API_KEY, BEA_API_KEY
+#
+# Schedule: 1st of each month 14:00 UTC. Also runnable via "Run workflow".
+
+name: Monthly data refresh
+
+on:
+  schedule:
+    - cron: "0 14 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: monthly-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Live fetch + rebuild all reports
+        env:
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          BLS_API_KEY: ${{ secrets.BLS_API_KEY }}
+          BEA_API_KEY: ${{ secrets.BEA_API_KEY }}
+        run: |
+          set -euo pipefail
+          missing=0
+          for k in CENSUS_API_KEY FRED_API_KEY BLS_API_KEY BEA_API_KEY; do
+            if [ -z "${!k}" ]; then
+              echo "::error::Missing Actions secret: $k — add it under Settings → Secrets → Actions"
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then exit 1; fi
+          python -m pipeline.refresh_all --strict --archive
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: |
+            chore: monthly live data refresh ${{ github.run_id }}
+
+            Automated fetch_all + rebuild of rental, apartment, and SFH appreciation reports.
+          title: "Monthly data refresh — ${{ github.event_name == 'schedule' && 'scheduled' || 'manual' }}"
+          body: |
+            ## Summary
+            - Live `python -m pipeline.refresh_all --strict --archive`
+            - Overwrote `data/*.json` and rebuilt:
+              - `rental_market_report.md`
+              - `apartment_market_report.md`
+              - `sfh_appreciation_report.md`
+            - Snapshot under `archives/YYYY-MM/` when present
+
+            ## Still manual (judgment pass)
+            - Top 10 / avoid list wording if ranks flipped hard
+            - Legal / squatting statute updates
+            - Apartment occupancy / concessions / cap-rate narrative
+
+            Merge when the numbers look sane. Informational only — not financial advice.
+          branch: chore/monthly-data-refresh
+          delete-branch: true
