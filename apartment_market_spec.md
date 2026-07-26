@@ -22,6 +22,8 @@ This document is both the apartment analysis specification and the reusable AI p
 
 **Canonical apartment report:** `apartment_market_report.md`
 
+**Web presentation (GitHub Pages):** Served on **https://ndduc.github.io/Market/** — Top 10 overview + full detailed report for this sibling. Full contract: parent [`rental_market_spec.md` → Web presentation / GitHub Pages](rental_market_spec.md#web-presentation--github-pages). Do not rename §3 / §4 headings (overview extractor).
+
 **Shared data:** Reuse live `data/` pulls from the parent pipeline (BLS jobs, Census demographics, FRED income, BEA, FHFA, Redfin) as **demand / context** inputs. Apartment-specific rents, occupancy, concessions, deliveries, cap rates, and per-door pricing require **live apartment search** each refresh — mark `unavailable` when missing. Do not invent numbers.
 
 ---
@@ -36,6 +38,7 @@ Every section below includes **[↑ Back to Spec index](#spec-index)** under its
 | [Scope](#scope) | Geography, property types, investor lenses |
 | [Ranking dimensions](#ranking-dimensions) | Apartment pillars, supply, cap rates, financing, PM |
 | [Required outputs](#required-outputs) | Same format as base report; apartment column meanings |
+| [Web presentation / GitHub Pages](#web-presentation--github-pages) | Overview + full URLs; §3/§4 lock (parent contract) |
 | [Data & live search](#data--live-search-requirements-mandatory) | Shared `data/` + apartment-specific sources |
 | [Analysis rules](#analysis-rules-for-the-ai) | Honesty and scoring rules |
 | [Scoring rubric](#suggested-scoring-rubric-directional) | 1–10 directional guide for apartments |
@@ -171,8 +174,10 @@ The apartment report **must match that report’s structure, tone, and section o
 4. **Top 10 actionable markets** — apartment fit / caution  
    then **Best landlord-protection markets**  
    then **Best tenant-protection markets that still have an investment case**  
-   then **Markets to avoid / watch**
-5. **All-state ranking matrix** — companion **4a–4e** (apartment column meanings above)
+   then **Markets to avoid / watch**  
+   (**Heading must remain exactly** `## 3. Top 10 actionable markets` — Pages overview extractor.)
+5. **All-state ranking matrix** — companion **4a–4e** (apartment column meanings above)  
+   (**Heading must remain exactly** `## 4. All-state ranking matrix` — overview stops before this.)
 6. **City leaderboards** — cash flow / Class B-C value-add / Class A growth / submarkets / jobs (adapt board titles to apartments; no “best single-family” board)
 7. **All-state deep dives** — **every state + D.C.** with fields: Scores, Prices (apartment screens), Entry capital, Top industries, Demographics / income, Top submarkets, Best fit, Risks, Confidence
 8. **Legal** — verified highlights; emphasize rent regulation impact on apartments
@@ -186,6 +191,23 @@ The apartment report **must match that report’s structure, tone, and section o
 **Language:** Plain English. Do not use `~` or `~~` for “approximately” (Markdown strikethrough). Use **about** or **≈**.
 
 **Honesty:** Cite sources or mark `unavailable`. Never invent apartment rents, cap rates, occupancy, or $/door.
+
+---
+
+## Web presentation / GitHub Pages
+[↑ Back to Spec index](#spec-index)
+
+Full contract (files, extractor, link/UX rules, appendix placement): parent **[Web presentation / GitHub Pages](rental_market_spec.md#web-presentation--github-pages)**.
+
+This sibling’s live URLs:
+
+| View | URL |
+|------|-----|
+| Hub | https://ndduc.github.io/Market/ |
+| Overview | `overview.html?src=apartment_market_report.md` |
+| Full | `view.html?src=apartment_market_report.md` |
+
+**Locked headings (do not change):** `## 3. Top 10 actionable markets` and `## 4. All-state ranking matrix` — overview Pages slice between them.
 
 ---
 
@@ -259,6 +281,8 @@ Owner law 9–10 = strong landlord baseline + rent-control preemption where rele
 
 Emit **`apartment_market_report.md`** matching `rental_market_report.md` section order with apartment content. Update README links when the file is created or refreshed.
 
+**Section order (aligned with Pages):** Index → National snapshot → Top 10 (`## 3. Top 10 actionable markets`) → matrix (`## 4. All-state ranking matrix`) → … → What changed appendix last (keep `#1-what-changed-vs-the-prior-run`). Do not put What changed early in the body.
+
 ---
 
 ## AI prompt (copy-paste)
@@ -269,6 +293,8 @@ Emit **`apartment_market_report.md`** matching `rental_market_report.md` section
 Follow apartment_market_spec.md. Produce / refresh apartment_market_report.md using rental_market_report.md as the mandatory format template (same sections, Index, Back to Index, 4a–4e, all-state deep dives, A–Z).
 
 Property types: conventional apartments 5+ units only. Cross-link the SFR/2–4 sibling report; do not copy its rankings blindly.
+
+Section order: Index → National snapshot (first body) → Top 10 → matrix → city boards → deep dives → legal → insurance/tax → PM → workflow → methodology/A–Z → What changed appendix LAST. Keep headings EXACTLY `## 3. Top 10 actionable markets` and `## 4. All-state ranking matrix` (GitHub Pages overview). Keep `## 1. What changed vs the prior run` for the appendix anchor.
 
 Live-search apartment occupancy, concessions, deliveries, cap rates, and multifamily financing. Reuse shared data/ for jobs, demographics, and income. Mark unavailable when apartment pricing is missing. No invented numbers. No tilde-as-approximately (use about / ≈).
 

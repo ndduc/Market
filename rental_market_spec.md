@@ -20,6 +20,8 @@ This document is both the analysis specification and the reusable AI prompt.
 
 **SFH appreciation sibling:** Appreciation-first **single-family** is specified in `sfh_appreciation_spec.md` and reported in `sfh_appreciation_report.md`. That sibling **must reuse this report’s format** but ranks for equity-path / price growth — do not merge the two Top 10 lists without re-underwriting.
 
+**Web presentation (GitHub Pages):** Markdown reports are also served via a static viewer on **https://ndduc.github.io/Market/** (see **Web presentation / GitHub Pages**). Each report has a **Top 10 overview** page plus a **full detailed report** page. Do not rename §3 / §4 headings in a way that breaks the overview extractor.
+
 **Canonical build method:** Do **not** maintain one-off “patch the Markdown” scripts (`_add_*.py` that string-replace sections). Every full refresh must use the **durable pipeline**:
 
 ```text
@@ -41,6 +43,7 @@ Every section below includes **[↑ Back to Spec index](#spec-index)** under its
 | [Scope](#scope) | Geography, suburbs, property types, investor lenses |
 | [Ranking dimensions](#ranking-dimensions) | Pillars, industries, demographics/income, prices, cash flow, financing, overlays |
 | [Required outputs](#required-outputs) | Report format, section order, **Index requirement**, presentation rules |
+| [Web presentation / GitHub Pages](#web-presentation--github-pages) | Overview + full viewer; §3/§4 heading contract |
 | [Durable live-data pipeline](#durable-live-data-pipeline-mandatory) | Exact commands: `fetch_all` → `build_report`; keys + `data/` map |
 | [Live data & web search](#live-data--web-search-requirements-mandatory) | Hard fetch/search rules and sources |
 | [Analysis rules](#analysis-rules-for-the-ai) | Scoring and honesty rules |
@@ -352,27 +355,29 @@ Every full analysis **must match that report’s structure, tone, and section or
 
 #### Required section order
 1. **Header** — title, analysis date, coverage, property types, live-research confirmation, disclaimer
-2. **Index (table of contents)** — clickable jump links to every major section, plus shortcuts to **4a–4e**, deep dives, city boards, and the **A–Z state rank index**. **Every indexed heading** must include **[↑ Back to Index](#index)** directly underneath. Required because the report is long and multi-table.
-3. **What changed vs the prior run** — short table of score / ranking / data updates when a prior report exists (**place as a bottom appendix**, not the first body section; Index may link it last)
-4. **National market snapshot** — live national bullets + yield definition + core conclusion + single-family vs 2–4 unit takeaway
-5. **Top 10 actionable markets** — ranked table with why / property-type fit / main caution  
+2. **Index (table of contents)** — clickable jump links to every major section, plus shortcuts to **4a–4e**, deep dives, city boards, and the **A–Z state rank index**. Link **What changed** last as an appendix. **Every indexed heading** must include **[↑ Back to Index](#index)** directly underneath. Required because the report is long and multi-table.
+3. **National market snapshot** — live national bullets + yield definition + core conclusion + single-family vs 2–4 unit takeaway (**first body section** after Index)
+4. **Top 10 actionable markets** — ranked table with why / property-type fit / main caution  
    then **Best landlord-protection markets**  
    then **Best tenant-protection markets that still have an investment case**  
-   then **Markets to avoid / watch**
-6. **All-state ranking matrix** — use **companion tables in the same section** (not one mega-table):  
+   then **Markets to avoid / watch**  
+   (**Heading must remain exactly** `## 3. Top 10 actionable markets` — the Pages overview extractor depends on it.)
+5. **All-state ranking matrix** — use **companion tables in the same section** (not one mega-table):  
    - **4a Scores:** # / State (primary metros) / Jobs / Price / Cash / Appr. / Econ / Owner / Tenant / Conf.  
    - **4b Prices & metros:** # / State / Median / Typical / Major metros (same `#` order; compact $263k-style display is OK)  
    - **4c Top industries (optional companion, or fold into deep dives + cards if space-constrained):** # / State / Top industries (2–4) / Concentration note  
    - **4d Demographics & income:** # / State / Race–ethnicity mix / Median HH income / Mean HH income  
    - **4e Entry capital (optional companion):** # / State / Down % / Cash to close / Shock liquid (6–9 mo) / Total recommended liquid — same `#` order; based on median price × financing defaults  
-   plus composite buckets and score-change notes. Do not merge scores + dollars + long metro lists + long industry + demographic + capital strings into a single wide table.
-7. **City leaderboards** — cash-flow screen (include metro median / screen price column); best for single-family; best for 2–4 unit; appreciation leaders; job-market leaders; best balanced city shortlist; **top suburbs screen**; and for featured metros, **top job industries / employer clusters**, **race–ethnicity notes**, and **median / mean income** when available
-8. **All-state deep dives** — fuller writeups for **every state + D.C.** in actionable-rank order (scores, **Prices:**, **Entry capital:**, **Top industries:**, **Demographics / income:**, **Top suburbs:** when researched, narrative, best fit, risks, confidence). Do **not** use remaining-state bullet cards as a substitute.
-9. **Legal environment — verified highlights** — dated rent-cap / just-cause / city-override notes with links
-10. **Insurance and property-tax overlays** — directional high/low drag and catastrophe haircuts
-11. **Property management rates & remote ops** — fee stack (management %, leasing, add-ons), all-in cost screen, notable third-party vs institutional operators (live-searched; not an endorsement)
-12. **Practical acquisition workflow** — numbered steps from strategy → address underwriting (include get PM fee schedule in writing)
-13. **Methodology and sources** — live-research confirmation, financing assumptions, **PM fee defaults**, price-measure definitions, demographics/income definitions, primary links, caveats, **navigable A–Z actionable-rank index** (link every state to its §6 deep dive)
+   plus composite buckets and score-change notes. Do not merge scores + dollars + long metro lists + long industry + demographic + capital strings into a single wide table.  
+   (**Heading must remain exactly** `## 4. All-state ranking matrix` — overview pages stop extracting at this heading.)
+6. **City leaderboards** — cash-flow screen (include metro median / screen price column); best for single-family; best for 2–4 unit; appreciation leaders; job-market leaders; best balanced city shortlist; **top suburbs screen**; and for featured metros, **top job industries / employer clusters**, **race–ethnicity notes**, and **median / mean income** when available
+7. **All-state deep dives** — fuller writeups for **every state + D.C.** in actionable-rank order (scores, **Prices:**, **Entry capital:**, **Top industries:**, **Demographics / income:**, **Top suburbs:** when researched, narrative, best fit, risks, confidence). Do **not** use remaining-state bullet cards as a substitute.
+8. **Legal environment — verified highlights** — dated rent-cap / just-cause / city-override notes with links
+9. **Insurance and property-tax overlays** — directional high/low drag and catastrophe haircuts
+10. **Property management rates & remote ops** — fee stack (management %, leasing, add-ons), all-in cost screen, notable third-party vs institutional operators (live-searched; not an endorsement)
+11. **Practical acquisition workflow** — numbered steps from strategy → address underwriting (include get PM fee schedule in writing)
+12. **Methodology and sources** — live-research confirmation, financing assumptions, **PM fee defaults**, price-measure definitions, demographics/income definitions, primary links, caveats, **navigable A–Z actionable-rank index** (link every state to its §6 deep dive)
+13. **Appendix: What changed vs the prior run** — short changelog table (**bottom of report**; keep heading `## 1. What changed vs the prior run` so existing anchors still work)
 
 **Navigation rules:**
 - Keep a top **Index** with Markdown anchor links (works in GitHub / most Markdown previews), including shortcuts to **all** deep-dive state headings (or A–Z → deep dive).
@@ -460,6 +465,61 @@ Every full analysis **must match that report’s structure, tone, and section or
 - Include analysis date in the header
 - Always include **What changed vs the prior run** when a prior report exists
 - Suggested refresh cadence: after major jobs / house-price / rent / legal releases, or at least quarterly — **each refresh still re-fetches live data**
+
+---
+
+## Web presentation / GitHub Pages
+[↑ Back to Spec index](#spec-index)
+
+Live site: **https://ndduc.github.io/Market/** (static GitHub Pages; `.nojekyll` so Markdown and assets serve without Jekyll processing).
+
+### Files
+
+| Path | Role |
+|------|------|
+| `index.html` | Hub — Overview + Full links for all three reports |
+| `overview.html?src=<report.md>` | Top 10 overview only (`assets/js/overview-viewer.js`) |
+| `view.html?src=<report.md>` | Full Markdown report (`assets/js/report-viewer.js`) |
+| `assets/css/report.css` | Shared report styles |
+| `.nojekyll` | Disable Jekyll on Pages |
+
+### Overview vs full
+
+- **Overview** extracts only the Top 10 block (actionable table + landlord-protection + tenant-protection + avoid/watch subsections).
+- **Full** renders the entire report Markdown.
+
+Allowed `?src=` values (exact filenames):
+
+- `rental_market_report.md`
+- `apartment_market_report.md`
+- `sfh_appreciation_report.md`
+
+### Overview extractor contract (do not break)
+
+`overview-viewer.js` slices by **exact heading line match**:
+
+1. **Start:** `## 3. Top 10 actionable markets` (must match that line)
+2. **End:** `## 4. All-state ranking matrix` (slice stops **before** this heading)
+3. Everything between those headings is included in the overview
+
+**Do not rename, renumber, or rephrase these two headings.** Sibling reports use the same locked strings. Overview Pages depend on them.
+
+### Link / UX rules
+
+- External `https` links → open in a **new tab**
+- Index / Back / in-app overview↔full navigation → **same tab**
+- Sticky table headers on **desktop**; sticky thead **disabled on mobile** (sticky headers were covering the first data row)
+- Edge-to-edge layout on wide desktops
+
+### What changed appendix
+
+- Lives as the **bottom** appendix (after Methodology / A–Z)
+- Index links it **last**
+- Keep heading text `## 1. What changed vs the prior run` so the `#1-what-changed-vs-the-prior-run` anchor still works
+
+### Daily Actions refresh (related)
+
+GitHub Actions daily refresh (see README) uploads rebuilt `data/` + reports as **artifacts only** — it does **not** auto-commit or open PRs. Pages content updates when those files are committed to the default branch.
 
 ---
 
@@ -754,19 +814,20 @@ Respond in Markdown **and**:
 
 Required shape (do not reorder):
 1. Header + disclaimer
-2. **Index** (clickable TOC + shortcuts to 4a–4d, deep dives, city boards, A–Z)
-3. What changed vs prior run
-4. National market snapshot (yield definition + core conclusion + single-family vs 2–4 unit)
-5. Top 10 actionable → landlord-protection → tenant-protection → avoid/watch
-6. All-state ranking matrix as companion tables (**4a–4e** including **entry capital**) + composite buckets
-7. City leaderboards (cash flow with metro median column; single-family; 2–4 unit; appreciation; jobs; balanced; **top suburbs**; **top industries**; **income / race notes**; **entry-capital notes for featured metros**)
-8. All-state deep dives (**every state + D.C.**) with inline **Prices:**, **Entry capital:**, **Top industries:**, **Demographics / income:**, and **Top suburbs:** when researched
-9. Legal environment highlights
-10. Insurance and property-tax overlays
+2. **Index** (clickable TOC + shortcuts to 4a–4e, deep dives, city boards, A–Z; link **What changed** last)
+3. National market snapshot (yield definition + core conclusion + single-family vs 2–4 unit) — **first body section**
+4. Top 10 actionable → landlord-protection → tenant-protection → avoid/watch — heading **exactly** `## 3. Top 10 actionable markets` (Pages overview)
+5. All-state ranking matrix as companion tables (**4a–4e** including **entry capital**) + composite buckets — heading **exactly** `## 4. All-state ranking matrix` (overview stops here)
+6. City leaderboards (cash flow with metro median column; single-family; 2–4 unit; appreciation; jobs; balanced; **top suburbs**; **top industries**; **income / race notes**; **entry-capital notes for featured metros**)
+7. All-state deep dives (**every state + D.C.**) with inline **Prices:**, **Entry capital:**, **Top industries:**, **Demographics / income:**, and **Top suburbs:** when researched
+8. Legal environment highlights
+9. Insurance and property-tax overlays
+10. Property management rates & remote ops
 11. Practical acquisition workflow
 12. Methodology and sources + **navigable A–Z actionable-rank index** (every state links to its deep dive)
+13. **Appendix: What changed vs prior run** (bottom; keep `## 1. What changed vs the prior run` / `#1-what-changed-vs-the-prior-run`)
 
-If output length is limited, still keep this outline: compress deep-dive narratives before dropping whole sections or whole states. **Never drop median/typical prices from the all-state matrix.** Prefer keeping **top industries**, **demographics / income**, and **entry capital** for all states. **Never replace deep dives with remaining-state bullet cards.** Do **not** add a separate standalone price-, demographics-, or income-dump section. Never replace this format with a different report layout.
+If output length is limited, still keep this outline: compress deep-dive narratives before dropping whole sections or whole states. **Never drop median/typical prices from the all-state matrix.** Prefer keeping **top industries**, **demographics / income**, and **entry capital** for all states. **Never replace deep dives with remaining-state bullet cards.** Do **not** add a separate standalone price-, demographics-, or income-dump section. Never replace this format with a different report layout. Do **not** rename §3 / §4 headings — overview Pages depend on the locked strings.
 
 ---
 
@@ -785,9 +846,10 @@ FORMAT (MANDATORY):
 - Use everyday table labels: Jobs, Price, Cash flow, Appreciation, Owner law, Tenant law.
 - Say “single-family” and “2–4 unit” (duplex/triplex/fourplex) in reader-facing text.
 - Refresh `rental_market_report.md` as the latest base report. Optionally also save `rental_market_report_YYYY-MM-DD.md`.
-- Always include “What changed vs the prior run” when a prior report exists.
+- Always include “What changed vs the prior run” when a prior report exists (as the **bottom appendix**, not early body).
 - Always include a top **Index** (TOC with anchors) and a navigable end **A–Z rank index**.
 - Put **[↑ Back to Index](#index)** under every indexed section / subsection heading (including each deep dive and 4a–4e).
+- Do **not** rename `## 3. Top 10 actionable markets` or `## 4. All-state ranking matrix` — GitHub Pages overview extractor depends on those exact headings.
 - Use the durable pipeline: LIVE FETCH → overwrite `data/` → BUILD report tables → narrative update. Do NOT create disposable `_add_*.py` Markdown patch scripts.
 
 PROPERTY TYPE SCOPE:
@@ -861,17 +923,18 @@ Also apply mandatory overlays:
 
 Then provide the report in this exact section order:
 1) Header + disclaimer
-2) **Index** (TOC + shortcuts to 4a–4d, deep dives, city boards, A–Z)
-3) What changed vs prior run
-4) National market snapshot + yield definition + core conclusion + single-family vs 2–4 unit takeaway
-5) Top 10 actionable markets; landlord-protection list; tenant-protection list; avoid/watch
-6) All-state ranking matrix as companion tables (**4a–4e** including **entry capital**) + composite buckets
-7) City leaderboards (cash flow with metro median/screen price; best single-family; best 2–4 unit; appreciation; jobs; balanced shortlist; **top suburbs**; **top industries**; **income / race notes**; **entry-capital notes for featured metros**)
-8) All-state deep dives (**every state + D.C.**) with inline **Prices:**, **Entry capital:**, **Top industries:**, **Demographics / income:**, and **Top suburbs:** when researched
-9) Legal environment highlights with links
-10) Insurance and property-tax overlays
+2) **Index** (TOC + shortcuts to 4a–4e, deep dives, city boards, A–Z; link What changed last)
+3) National market snapshot + yield definition + core conclusion + single-family vs 2–4 unit takeaway (first body section)
+4) Top 10 actionable markets; landlord-protection list; tenant-protection list; avoid/watch — heading EXACTLY `## 3. Top 10 actionable markets` (GitHub Pages overview extractor)
+5) All-state ranking matrix as companion tables (**4a–4e** including **entry capital**) + composite buckets — heading EXACTLY `## 4. All-state ranking matrix` (overview stops before this)
+6) City leaderboards (cash flow with metro median/screen price; best single-family; best 2–4 unit; appreciation; jobs; balanced shortlist; **top suburbs**; **top industries**; **income / race notes**; **entry-capital notes for featured metros**)
+7) All-state deep dives (**every state + D.C.**) with inline **Prices:**, **Entry capital:**, **Top industries:**, **Demographics / income:**, and **Top suburbs:** when researched
+8) Legal environment highlights with links
+9) Insurance and property-tax overlays
+10) Property management rates & remote ops
 11) Practical acquisition workflow
 12) Methodology and sources + **navigable A–Z actionable-rank index** (every state → deep dive)
+13) Appendix: What changed vs prior run (BOTTOM; keep heading `## 1. What changed vs the prior run` so `#1-what-changed-vs-the-prior-run` works)
 
 Rules:
 - Match `rental_market_report.md` format first; **live-fetch every run** before you rank; overwrite `data/`; build tables from `data/`.
