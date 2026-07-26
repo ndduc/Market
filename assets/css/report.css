@@ -1,0 +1,234 @@
+/* Report viewer — sticky table headers + readable long docs */
+:root {
+  --bg: #f6f4ef;
+  --paper: #fffcf7;
+  --ink: #1c1917;
+  --muted: #57534e;
+  --line: #d6d3d1;
+  --head: #e7e5e4;
+  --accent: #0f766e;
+  --nav-h: 3.25rem;
+  --font: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --sans: "DM Sans", "Segoe UI", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #dce9e4 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #efe6d6 0%, transparent 50%),
+    var(--bg);
+  font-family: var(--font);
+  line-height: 1.55;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0 1rem;
+  background: rgba(255, 252, 247, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+}
+
+.topbar a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.topbar a:hover { text-decoration: underline; }
+
+.topbar .title {
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.topbar .spacer { flex: 1; }
+
+.wrap {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 1.25rem auto 3rem;
+}
+
+.home-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 10px 30px rgba(28, 25, 23, 0.05);
+}
+
+.home-card h1 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  letter-spacing: -0.02em;
+}
+
+.home-card p {
+  margin: 0 0 1.25rem;
+  color: var(--muted);
+  font-family: var(--sans);
+}
+
+.home-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.home-card li a {
+  display: block;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  font-family: var(--sans);
+  font-weight: 600;
+}
+
+.home-card li a:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(15, 118, 110, 0.12);
+}
+
+.home-card li span {
+  display: block;
+  margin-top: 0.2rem;
+  font-weight: 400;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+#content {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem 2.5rem;
+  box-shadow: 0 10px 30px rgba(28, 25, 23, 0.05);
+}
+
+#content > :first-child { margin-top: 0; }
+
+#content h1,
+#content h2,
+#content h3 {
+  font-family: var(--sans);
+  letter-spacing: -0.02em;
+  scroll-margin-top: calc(var(--nav-h) + 0.75rem);
+}
+
+#content a { color: var(--accent); }
+
+#content code {
+  font-family: var(--mono);
+  font-size: 0.88em;
+  background: #f5f5f4;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+#content pre {
+  overflow-x: auto;
+  background: #1c1917;
+  color: #fafaf9;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+}
+
+#content pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+#content blockquote {
+  margin: 1rem 0;
+  padding: 0.6rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: #f0faf8;
+  color: var(--muted);
+}
+
+/* Sticky table headers: keep header row visible while scrolling the page.
+   Avoid overflow-x on the wrapper — it breaks position:sticky vs the viewport. */
+#content .table-wrap {
+  margin: 1rem 0 1.35rem;
+  max-width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+#content table {
+  width: max(100%, max-content);
+  max-width: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  margin: 0;
+}
+
+#content thead th {
+  position: sticky;
+  top: var(--nav-h);
+  z-index: 5;
+  background: var(--head);
+  color: var(--ink);
+  text-align: left;
+  font-weight: 700;
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 1px 0 var(--line);
+}
+
+#content tbody td {
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+#content tbody tr:nth-child(even) td {
+  background: #fafaf9;
+}
+
+#content tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.status {
+  font-family: var(--sans);
+  color: var(--muted);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.status.error { color: #b91c1c; }
+
+@media (max-width: 700px) {
+  #content { padding: 1rem; }
+  #content thead th,
+  #content tbody td { padding: 0.45rem 0.55rem; font-size: 0.85rem; }
+}

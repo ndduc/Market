@@ -12,15 +12,17 @@ US residential investment screening for all 50 states + D.C. Informational only 
 
 ## Read the reports (web view)
 
-**GitHub Pages:**
+**GitHub Pages (sticky table headers):**
 
 **https://ndduc.github.io/Market/**
 
-| Report | GitHub Pages | GitHub blob | Markdown preview |
-|--------|--------------|-------------|------------------|
-| SFR / 2–4 | [rental_market_report](https://ndduc.github.io/Market/rental_market_report) | [blob](https://github.com/ndduc/Market/blob/master/rental_market_report.md) | [preview](https://markdown.github.com/?url=https://raw.githubusercontent.com/ndduc/Market/master/rental_market_report.md) |
-| Apartments | [apartment_market_report](https://ndduc.github.io/Market/apartment_market_report) | [blob](https://github.com/ndduc/Market/blob/master/apartment_market_report.md) | [preview](https://markdown.github.com/?url=https://raw.githubusercontent.com/ndduc/Market/master/apartment_market_report.md) |
-| SFH appreciation | [sfh_appreciation_report](https://ndduc.github.io/Market/sfh_appreciation_report) | [blob](https://github.com/ndduc/Market/blob/master/sfh_appreciation_report.md) | [preview](https://markdown.github.com/?url=https://raw.githubusercontent.com/ndduc/Market/master/sfh_appreciation_report.md) |
+| Report | Sticky-header viewer | GitHub blob | Markdown preview |
+|--------|----------------------|-------------|------------------|
+| SFR / 2–4 | [viewer](https://ndduc.github.io/Market/view.html?src=rental_market_report.md) | [blob](https://github.com/ndduc/Market/blob/master/rental_market_report.md) | [preview](https://markdown.github.com/?url=https://raw.githubusercontent.com/ndduc/Market/master/rental_market_report.md) |
+| Apartments | [viewer](https://ndduc.github.io/Market/view.html?src=apartment_market_report.md) | [blob](https://github.com/ndduc/Market/blob/master/apartment_market_report.md) | [preview](https://markdown.github.com/?url=https://raw.githubusercontent.com/ndduc/Market/master/apartment_market_report.md) |
+| SFH appreciation | [viewer](https://ndduc.github.io/Market/view.html?src=sfh_appreciation_report.md) | [blob](https://github.com/ndduc/Market/blob/master/sfh_appreciation_report.md) | [preview](https://markdown.github.com/?url=https://raw.githubusercontent.com/ndduc/Market/master/sfh_appreciation_report.md) |
+
+Use the **viewer** links for scrolling long tables — column headers stay pinned under the top bar. GitHub’s raw `.md` blob view cannot sticky-header.
 
 ## Files
 
