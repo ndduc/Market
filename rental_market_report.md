@@ -23,8 +23,8 @@ Every section below includes **[↑ Back to Index](#index)** under its heading s
 | [4a Scores](#4a-scores-actionable-order) · [4b Prices](#4b-prices--major-metros-same-order) | [4c Industries](#4c-top-job-industries-same-order) · [4d Demographics & income](#4d-demographics--income-same-order) · [4e Entry capital](#4e-entry-capital--shock-reserves-same-order) |
 | [5. City leaderboards](#5-city-leaderboards) | [6. All-state deep dives](#6-all-state-deep-dives) |
 | [7. Legal](#7-legal-environment--verified-2026-highlights) | [8. Insurance & tax](#8-insurance-and-property-tax-overlays) |
-| [9. Acquisition workflow](#9-practical-acquisition-workflow) | [10. Methodology & sources](#10-methodology-and-sources) |
-| [A–Z state rank index](#az-actionable-rank-index) | |
+| [9. Property management](#9-property-management-rates--remote-ops) | [10. Acquisition workflow](#10-practical-acquisition-workflow) |
+| [11. Methodology & sources](#11-methodology-and-sources) | [A–Z state rank index](#az-actionable-rank-index) |
 
 **Deep dives (all states + D.C., actionable order):** [OH](#ohio) · [IN](#indiana) · [AR](#arkansas) · [IA](#iowa) · [MO](#missouri) · [WI](#wisconsin) · [AL](#alabama) · [KY](#kentucky) · [PA](#pennsylvania) · [TN](#tennessee) · [NE](#nebraska) · [ND](#north-dakota) · [MI](#michigan) · [WV](#west-virginia) · [KS](#kansas) · [GA](#georgia) · [MS](#mississippi) · [SC](#south-carolina) · [OK](#oklahoma) · [NC](#north-carolina) · [SD](#south-dakota) · [IL](#illinois) · [TX](#texas) · [VA](#virginia) · [NM](#new-mexico) · [MN](#minnesota) · [LA](#louisiana) · [AK](#alaska) · [VT](#vermont) · [ME](#maine) · [ID](#idaho) · [FL](#florida) · [WY](#wyoming) · [UT](#utah) · [MT](#montana) · [NV](#nevada) · [CT](#connecticut) · [DE](#delaware) · [AZ](#arizona) · [MD](#maryland) · [NH](#new-hampshire) · [NY](#new-york) · [NJ](#new-jersey) · [RI](#rhode-island) · [MA](#massachusetts) · [HI](#hawaii) · [CO](#colorado) · [OR](#oregon) · [WA](#washington) · [CA](#california) · [DC](#district-of-columbia)
 
@@ -49,6 +49,7 @@ This refresh adds the new **median + average/typical price** requirement from th
 | **Entry capital / shock reserves** | Every state shows **25% down**, cash to close, **6–9 mo shock liquid**, and total recommended liquid (metro/suburb variants in deep dives) |
 | **All-state deep dives** | **Every state + D.C.** has a full §6 deep dive (no remaining-state bullet cards) |
 | **Index / navigation**    | Top clickable **Index** + end **A–Z rank index**; **every section** has **[↑ Back to Index](#index)** under its heading |
+| **Property management fees** | National LTR fee stack (about 8–12% management; leasing 50–100% of one month’s rent) + notable third-party vs institutional operators — see §9 |
 | **Demographics & income** | Live **Census ACS** race + mean HH income; **FRED/CPS** median HH income; BEA per-capita personal income in `data/bea.json` |
 | Property-type scope       | Rankings cover **single-family houses** and **2–4 unit multifamily homes**, with split shortlists                                                                     |
 | Cash-flow realism         | Scores haircut for **property tax**, **insurance**, concessions, and vacancy — not just rent ÷ price                                                                  |
@@ -72,6 +73,7 @@ This refresh adds the new **median + average/typical price** requirement from th
 - **Entry capital tabulated:** Section **4e** and every deep-dive **Entry capital:** line screen **25% down**, cash to close (about 28% of median), and **6–9 months** PITI shock reserves.
 - **BEA per-capita personal income (2024):** state range about **$52k–$113k** (stored in `data/bea.json`; demand-capacity context, not a ranking filter).
 - **Demographics & income tabulated:** §4d lists race/ethnicity (ACS), median HH income (CPS/FRED), and **mean HH income (ACS S1901)** for every state + D.C.
+- **Property management screen:** Ongoing management about **8–12%** of collected rent (default **10%**); leasing often **50–100%** of one month’s rent; all-in first-year cost often **15–20%+** of gross — see §9.
 - **Job industries tabulated:** Section **4c** lists each state’s largest employment sectors (BLS May 2026 CES industry mix), with concentration notes for renter-demand risk.
 - **State prices (live):** Redfin All Residential medians as of **2026-05-31** in §4b / deep dives (state median range about **$259k–$887k**). Typical column uses Redfin median list when present.
 - Typical U.S. home value was **$370,320 in May 2026** ([Zillow via Federal Reserve Economic Data](https://fred.stlouisfed.org/series/USAUCSFRCONDOSMSAMID)).
@@ -92,7 +94,7 @@ This refresh adds the new **median + average/typical price** requirement from th
 
 - **Gross yield** = annual rent ÷ purchase price (prefer **median** purchase price when available). Screening only — not take-home cash flow.
 - Prefer **signed / achieved lease rent** when available; otherwise label **asking rent** (Zillow rent index).
-- **Realistic cash-flow score** assumes vacancy, management, maintenance, property tax, insurance, and concessions.
+- **Realistic cash-flow score** assumes vacancy, management (about **10%** of rent unless quoted), maintenance, property tax, insurance, and concessions.
 - Never treat gross yield as cash-on-cash.
 
 
@@ -1687,7 +1689,67 @@ Low tax rates help Alabama / Arkansas / Tennessee / South Carolina cash flow. Hi
 
 
 
-## 9. Practical acquisition workflow
+## 9. Property management rates & remote ops
+[↑ Back to Index](#index)
+
+
+Informational landscape for **long-term residential** (single-family and 2–4 unit) — not an endorsement or broker quote. Always get a written fee schedule for the exact ZIP and unit type. Short-term / vacation managers price differently (often **20–35%+** of revenue) and are out of scope here unless labeled.
+
+### Typical fee stack (2026 screens)
+[↑ Back to Index](#index)
+
+
+| Fee | Typical screen | Notes |
+|-----|----------------|-------|
+| **Monthly management** | **8–12%** of collected rent (national survey average about **8.5%**); or flat about **$80–$150+/unit/mo** | Most common structure is % of rent collected. Lower-rent markets often sit toward the high end of the % range. |
+| **Tenant placement / leasing** | **50–100%** of one month’s rent (averages near about **70%** when bundled with management) | Largest “surprise” add-on on turnover; negotiate hard. |
+| **Setup / onboarding** | About **$100–$350** (survey averages near about **$185**) | One-time intake / photos / system setup. |
+| **Lease renewal** | About **$100–$350** flat (averages near about **$200–$230**) | Charged when an existing tenant renews. |
+| **Inspections** | About **$75–$200** | Move-in / periodic condition checks. |
+| **Maintenance markup** | About **5–15%** of vendor invoices (or flat work-order fees) | Least transparent line — demand it in writing. |
+| **Eviction coordination** | About **$200–$500** + pass-through legal costs | Court / attorney fees are usually owner-paid. |
+
+**All-in screen:** first-year / fully loaded PM cost often lands about **15–20%+ of gross rent** once placement and add-ons are included. Cash-flow scoring in this report assumes about **10% of gross rent** for ongoing management unless a live quote replaces it ([iPropertyManagement fee research](https://ipropertymanagement.com/research/average-property-management-fees); [industry fee roundups](https://www.allpropertymanagement.com/resources/ask-a-pro/posts/how-much-property-managers-charge/)).
+
+**Property-type tilt:** single-family often prices at the higher end of the % band; 2–4 unit similar or slightly lower; large apartment portfolios often **4–8%** or flat per door — those institutional quotes do **not** automatically transfer to a one-off house.
+
+### Notable operators (scale landscape — verify locally)
+[↑ Back to Index](#index)
+
+
+**Third-party managers / directories (more relevant to remote small investors):**
+
+| Name | Role | Why it matters for remote investors |
+|------|------|-------------------------------------|
+| **Evernest** | Large third-party **single-family** manager (tens of thousands of doors cited in 2025 industry rankings) | One of the better-known national SFR third-party platforms; still get a local fee quote. |
+| **All Property Management** | Directory / marketplace matching owners to local PMs | Useful for shopping multiple local fee schedules; not a single national operator. |
+| **Avenue5 Residential** | Large third-party multifamily manager (100k+ units; multi-state) | Scale/process signal for apartment-style ops; less typical for scattered SFR duplexes. |
+| **Greystar / Asset Living / RPM Living / FPI / BH Management** | Largest U.S. multifamily managers by unit count | Institutional apartment scale; usually **not** the path for a single Midwest SFR — use as context for professionalized ops, not a default vendor. |
+
+**Institutional SFR landlords (own / operate portfolios — usually not your third-party PM):**
+
+| Name | Approximate scale (recent public / press figures) | Investor note |
+|------|---------------------------------------------------|---------------|
+| **Progress Residential** | About **100,000** SFR homes | Portfolio landlord; competing buyer / comps in Sun Belt metros. |
+| **Invitation Homes** | About **97,000** SFR (late 2025 filings) | Public REIT; same — competitor / comps, not mom-and-pop PM. |
+| **American Homes 4 Rent** | About **60,000** SFR | Public REIT; build-to-rent + scattered SFR. |
+| **Amherst / FirstKey / Blackstone SFR vehicles** | Tens of thousands of doors each | Institutional capital; underwriting and exit comps matter more than hiring them as your manager. |
+
+Sources for scale context: industry rankings and press (e.g. [Belong / ResRents third-party SFR notes](https://belonghome.com/blog/top-property-management-companies-in-the-us-2025-rankings), [DoorLoop largest managers](https://www.doorloop.com/blog/largest-property-management-companies), [Wolf Street SFR landlord scale](https://wolfstreet.com/2026/02/23/the-biggest-single-family-rental-landlords-mom-pop-landlords-and-trumps-push-to-block-the-big-guys-from-buying-more-homes/)). Figures move; re-check before relying on unit counts.
+
+### Remote-ops takeaway for this ranking
+[↑ Back to Index](#index)
+
+
+- Prefer metros with **multiple competing local PMs** (Indianapolis, Columbus, Kansas City, Dallas–Fort Worth, Atlanta, Phoenix, Tampa/Jacksonville) over thin one-PM towns.
+- In high-yield / ops-heavy cities (Memphis, Detroit, Cleveland C-class, Baltimore), budget the **all-in** PM stack and insist on maintenance markup transparency — cheap headline % can lose money on repairs.
+- Midwest landlord-friendly states in this report’s top tier generally have enough third-party depth for remote ownership; still interview **2–3** managers and compare full fee schedules, not just the monthly %.
+
+---
+
+
+
+## 10. Practical acquisition workflow
 [↑ Back to Index](#index)
 
 
@@ -1696,17 +1758,18 @@ Low tax rates help Alabama / Arkansas / Tennessee / South Carolina cash flow. Hi
 3. Shortlist 3–5 metros — not a whole state.
 4. Pull current ZIP-level sale and executed-rent comps (like-for-like).
 5. Get property-tax history and a **bindable insurance quote** before finalizing the offer.
-6. Model vacancy, management, repairs, capital expenses, leasing, utilities, legal cost, and concessions.
-7. Use the standard financing case (25% down; investor rate band about 7.0%–8.5% unless you have a live quote). Confirm **cash to close + shock reserves** from §4e / the state’s **Entry capital:** line before offering.
-8. Stress: rate +1%, rent −5%, insurance +50%, and six months of nonpayment / vacancy.
-9. Verify local licensing, inspection, deposit, notice, rent-cap, and just-cause rules.
-10. Buy only if the **address-level** case still works.
+6. Model vacancy, **management (about 10% of rent unless quoted)**, leasing/placement on turnover, repairs, capital expenses, utilities, legal cost, and concessions — use the §9 fee stack.
+7. Collect **written PM fee schedules** from at least two local managers (management %, leasing, renewal, maintenance markup).
+8. Use the standard financing case (25% down; investor rate band about 7.0%–8.5% unless you have a live quote). Confirm **cash to close + shock reserves** from §4e / the state’s **Entry capital:** line before offering.
+9. Stress: rate +1%, rent −5%, insurance +50%, and six months of nonpayment / vacancy.
+10. Verify local licensing, inspection, deposit, notice, rent-cap, and just-cause rules.
+11. Buy only if the **address-level** case still works.
 
 ---
 
 
 
-## 10. Methodology and sources
+## 11. Methodology and sources
 [↑ Back to Index](#index)
 
 
@@ -1738,7 +1801,9 @@ This report used active web search / browsing on July 25, 2026. Scores are compa
 | Loan type                      | Investor / cash-flow–qualified rental loan                                            |
 | Interest rate band             | About 7.0%–8.5% for typical July 2026 files; stronger files can be lower              |
 | Vacancy                        | 5–8% (higher if concessions are elevated)                                             |
-| Operating expenses before debt | About 35–50% of gross rent; higher in high-tax / high-insurance / older-stock markets |
+| Property management (ongoing)  | About **10%** of collected rent (common band **8–12%**; survey averages near about **8.5%**) unless a live PM quote is used — see §9 |
+| Leasing / placement (turnover) | About **50–100%** of one month’s rent (or fold into higher effective expense)         |
+| Operating expenses before debt | About 35–50% of gross rent (includes management); higher in high-tax / high-insurance / older-stock markets |
 | Gross yield                    | Annual rent ÷ price (prefer median purchase price; screen only)                       |
 | Preferred rent input           | Achieved / signed lease rent; otherwise asking rent labeled                           |
 
@@ -1773,8 +1838,13 @@ This report used active web search / browsing on July 25, 2026. Scores are compa
 - [Property tax rate compilations (Tax Foundation–based 2026 rankings)](https://www.financewonk.com/references/property-taxes-by-state)
 - [2026 landlord insurance cost summaries](https://richeyinsurance.com/landlord-insurance-statistics/)
 - [July 2026 investor loan rate sheets / comparisons](https://dscrfinder.com/blog/current-dscr-loan-rates)
+- [iPropertyManagement — average property management fees research (2026)](https://ipropertymanagement.com/research/average-property-management-fees)
+- [All Property Management — how much managers charge](https://www.allpropertymanagement.com/resources/ask-a-pro/posts/how-much-property-managers-charge/)
+- [DoorLoop — largest U.S. property management companies](https://www.doorloop.com/blog/largest-property-management-companies)
+- [Belong — top PM companies / SFR third-party notes (2025)](https://belonghome.com/blog/top-property-management-companies-in-the-us-2025-rankings)
+- [Wolf Street — largest SFR landlords scale (2026)](https://wolfstreet.com/2026/02/23/the-biggest-single-family-rental-landlords-mom-pop-landlords-and-trumps-push-to-block-the-big-guys-from-buying-more-homes/)
 - [Duplex / fourplex market guides and investor-loan comparisons](https://www.noradarealestate.com/blog/best-cities-to-buy-a-duplex-triplex-for-rental-income-2026/)
-- Official legal pages for Washington, Oregon, California, New York, Chicago / Cook County (linked in Section 8)
+- Official legal pages for Washington, Oregon, California, New York, Chicago / Cook County (linked in Section 7)
 
 
 
@@ -1783,7 +1853,7 @@ This report used active web search / browsing on July 25, 2026. Scores are compa
 
 
 - Race/ethnicity uses **2020 Census** shares (NH racial categories + Hispanic any race). ACS updates will shift percentages modestly; re-pull for address-level work.
-- **Mean household income** by state (ACS S1901/S1902) is marked `unavailable` because the Census data API now requires a key and the full mean table was not downloadable in this pass — do not treat median as mean.
+- **Mean household income** by state is pulled from Census ACS subject table S1901 when `CENSUS_API_KEY` is set; if missing, mark `unavailable` — do not treat median as mean.
 - CPS ASEC state medians (FRED) and ACS 1-year metro medians are different surveys; do not mix them in one ratio without labeling.
 - Entry capital and shock reserves are **screens** (25% down, about 3% closing, 7.5% PI, tax/insurance overlays, 6–9 months PITI) — not lender commitments or bindable insurance quotes. Recompute with live quotes and the exact address.
 - Industry rankings use CES supersectors (trade/transportation/utilities, education & health, government, etc.). Automated pulls of the full BLS table were blocked; rankings combine the May 2026 BLS industry chart extracts with standard CES state profiles — treat exact ordering of close sectors as directional.

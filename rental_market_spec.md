@@ -46,7 +46,7 @@ Every section below includes **[↑ Back to Spec index](#spec-index)** under its
 | [Optional follow-ups](#optional-follow-up-prompts) | Screens and refresh prompts |
 | [Out of scope](#out-of-scope-unless-asked-later) | What this analysis does not do |
 
-**Ranking metrics (quick):** [Industries](#required-job-industry-metrics-do-not-skip) · [Demographics & income](#required-demographics--income-metrics-do-not-skip) · [Prices](#required-price-metrics-do-not-skip) · [Entry capital & shock reserves](#required-entry-capital--shock-reserves-do-not-skip) · [Cash flow](#required-cash-flow-definition-do-not-improvise) · [Suburbs](#required-suburb-research-mandatory)
+**Ranking metrics (quick):** [Industries](#required-job-industry-metrics-do-not-skip) · [Demographics & income](#required-demographics--income-metrics-do-not-skip) · [Prices](#required-price-metrics-do-not-skip) · [Entry capital & shock reserves](#required-entry-capital--shock-reserves-do-not-skip) · [Cash flow](#required-cash-flow-definition-do-not-improvise) · [Property management](#required-property-management-metrics-do-not-skip) · [Suburbs](#required-suburb-research-mandatory)
 
 ---
 
@@ -315,6 +315,23 @@ These are mandatory in analysis even if not separate 1–10 pillars:
 | **Remote-operability / PM availability** | Critical for out-of-state investors |
 | **Ops intensity** | Ultra-high-yield cities may imply crime, condition, turnover, or collection risk — say so |
 
+### Required property-management metrics (do not skip)
+
+[↑ Back to Spec index](#spec-index)
+
+Every full refresh must include a **Property management rates & remote ops** section in the report (after insurance/tax overlays; before acquisition workflow). Live-search current fee benchmarks and notable operators; cite URLs and as-of dates. Do not invent company fee schedules.
+
+| Field | Requirement |
+|-------|-------------|
+| **Monthly management fee** | National typical range for **long-term residential** (single-family and 2–4 unit): usually **8–12% of collected rent**; note published national averages when available (e.g. about **8.5%** survey averages). Flat-fee alternatives (often about **$80–$150+/unit/mo**) when common. |
+| **Leasing / tenant placement** | Typical **50–100% of one month’s rent** (or flat $500–$1,500); note average about **70%** of one month’s rent when sourced. |
+| **Other common fees** | Setup / onboarding, lease renewal, inspections, eviction coordination, and **maintenance markups** (often about **5–15%** of vendor invoices) — list as a fee stack, not only the headline %. |
+| **All-in cost screen** | State that first-year / fully loaded PM cost often lands about **15–20%+ of gross rent** once placement + add-ons are included — use this haircut in cash-flow scoring. |
+| **Property-type note** | Single-family often prices at the **higher** end of the % range; small multifamily (2–4) similar or slightly lower; large multifamily / institutional often **lower %** or flat per door. Short-term / vacation management is a **different** business (often **20–35%+**) — keep out of LTR screens unless labeled. |
+| **Regional direction** | Note when high-rent coasts quote **lower %** and lower-rent Midwest/Southeast quote **higher %** to cover fixed labor. Flag thin-PM metros as remote-ops risk. |
+| **Notable operators (landscape, not endorsement)** | List **third-party** residential managers / marketplaces useful to remote investors (e.g. large multifamily managers like Greystar / Avenue5 for scale context; SFR third-party specialists / marketplaces such as Evernest, All Property Management directories) **and** separate **institutional SFR landlords** (Invitation Homes, Progress Residential, American Homes 4 Rent, etc.) that are **not** typically available as mom-and-pop third-party PMs. Always label: scale ≠ quote for a one-off duplex. |
+| **Underwriting default** | Unless the user supplies a live PM quote, cash-flow screens should assume **about 10% of gross rent** for ongoing management **plus** a leasing-fee allowance on turnover (or fold leasing into higher effective expense). State the assumption in Methodology. |
+
 ---
 
 ## Required outputs
@@ -349,8 +366,9 @@ Every full analysis **must match that report’s structure, tone, and section or
 8. **All-state deep dives** — fuller writeups for **every state + D.C.** in actionable-rank order (scores, **Prices:**, **Entry capital:**, **Top industries:**, **Demographics / income:**, **Top suburbs:** when researched, narrative, best fit, risks, confidence). Do **not** use remaining-state bullet cards as a substitute.
 9. **Legal environment — verified highlights** — dated rent-cap / just-cause / city-override notes with links
 10. **Insurance and property-tax overlays** — directional high/low drag and catastrophe haircuts
-11. **Practical acquisition workflow** — numbered steps from strategy → address underwriting
-12. **Methodology and sources** — live-research confirmation, financing assumptions, price-measure definitions, demographics/income definitions, primary links, caveats, **navigable A–Z actionable-rank index** (link every state to its §6 deep dive)
+11. **Property management rates & remote ops** — fee stack (management %, leasing, add-ons), all-in cost screen, notable third-party vs institutional operators (live-searched; not an endorsement)
+12. **Practical acquisition workflow** — numbered steps from strategy → address underwriting (include get PM fee schedule in writing)
+13. **Methodology and sources** — live-research confirmation, financing assumptions, **PM fee defaults**, price-measure definitions, demographics/income definitions, primary links, caveats, **navigable A–Z actionable-rank index** (link every state to its §6 deep dive)
 
 **Navigation rules:**
 - Keep a top **Index** with Markdown anchor links (works in GitHub / most Markdown previews), including shortcuts to **all** deep-dive state headings (or A–Z → deep dive).
@@ -378,8 +396,9 @@ Every full analysis **must match that report’s structure, tone, and section or
 - **Index / TOC** at the top and a **navigable A–Z rank index** at the end (**every** state links to its §6 deep dive)
 - **Deep dives for every state + D.C.** (with Prices, **Entry capital**, Top industries, Demographics / income, Top suburbs when researched) — no remaining-state bullet cards
 - **Entry capital screens** for every state (down %, cash to close, shock liquid, total recommended liquid) + metro/suburb variants when prices diverge
+- **Property management rates & remote ops** — fee stack + notable third-party vs institutional operators (live-searched)
 - Insurance / property-tax overlays and legal highlights with citations
-- Methodology: live search confirmation, financing defaults, yield definition, price-measure definitions, industry sources, demographics/income sources, sources, data gaps, disclaimer
+- Methodology: live search confirmation, financing defaults, yield definition, price-measure definitions, industry sources, demographics/income sources, **PM fee sources**, sources, data gaps, disclaimer
 
 ### How to present median and average prices (integrated, not isolated)
 
@@ -645,7 +664,7 @@ Search and pull from as many of these as available (use current equivalents if p
 | Property tax | Effective property tax rate by state/county; assessor or tax-burden summaries |
 | Insurance / catastrophe | Landlord insurance cost reports, carrier exits, hurricane/flood/hail/wildfire risk summaries |
 | Landlord / tenant law | State statutes, AG/housing agency pages, city ordinance pages, rent-control / just-cause / licensing news |
-| Property management / remote ops | PM availability, typical management fee ranges, licensing friction for out-of-state owners |
+| Property management / remote ops | PM availability, **management % + leasing fees + add-on stack**, third-party vs institutional SFR operators, licensing friction for out-of-state owners |
 
 ### Metrics required before High confidence
 
@@ -804,7 +823,8 @@ DEFAULT UNDERWRITING ASSUMPTIONS (state them; override only if user specifies):
 - Closing/acquisition costs screen ~3% of purchase (cash to close ≈ 28% of price at defaults)
 - Recommended shock liquid: **6 months** PITI (raise to **9–12 months** in high-insurance / high-tax / soft-rent markets)
 - Vacancy 5–8% (higher if concessions are elevated)
-- Operating expenses ~35–50% of gross rent before debt, higher in high-tax/high-insurance/older-stock markets
+- **Property management:** about **10% of collected rent** ongoing (within the common 8–12% band; national survey averages near ~8.5%) unless a live PM quote is used; plus leasing/placement allowance of about **50–100% of one month’s rent** on turnover
+- Operating expenses ~35–50% of gross rent before debt (includes management), higher in high-tax/high-insurance/older-stock markets
 - Gross yield = annual rent / price (screen only)
 - Prefer achieved rent over asking rent; if using asking rent indexes, label it
 - Stress top markets for rate +1%, rent −5%, insurance +50%, and 6 months vacancy/nonpayment
