@@ -374,12 +374,11 @@ body {
     max-width: 100%;
   }
 
+  /* Hint in normal flow — sticky/overlay was covering the first data row */
   #content .table-wrap.is-wide::before {
     content: "Swipe sideways to see more columns →";
     display: block;
-    position: sticky;
-    left: 0;
-    z-index: 6;
+    position: static;
     padding: 0.4rem 0.65rem;
     font-family: var(--sans);
     font-size: 0.75rem;
@@ -395,15 +394,26 @@ body {
     font-size: 0.82rem;
   }
 
+  /*
+    Sticky thead + overflow-x on the wrapper makes the header paint over
+    the first body row on mobile (e.g. AK missing in A–Z rank tables).
+    Keep headers in normal document flow on small screens.
+  */
   #content thead th {
-    /* Stick under topbar while the page scrolls; horizontal swipe still works */
-    top: calc(var(--nav-h) + var(--safe-top));
+    position: static;
+    top: auto;
+    z-index: auto;
+    box-shadow: none;
     padding: 0.5rem 0.55rem;
     font-size: 0.78rem;
   }
 
   #content tbody td {
     padding: 0.45rem 0.55rem;
+  }
+
+  #content tbody tr:first-child td {
+    background-clip: padding-box;
   }
 
   #content pre {
