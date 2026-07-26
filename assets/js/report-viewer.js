@@ -28,6 +28,7 @@
       marked.setOptions({ gfm: true, breaks: false });
       content.innerHTML = marked.parse(md);
       wrapTables(content);
+      markWideTables(content);
       document.title = (labels[src] || src) + " · Market";
     })
     .catch(function (err) {
@@ -47,5 +48,19 @@
       table.parentNode.insertBefore(wrap, table);
       wrap.appendChild(table);
     });
+  }
+
+  function markWideTables(root) {
+    function update() {
+      root.querySelectorAll(".table-wrap").forEach(function (wrap) {
+        var wide = wrap.scrollWidth > wrap.clientWidth + 4;
+        wrap.classList.toggle("is-wide", wide);
+      });
+    }
+    update();
+    window.addEventListener("resize", update, { passive: true });
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", update, { passive: true });
+    }
   }
 })();
