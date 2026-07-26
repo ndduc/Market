@@ -166,22 +166,22 @@ The apartment report **must match that report’s structure, tone, and section o
 #### Required section order
 
 1. **Header** — title (Apartment / Multifamily), analysis date, coverage, property types (**5+ unit apartments**), live-research confirmation, disclaimer; link to sibling SFR/2–4 report
-2. **Index** — same jump-link pattern; every indexed heading gets **[↑ Back to Index](#index)** underneath
-3. **What changed vs the prior run**
-4. **National market snapshot** — apartment national bullets + yield/cap-rate definition + core conclusion + **Class A vs B/C** takeaway (replaces SFR vs 2–4 takeaway)
-5. **Top 10 actionable markets** — apartment fit / caution  
+2. **Index** — same jump-link pattern; every indexed heading gets **[↑ Back to Index](#index)** underneath; link What changed last as appendix
+3. **National market snapshot** — apartment national bullets + yield/cap-rate definition + core conclusion + **Class A vs B/C** takeaway (replaces SFR vs 2–4 takeaway)
+4. **Top 10 actionable markets** — apartment fit / caution  
    then **Best landlord-protection markets**  
    then **Best tenant-protection markets that still have an investment case**  
    then **Markets to avoid / watch**
-6. **All-state ranking matrix** — companion **4a–4e** (apartment column meanings above)
-7. **City leaderboards** — cash flow / Class B-C value-add / Class A growth / submarkets / jobs (adapt board titles to apartments; no “best single-family” board)
-8. **All-state deep dives** — **every state + D.C.** with fields: Scores, Prices (apartment screens), Entry capital, Top industries, Demographics / income, Top submarkets, Best fit, Risks, Confidence
-9. **Legal** — verified highlights; emphasize rent regulation impact on apartments
-10. **Insurance and property tax overlays**
-11. **Property management rates & remote ops** — multifamily fee stack + operators
-12. **Practical acquisition workflow** — multifamily LOI / PSA / due diligence / agency debt path
-13. **Methodology and sources**
-14. **A–Z actionable rank index**
+5. **All-state ranking matrix** — companion **4a–4e** (apartment column meanings above)
+6. **City leaderboards** — cash flow / Class B-C value-add / Class A growth / submarkets / jobs (adapt board titles to apartments; no “best single-family” board)
+7. **All-state deep dives** — **every state + D.C.** with fields: Scores, Prices (apartment screens), Entry capital, Top industries, Demographics / income, Top submarkets, Best fit, Risks, Confidence
+8. **Legal** — verified highlights; emphasize rent regulation impact on apartments
+9. **Insurance and property tax overlays**
+10. **Property management rates & remote ops** — multifamily fee stack + operators
+11. **Practical acquisition workflow** — multifamily LOI / PSA / due diligence / agency debt path
+12. **Methodology and sources**
+13. **A–Z actionable rank index**
+14. **Appendix: What changed vs the prior run** (bottom; keep `#1-what-changed-vs-the-prior-run` anchor)
 
 **Language:** Plain English. Do not use `~` or `~~` for “approximately” (Markdown strikethrough). Use **about** or **≈**.
 

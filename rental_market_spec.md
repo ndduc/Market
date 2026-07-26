@@ -353,7 +353,7 @@ Every full analysis **must match that report’s structure, tone, and section or
 #### Required section order
 1. **Header** — title, analysis date, coverage, property types, live-research confirmation, disclaimer
 2. **Index (table of contents)** — clickable jump links to every major section, plus shortcuts to **4a–4e**, deep dives, city boards, and the **A–Z state rank index**. **Every indexed heading** must include **[↑ Back to Index](#index)** directly underneath. Required because the report is long and multi-table.
-3. **What changed vs the prior run** — short table of score / ranking / data updates (required whenever a prior report exists)
+3. **What changed vs the prior run** — short table of score / ranking / data updates when a prior report exists (**place as a bottom appendix**, not the first body section; Index may link it last)
 4. **National market snapshot** — live national bullets + yield definition + core conclusion + single-family vs 2–4 unit takeaway
 5. **Top 10 actionable markets** — ranked table with why / property-type fit / main caution  
    then **Best landlord-protection markets**  

@@ -21,37 +21,17 @@ Every section below includes **[↑ Back to Index](#index)** under its heading s
 
 | | |
 |---|---|
-| [1. What changed](#1-what-changed-vs-the-prior-run) | [2. National snapshot](#2-national-market-snapshot) |
-| [3. Top 10 / lists](#3-top-10-actionable-markets) | [4. All-state matrix](#4-all-state-ranking-matrix) |
+| [2. National snapshot](#2-national-market-snapshot) | [3. Top 10 / lists](#3-top-10-actionable-markets) |
+| [4. All-state matrix](#4-all-state-ranking-matrix) | [5. City leaderboards](#5-city-leaderboards) |
 | [4a Scores](#4a-scores-actionable-order) · [4b Prices](#4b-prices--major-metros-same-order) | [4c Industries](#4c-top-job-industries-same-order) · [4d Demographics & income](#4d-demographics--income-same-order) · [4e Entry capital](#4e-entry-capital--shock-reserves-same-order) |
-| [5. City leaderboards](#5-city-leaderboards) | [6. All-state deep dives](#6-all-state-deep-dives) |
-| [7. Legal](#7-legal-environment--verified-2026-highlights) | [8. Insurance & tax](#8-insurance-and-property-tax-overlays) |
-| [9. Property management](#9-property-management-rates--remote-ops) | [10. Acquisition workflow](#10-practical-acquisition-workflow) |
-| [11. Methodology & sources](#11-methodology-and-sources) | [A–Z state rank index](#az-actionable-rank-index) |
+| [6. All-state deep dives](#6-all-state-deep-dives) | [7. Legal](#7-legal-environment--verified-2026-highlights) |
+| [8. Insurance & tax](#8-insurance-and-property-tax-overlays) | [9. Property management](#9-property-management-rates--remote-ops) |
+| [10. Acquisition workflow](#10-practical-acquisition-workflow) | [11. Methodology & sources](#11-methodology-and-sources) |
+| [A–Z state rank index](#az-actionable-rank-index) | [What changed (appendix)](#1-what-changed-vs-the-prior-run) |
 
 **Deep dives (all states + D.C., appreciation actionable order):** [IL](#illinois) · [WI](#wisconsin) · [CT](#connecticut) · [NJ](#new-jersey) · [PA](#pennsylvania) · [NY](#new-york) · [KY](#kentucky) · [IN](#indiana) · [MO](#missouri) · [MA](#massachusetts) · [ND](#north-dakota) · [TN](#tennessee) · [NH](#new-hampshire) · [NE](#nebraska) · [VT](#vermont) · [OH](#ohio) · [ID](#idaho) · [IA](#iowa) · [SD](#south-dakota) · [AR](#arkansas) · [HI](#hawaii) · [WV](#west-virginia) · [VA](#virginia) · [AL](#alabama) · [GA](#georgia) · [AK](#alaska) · [MN](#minnesota) · [MI](#michigan) · [KS](#kansas) · [ME](#maine) · [MS](#mississippi) · [SC](#south-carolina) · [NC](#north-carolina) · [MD](#maryland) · [MT](#montana) · [NM](#new-mexico) · [AZ](#arizona) · [LA](#louisiana) · [WY](#wyoming) · [NV](#nevada) · [DE](#delaware) · [OK](#oklahoma) · [UT](#utah) · [TX](#texas) · [OR](#oregon) · [FL](#florida) · [RI](#rhode-island) · [WA](#washington) · [CO](#colorado) · [CA](#california) · [DC](#district-of-columbia)
 
 **City boards:** [Appreciation path](#appreciation-path-metros-fhfa--demand) · [Single-family equity](#best-single-family-equity-path-metros) · [Jobs / migration](#job--migration-leaders) · [Supply-constrained / high-income](#supply-constrained--high-income-screens) · [Top suburbs (App tilt)](#top-suburbs-worth-researching-appreciation-tilt) · [Carry / thin-cash notes](#carry--thin-cash-notes-secondary)
-
----
-
-## 1. What changed vs the prior run
-[↑ Back to Index](#index)
-
-This is the **first sibling deliverable** focused solely on **single-family appreciation investing**. It does **not** replace `rental_market_report.md` (cash-flow–balanced SFR + 2–4 unit).
-
-| Change | What it means |
-| ------ | ------------- |
-| **New strategy lens** | Rankings overweight **appreciation**, **jobs/migration**, **entry vs income**, **liquidity/exit**, and **owner-law / remote ops**; day-one cash flow is secondary |
-| **Property scope** | **Single-family houses only** — apartments and 2–4 unit MF are out of primary scope |
-| **Squatting overlay** | Vacant App SFH treated as first-class risk — reform vs friction jurisdictions, adverse-possession neglect, vacant monitoring |
-| **Score column meanings** | Same 4a columns as the base report, but **Price** = entry-vs-income + liquidity for equity path (not pure “cheap = good”); **Cash** = carry tolerance (thin OK); **Appr.** dominates the Econ blend |
-| **Econ weights** | Appreciation **40%** / Jobs **30%** / Price **20%** / Cash **10%** (vs equal 25% pillars in the base rental report) |
-| **Live data reused** | Same `data/` snapshots: FHFA, Redfin state prices, BLS jobs/industries, ACS/FRED income & demographics, BEA |
-| **Rank flip vs base** | Midwest cash-flow leaders (Ohio, Indiana, Arkansas) fall behind **FHFA + liquidity appreciation leaders** (Illinois, Wisconsin, Connecticut, New Jersey, Pennsylvania, upstate New York, etc.) |
-| **Format** | Mirrors `rental_market_report.md` section order, Index / Back to Index, companion tables, all-state deep dives |
-
-**Defaults used (user did not override):** appreciation-first; single-family only; remote-capable preferred; **5–10+ year** hold; moderate risk; thin day-one cash flow acceptable; **vacant SFH monitored against squatting**.
 
 ---
 
@@ -1598,5 +1578,28 @@ Actionable rank by postal abbreviation (1 = highest appreciation actionable). **
 | [WY](#wyoming) 39 |  |  |  |  |
 
 ---
+
+---
+
+## 1. What changed vs the prior run
+[↑ Back to Index](#index)
+
+This is the **first sibling deliverable** focused solely on **single-family appreciation investing**. It does **not** replace `rental_market_report.md` (cash-flow–balanced SFR + 2–4 unit).
+
+| Change | What it means |
+| ------ | ------------- |
+| **New strategy lens** | Rankings overweight **appreciation**, **jobs/migration**, **entry vs income**, **liquidity/exit**, and **owner-law / remote ops**; day-one cash flow is secondary |
+| **Property scope** | **Single-family houses only** — apartments and 2–4 unit MF are out of primary scope |
+| **Squatting overlay** | Vacant App SFH treated as first-class risk — reform vs friction jurisdictions, adverse-possession neglect, vacant monitoring |
+| **Score column meanings** | Same 4a columns as the base report, but **Price** = entry-vs-income + liquidity for equity path (not pure “cheap = good”); **Cash** = carry tolerance (thin OK); **Appr.** dominates the Econ blend |
+| **Econ weights** | Appreciation **40%** / Jobs **30%** / Price **20%** / Cash **10%** (vs equal 25% pillars in the base rental report) |
+| **Live data reused** | Same `data/` snapshots: FHFA, Redfin state prices, BLS jobs/industries, ACS/FRED income & demographics, BEA |
+| **Rank flip vs base** | Midwest cash-flow leaders (Ohio, Indiana, Arkansas) fall behind **FHFA + liquidity appreciation leaders** (Illinois, Wisconsin, Connecticut, New Jersey, Pennsylvania, upstate New York, etc.) |
+| **Format** | Mirrors `rental_market_report.md` section order, Index / Back to Index, companion tables, all-state deep dives |
+
+**Defaults used (user did not override):** appreciation-first; single-family only; remote-capable preferred; **5–10+ year** hold; moderate risk; thin day-one cash flow acceptable; **vacant SFH monitored against squatting**.
+
+> Changelog appendix — kept at the bottom so the national snapshot comes first.
+
 
 *End of single-family appreciation sibling report. Informational only — not financial advice. Re-pull live comps, tax bills, and bindable insurance quotes before deploying capital. For cash-flow–first SFR + 2–4 unit screens, use `rental_market_report.md`.*

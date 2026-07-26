@@ -18,52 +18,19 @@ Every section below includes **[↑ Back to Index](#index)** under its heading s
 
 | | |
 |---|---|
-| [1. What changed](#1-what-changed-vs-the-prior-run) | [2. National snapshot](#2-national-market-snapshot) |
-| [3. Top 10 / lists](#3-top-10-actionable-markets) | [4. All-state matrix](#4-all-state-ranking-matrix) |
+| [2. National snapshot](#2-national-market-snapshot) | [3. Top 10 / lists](#3-top-10-actionable-markets) |
+| [4. All-state matrix](#4-all-state-ranking-matrix) | [5. City leaderboards](#5-city-leaderboards) |
 | [4a Scores](#4a-scores-actionable-order) · [4b Prices](#4b-prices--major-metros-same-order) | [4c Industries](#4c-top-job-industries-same-order) · [4d Demographics & income](#4d-demographics--income-same-order) · [4e Entry capital](#4e-entry-capital--shock-reserves-same-order) |
-| [5. City leaderboards](#5-city-leaderboards) | [6. All-state deep dives](#6-all-state-deep-dives) |
-| [7. Legal](#7-legal-environment--verified-2026-highlights) | [8. Insurance & tax](#8-insurance-and-property-tax-overlays) |
-| [9. Property management](#9-property-management-rates--remote-ops) | [10. Acquisition workflow](#10-practical-acquisition-workflow) |
-| [11. Methodology & sources](#11-methodology-and-sources) | [A–Z state rank index](#az-actionable-rank-index) |
+| [6. All-state deep dives](#6-all-state-deep-dives) | [7. Legal](#7-legal-environment--verified-2026-highlights) |
+| [8. Insurance & tax](#8-insurance-and-property-tax-overlays) | [9. Property management](#9-property-management-rates--remote-ops) |
+| [10. Acquisition workflow](#10-practical-acquisition-workflow) | [11. Methodology & sources](#11-methodology-and-sources) |
+| [A–Z state rank index](#az-actionable-rank-index) | [What changed (appendix)](#1-what-changed-vs-the-prior-run) |
 
 **Deep dives (all states + D.C., actionable order):** [OH](#ohio) · [IN](#indiana) · [AR](#arkansas) · [IA](#iowa) · [MO](#missouri) · [WI](#wisconsin) · [AL](#alabama) · [KY](#kentucky) · [PA](#pennsylvania) · [TN](#tennessee) · [NE](#nebraska) · [ND](#north-dakota) · [MI](#michigan) · [WV](#west-virginia) · [KS](#kansas) · [GA](#georgia) · [MS](#mississippi) · [SC](#south-carolina) · [OK](#oklahoma) · [NC](#north-carolina) · [SD](#south-dakota) · [IL](#illinois) · [TX](#texas) · [VA](#virginia) · [NM](#new-mexico) · [MN](#minnesota) · [LA](#louisiana) · [AK](#alaska) · [VT](#vermont) · [ME](#maine) · [ID](#idaho) · [FL](#florida) · [WY](#wyoming) · [UT](#utah) · [MT](#montana) · [NV](#nevada) · [CT](#connecticut) · [DE](#delaware) · [AZ](#arizona) · [MD](#maryland) · [NH](#new-hampshire) · [NY](#new-york) · [NJ](#new-jersey) · [RI](#rhode-island) · [MA](#massachusetts) · [HI](#hawaii) · [CO](#colorado) · [OR](#oregon) · [WA](#washington) · [CA](#california) · [DC](#district-of-columbia)
 
 **City boards:** [Cash flow](#cash-flow-potential-gross-yield-is-a-screen) · [Single-family](#best-for-single-family-houses) · [2–4 unit](#best-for-24-unit-multifamily-homes) · [Top suburbs](#top-suburbs-worth-researching-live-2026-screen) · [Appreciation](#appreciation-leaders-first-quarter-2026-federal-housing-finance-agency) · [Jobs](#job-market-leaders-may-2026-payroll-changes)
 
 ---
-
-## 1. What changed vs the prior run
-[↑ Back to Index](#index)
-
-
-This refresh adds the new **median + average/typical price** requirement from the updated spec while keeping the same overall report shape.
-
-
-| Change                    | What it means                                                                                                                                                         |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Prices in context**     | Live **Redfin** state medians + **FHFA** YoY in §4b; deep-dive Prices / Entry capital rebuilt from same medians |
-| **Top suburb research**   | Major metros now include **1–3 researched suburbs** (cash-flow vs appreciation), e.g. Phoenix East vs West Valley                                                     |
-| **Top job industries**    | Live **BLS CES SAE** supersector shares every refresh (API) |
-| **Live APIs this run**    | Census + FRED + BLS + BEA keys; no-key FHFA HPI + Redfin state tracker |
-| **Durable pipeline**      | Full refreshes must **live-fetch → overwrite** `data/` **→ build** (no disposable `_add_*.py` patch scripts)                                                          |
-| **Entry capital / shock reserves** | Every state shows **25% down**, cash to close, **6–9 mo shock liquid**, and total recommended liquid (metro/suburb variants in deep dives) |
-| **All-state deep dives** | **Every state + D.C.** has a full §6 deep dive (no remaining-state bullet cards) |
-| **Index / navigation**    | Top clickable **Index** + end **A–Z rank index**; **every section** has **[↑ Back to Index](#index)** under its heading |
-| **Property management fees** | National LTR fee stack (about 8–12% management; leasing 50–100% of one month’s rent) + notable third-party vs institutional operators — see §9 |
-| **Demographics & income** | Live **Census ACS** race + mean HH income; **FRED/CPS** median HH income; BEA per-capita personal income in `data/bea.json` |
-| Property-type scope       | Rankings cover **single-family houses** and **2–4 unit multifamily homes**, with split shortlists                                                                     |
-| Cash-flow realism         | Scores haircut for **property tax**, **insurance**, concessions, and vacancy — not just rent ÷ price                                                                  |
-| Financing defaults        | Standard case: **25% down**, investor loan rates near **7.0%–8.5%** for typical files (July 2026 lender sheets)                                                       |
-| Risk overlays             | Insurance catastrophe, tax drag, new supply/concessions, exit liquidity, remote management, ops intensity                                                             |
-| City vs state law         | Local rules can override the state baseline (Chicago, New York City, coastal California, Seattle, etc.)                                                               |
-| Language                  | Fewer abbreviations; terms spelled out in plain English                                                                                                               |
-
-
-**Defaults used (user did not override):** balanced strategy; remote-capable preferred; 5–10 year hold; moderate risk.
-
----
-
-
 
 ## 2. National market snapshot
 [↑ Back to Index](#index)
@@ -1889,5 +1856,39 @@ Actionable rank by postal abbreviation (1 = highest). **Every** state links to i
 | [WY](#wyoming) 33 |  |  |  |  |
 
 ---
+
+---
+
+## 1. What changed vs the prior run
+[↑ Back to Index](#index)
+
+
+This refresh adds the new **median + average/typical price** requirement from the updated spec while keeping the same overall report shape.
+
+
+| Change                    | What it means                                                                                                                                                         |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Prices in context**     | Live **Redfin** state medians + **FHFA** YoY in §4b; deep-dive Prices / Entry capital rebuilt from same medians |
+| **Top suburb research**   | Major metros now include **1–3 researched suburbs** (cash-flow vs appreciation), e.g. Phoenix East vs West Valley                                                     |
+| **Top job industries**    | Live **BLS CES SAE** supersector shares every refresh (API) |
+| **Live APIs this run**    | Census + FRED + BLS + BEA keys; no-key FHFA HPI + Redfin state tracker |
+| **Durable pipeline**      | Full refreshes must **live-fetch → overwrite** `data/` **→ build** (no disposable `_add_*.py` patch scripts)                                                          |
+| **Entry capital / shock reserves** | Every state shows **25% down**, cash to close, **6–9 mo shock liquid**, and total recommended liquid (metro/suburb variants in deep dives) |
+| **All-state deep dives** | **Every state + D.C.** has a full §6 deep dive (no remaining-state bullet cards) |
+| **Index / navigation**    | Top clickable **Index** + end **A–Z rank index**; **every section** has **[↑ Back to Index](#index)** under its heading |
+| **Property management fees** | National LTR fee stack (about 8–12% management; leasing 50–100% of one month’s rent) + notable third-party vs institutional operators — see §9 |
+| **Demographics & income** | Live **Census ACS** race + mean HH income; **FRED/CPS** median HH income; BEA per-capita personal income in `data/bea.json` |
+| Property-type scope       | Rankings cover **single-family houses** and **2–4 unit multifamily homes**, with split shortlists                                                                     |
+| Cash-flow realism         | Scores haircut for **property tax**, **insurance**, concessions, and vacancy — not just rent ÷ price                                                                  |
+| Financing defaults        | Standard case: **25% down**, investor loan rates near **7.0%–8.5%** for typical files (July 2026 lender sheets)                                                       |
+| Risk overlays             | Insurance catastrophe, tax drag, new supply/concessions, exit liquidity, remote management, ops intensity                                                             |
+| City vs state law         | Local rules can override the state baseline (Chicago, New York City, coastal California, Seattle, etc.)                                                               |
+| Language                  | Fewer abbreviations; terms spelled out in plain English                                                                                                               |
+
+
+**Defaults used (user did not override):** balanced strategy; remote-capable preferred; 5–10 year hold; moderate risk.
+
+> Changelog appendix — kept at the bottom so the national snapshot comes first.
+
 
 *End of base report (prices, suburbs, top industries, demographics, and income integrated into rankings / cities / deep dives). Re-pull live comps, tax bills, and bindable insurance quotes before deploying capital. Future dated runs should keep this section structure.*

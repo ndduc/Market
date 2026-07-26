@@ -211,18 +211,18 @@ Insurance/catastrophe, property-tax drag, new supply / concessions, **liquidity/
 #### Required section order
 
 1. Header — title, date, coverage, **SFH-only**, appreciation objective, live-research note, disclaimer  
-2. **Index** + **[↑ Back to Index](#index)** under every indexed heading  
-3. What changed vs prior run (or vs base rental report on first publish)  
-4. National market snapshot — **equity-path definition** + core conclusion (no SFR vs 2–4 dual takeaway as primary)  
-5. Top 10 actionable → landlord-protection → tenant-protection (equity case) → avoid/watch  
-6. All-state matrix companions **4a–4e** (same columns as base; redefine Price/Cash/Appr framing in prose)  
-7. City leaderboards — appreciation-path metros; SFH equity list; jobs/migration; supply-constrained screens; App-tilt suburbs; light carry notes (not CF-primary boards)  
-8. All-state deep dives (**every** state + D.C.) with Scores / Prices / Entry capital / Industries / Demographics / Top suburbs / Best fit / Risks / Confidence  
-9. Legal highlights (**must include Squatting / vacant SFH subsection**)  
-10. Insurance & property tax  
-11. Property management & remote ops (**lighter** than base, still present; include vacant monitoring)  
-12. Acquisition workflow (appreciation-adapted; **vacant-property / anti-squat controls**)  
-13. Methodology + **A–Z rank index**
+2. **Index** + **[↑ Back to Index](#index)** under every indexed heading (link What changed last as appendix)  
+3. National market snapshot — **equity-path definition** + core conclusion (no SFR vs 2–4 dual takeaway as primary)  
+4. Top 10 actionable → landlord-protection → tenant-protection (equity case) → avoid/watch  
+5. All-state matrix companions **4a–4e** (same columns as base; redefine Price/Cash/Appr framing in prose)  
+6. City leaderboards — appreciation-path metros; SFH equity list; jobs/migration; supply-constrained screens; App-tilt suburbs; light carry notes (not CF-primary boards)  
+7. All-state deep dives (**every** state + D.C.) with Scores / Prices / Entry capital / Industries / Demographics / Top suburbs / Best fit / Risks / Confidence  
+8. Legal highlights (**must include Squatting / vacant SFH subsection**)  
+9. Insurance & property tax  
+10. Property management & remote ops (**lighter** than base, still present; include vacant monitoring)  
+11. Acquisition workflow (appreciation-adapted; **vacant-property / anti-squat controls**)  
+12. Methodology + **A–Z rank index**  
+13. **Appendix: What changed** (bottom; keep `#1-what-changed-vs-the-prior-run` anchor)
 
 **Markdown rule:** never use `~` for “approximately” (strikethrough). Use `about` or `≈`.
 

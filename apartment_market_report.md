@@ -21,36 +21,17 @@ Every section below includes **[↑ Back to Index](#index)** under its heading s
 
 | | |
 |---|---|
-| [1. What changed](#1-what-changed-vs-the-prior-run) | [2. National snapshot](#2-national-market-snapshot) |
-| [3. Top 10 / lists](#3-top-10-actionable-markets) | [4. All-state matrix](#4-all-state-ranking-matrix) |
+| [2. National snapshot](#2-national-market-snapshot) | [3. Top 10 / lists](#3-top-10-actionable-markets) |
+| [4. All-state matrix](#4-all-state-ranking-matrix) | [5. City leaderboards](#5-city-leaderboards) |
 | [4a Scores](#4a-scores-actionable-order) · [4b Apartment screens](#4b-apartment-screens--major-metros-same-order) | [4c Industries](#4c-top-job-industries-same-order) · [4d Demographics & income](#4d-demographics--income-same-order) · [4e Entry capital](#4e-entry-capital--shock-reserves-same-order) |
-| [5. City leaderboards](#5-city-leaderboards) | [6. All-state deep dives](#6-all-state-deep-dives) |
-| [7. Legal](#7-legal-environment--verified-2026-highlights) | [8. Insurance & tax](#8-insurance-and-property-tax-overlays) |
-| [9. Property management](#9-property-management-rates--remote-ops) | [10. Acquisition workflow](#10-practical-acquisition-workflow) |
-| [11. Methodology & sources](#11-methodology-and-sources) | [A–Z state rank index](#az-actionable-rank-index) |
+| [6. All-state deep dives](#6-all-state-deep-dives) | [7. Legal](#7-legal-environment--verified-2026-highlights) |
+| [8. Insurance & tax](#8-insurance-and-property-tax-overlays) | [9. Property management](#9-property-management-rates--remote-ops) |
+| [10. Acquisition workflow](#10-practical-acquisition-workflow) | [11. Methodology & sources](#11-methodology-and-sources) |
+| [A–Z state rank index](#az-actionable-rank-index) | [What changed (appendix)](#1-what-changed-vs-the-prior-run) |
 
 **Deep dives (all states + D.C., actionable order):** [OH](#ohio) · [IN](#indiana) · [MO](#missouri) · [AL](#alabama) · [TN](#tennessee) · [PA](#pennsylvania) · [GA](#georgia) · [KY](#kentucky) · [WI](#wisconsin) · [MI](#michigan) · [NC](#north-carolina) · [SC](#south-carolina) · [AR](#arkansas) · [IL](#illinois) · [TX](#texas) · [IA](#iowa) · [OK](#oklahoma) · [KS](#kansas) · [NE](#nebraska) · [MS](#mississippi) · [VA](#virginia) · [MN](#minnesota) · [FL](#florida) · [LA](#louisiana) · [ND](#north-dakota) · [SD](#south-dakota) · [WV](#west-virginia) · [NM](#new-mexico) · [NV](#nevada) · [AZ](#arizona) · [ID](#idaho) · [UT](#utah) · [MT](#montana) · [DE](#delaware) · [CT](#connecticut) · [MD](#maryland) · [WY](#wyoming) · [AK](#alaska) · [ME](#maine) · [VT](#vermont) · [NH](#new-hampshire) · [CO](#colorado) · [RI](#rhode-island) · [NY](#new-york) · [NJ](#new-jersey) · [MA](#massachusetts) · [HI](#hawaii) · [OR](#oregon) · [WA](#washington) · [CA](#california) · [DC](#district-of-columbia)
 
 **City boards:** [Cash flow / NOI](#cash-flow--noi-screens) · [Class B/C value-add](#best-for-class-bc-value-add) · [Class A / growth](#best-for-class-a--growth-hold) · [Submarkets](#top-submarkets-worth-researching-live-2026-screen) · [Jobs](#job-market-leaders-context-for-renter-demand)
-
----
-
-## 1. What changed vs the prior run
-[↑ Back to Index](#index)
-
-First full apartment report in this workspace (sibling of the SFR / 2–4 base report).
-
-| Change | What it means |
-|--------|----------------|
-| **New apartment scope** | Rankings and deep dives target **5+ unit** conventional apartments only |
-| **Format reuse** | Same Index, §1–11 order, 4a–4e companions, all-state deep dives, A–Z as `rental_market_report.md` |
-| **National MF context** | Mid-2026 rebalancing: occupancy improving as deliveries slow; concessions still matter in Sun Belt Class A; national cap-rate band about mid-5%s (brokerage / lender screens) |
-| **Shared demand data** | Jobs, industries, demographics, income from live `data/` pulls (same parent pipeline) |
-| **Apartment pricing honesty** | Many $/door and metro cap prints marked `unavailable` or directional — not invented from Redfin house medians |
-| **PM defaults** | Multifamily third-party screen about **5–6% of EGI** (not SFR 10%) |
-| **Entry capital** | Illustrative **30% down** on mid-size garden screens + 6–12 mo reserves |
-
-**Defaults used:** balanced strategy; professional multifamily management; 5–10+ year hold; moderate risk; remote OK with third-party or platform ops.
 
 ---
 
@@ -1534,5 +1515,27 @@ Actionable rank by postal abbreviation (1 = highest). Every state links to its [
 | [WY](#wyoming) 37 |  |  |  |  |
 
 ---
+
+---
+
+## 1. What changed vs the prior run
+[↑ Back to Index](#index)
+
+First full apartment report in this workspace (sibling of the SFR / 2–4 base report).
+
+| Change | What it means |
+|--------|----------------|
+| **New apartment scope** | Rankings and deep dives target **5+ unit** conventional apartments only |
+| **Format reuse** | Same Index, §1–11 order, 4a–4e companions, all-state deep dives, A–Z as `rental_market_report.md` |
+| **National MF context** | Mid-2026 rebalancing: occupancy improving as deliveries slow; concessions still matter in Sun Belt Class A; national cap-rate band about mid-5%s (brokerage / lender screens) |
+| **Shared demand data** | Jobs, industries, demographics, income from live `data/` pulls (same parent pipeline) |
+| **Apartment pricing honesty** | Many $/door and metro cap prints marked `unavailable` or directional — not invented from Redfin house medians |
+| **PM defaults** | Multifamily third-party screen about **5–6% of EGI** (not SFR 10%) |
+| **Entry capital** | Illustrative **30% down** on mid-size garden screens + 6–12 mo reserves |
+
+**Defaults used:** balanced strategy; professional multifamily management; 5–10+ year hold; moderate risk; remote OK with third-party or platform ops.
+
+> Changelog appendix — kept at the bottom so the national snapshot comes first.
+
 
 *End of apartment market report. Sibling SFR / 2–4 analysis: [`rental_market_report.md`](rental_market_report.md).*
